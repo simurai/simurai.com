@@ -1,0 +1,26 @@
+---
+
+layout: default
+blog: true
+
+---
+
+<main class="main">
+
+    <article class="article">
+        <h1>{{ page.title }}</h1>
+        <div class="article-meta">
+            <time class="article-time">{{ page.date | date: "%B %d %Y" }}</time>
+        </div>
+        {{content}}
+    </article>
+
+    {% include comments.html %}
+
+</main>
+
+<nav class="subnav">
+    {% for post in site.posts %}
+      <a class="subnav-item{% if page.title == post.title and page.date == post.date %} active{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
+</nav>

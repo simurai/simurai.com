@@ -1,0 +1,36 @@
+---
+
+layout: default
+title: 404
+
+---
+
+<div class="wrapper">
+    <div class="cols">
+        <aside class="col col-1-2">
+            <h1 class="title--404">404</h1>
+        </aside>
+        <div class="col col-1-2">
+            <p>Some things aren't meant to last forever. :-/</p>
+            <p>I might still can <a href="/contact">help</a> you out.</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    
+    var path = window.location.pathname;
+    
+    // title
+    document.title = "404 - " + path;
+        
+    // Redirects
+    var redirects = {
+        '/post/xxx/xxx': '/blog/.../xxx'
+    };
+    
+    if (redirects.hasOwnProperty(path)) {
+        window.location = redirects[path];
+    }
+        
+</script>

@@ -1,0 +1,279 @@
+
+/* Globals ----------------------------------------- */
+
+body {
+    margin: 0;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(30, 30%, 96%);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(220,60%,60%);
+}
+a:hover {
+    color: hsl(220,60%,70%);
+}
+a:active {
+    color: hsl(220,60%,50%);
+}
+
+h1 {
+    line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+
+/* Sections ----------------------------------------- */
+
+
+section {
+    padding: 60px 40px;
+    border-top: 1px solid hsl(0,0%,100%);
+    border-bottom: 1px solid hsla(0,0%,0%,.1);
+}
+
+
+.wrapper {
+    position: relative;
+    max-width: 700px;
+    margin: 100px auto;
+    text-shadow: 0px 1px 0px hsla(0,0%,100%,.8);
+}
+
+.title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.title--404 {
+    font-size: 6em;
+    text-align: center;
+    margin: 0;
+}
+
+.sub-title {
+    margin-bottom: 0;
+}
+
+blockquote {
+    margin: 1.5em 0;
+    padding: 0 1em;
+    font-size: .9em;
+    line-height: 1.3;
+    color: hsl(0, 0%, 50%);
+    border-radius: 0 6px 6px 0;
+    border-left: 4px solid hsl(0, 0%, 80%);
+}
+
+hr {
+    border: none;
+    border-bottom: 2px dashed hsl(0, 0%, 80%);
+    margin: 2em 0;
+}
+
+
+/* Blog ----------------------------------------- */
+
+.article-time {
+    color: hsl(0, 0%, 70%);
+}
+
+/* Columns ----------------------------------------- */
+
+.cols {
+    font-size: 0; /* removes white-space but */
+}
+.cols > .col {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4%;
+    font-size: 16px;
+}
+
+.cols > .col:last-child {
+    margin-right: 0;
+}
+
+.col-1-2 { width: 48%; }
+.col-1-3 { width: 30.666%; }
+.col-2-3 { width: 65.333%; }
+
+@media all and (max-width: 700px) {
+    .cols > .col {
+        display: block;
+        vertical-align: top;
+    }
+    .col-1-2,
+    .col-1-3,
+    .col-2-3  {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+/* Images ----------------------------------------- */
+
+.img--float {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.img--33 {
+    width: 33%;
+}
+
+.img--50 {
+    width: 50%;
+}
+
+.img--66 {
+    width: 66%;
+}
+
+.img--fill {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/* Code ----------------------------------------- */
+
+/* Inline */
+
+code {
+    color: hsl(0, 0%, 50%);
+}
+
+/* Block: highlight = GitHub MD, prettyprint = JSDoc  */
+
+.highlight {
+    display: block;
+    position: relative;
+    margin: 1em 0;
+    padding: 1em;
+    font-size: .9em;
+    line-height: 1.3;
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.highlight > pre {
+    margin: 0;
+}
+
+.highlight em {
+    color: #545454;
+    font-weight: bold;
+}
+
+code[data-lang]:after {
+    content: attr(data-lang);
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 1.5em;
+    padding: 0em .6em;
+    text-align: center;
+    font-size: .75em;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(0,0%,66%);
+    border-radius: 0 5px;
+    border-left: 1px solid hsla(0, 0%, 0%, 0.05);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+    background: hsla(0, 0%, 0%, 0.04);
+}
+
+
+
+/* Aside ----------------------------------------- */
+
+.aside {
+	position: fixed;
+	z-index: 1000;
+	width: 200px;
+	top: 80px;
+	text-align: right;
+	color: hsl(0, 0%, 60%);
+	margin-left: -260px;
+}
+
+aside a {
+	color: inherit;
+}
+
+aside a:hover {
+	color: hsl(0, 0%, 70%);
+}
+
+.aside-title {
+	font-weight: 400;
+	font-size: 1.4em;
+	letter-spacing: 1px;	
+	margin: .5em 0;
+}
+
+.aside-avatar {
+    width: 64px;
+    border-radius: 32px;
+    vertical-align: top;
+}
+
+.aside-description {
+	margin: 0 0 1em 0;
+	font-size: 0.8em; 
+	line-height: 1.2;
+}
+
+
+/* Nav ----------------------------------------- */
+
+.nav {
+    margin: 2em 0;
+}
+
+.nav-group {
+    margin: 1em 0;
+}
+
+.nav-item {
+    display: block;
+    font-size: .9em;
+}
+
+.nav-item.active {
+    color: hsl(0, 0%, 20%);
+}
+
+/* Subnav ----------------------------------------- */
+
+.subnav-item {
+    display: block;
+}
+
+
+/* Footer ----------------------------------------- */
+
+.footer-end {
+    border: none;
+    height: 1px;
+    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+}
+
+
+/* Responsive ----------------------------------------- */
+
+
+
+@media (max-width: 800px) {
+    
+}
