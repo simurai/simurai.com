@@ -1,9 +1,7 @@
 ---
 
-layout: default
-nav: projects
 title: simurai projects
+category: projects
+layout: index
 
 ---
-
-# Projects

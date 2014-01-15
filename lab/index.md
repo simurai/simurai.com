@@ -1,9 +1,7 @@
 ---
 
-layout: default
-nav: lab
 title: simurai lab
+category: lab
+layout: index
 
 ---
-
-# Lab

@@ -3,15 +3,19 @@
 
 body {
     margin: 0;
-    color: hsl(0, 0%, 30%);
+    color: hsl(0, 0%, 36%);
     font-family: 'Open Sans', sans-serif;
-    background-color: hsl(30, 30%, 96%);
+    background-color: hsl(30, 30%, 96%); /* rgb(248, 245, 242) */
     line-height: 1.5;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
     color: hsl(220,60%,60%);
+}
+a:visited {
+    color: hsl(220, 30%, 60%);
 }
 a:hover {
     color: hsl(220,60%,70%);
@@ -20,30 +24,27 @@ a:active {
     color: hsl(220,60%,50%);
 }
 
+
 h1 {
     line-height: 1;
 }
 
+b, strong,
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+    color: hsl(0, 0%, 20%);
 }
 
 
-/* Sections ----------------------------------------- */
-
-
-section {
-    padding: 60px 40px;
-    border-top: 1px solid hsl(0,0%,100%);
-    border-bottom: 1px solid hsla(0,0%,0%,.1);
-}
-
+/* Wrapper ----------------------------------------- */
 
 .wrapper {
     position: relative;
-    max-width: 700px;
+    max-width: 660px;
     margin: 100px auto;
     text-shadow: 0px 1px 0px hsla(0,0%,100%,.8);
+    padding-left: 240px; /* aside { margin-left 200px } + padding-right 40px */
+    padding-right: 40px;
 }
 
 .title {
@@ -55,10 +56,6 @@ section {
     font-size: 6em;
     text-align: center;
     margin: 0;
-}
-
-.sub-title {
-    margin-bottom: 0;
 }
 
 blockquote {
@@ -80,9 +77,60 @@ hr {
 
 /* Blog ----------------------------------------- */
 
+.index-time,
 .article-time {
     color: hsl(0, 0%, 70%);
+    font-weight: 300;
 }
+
+.article iframe {
+    margin: 1em 0;
+}
+
+.index {
+    padding: 0;
+    list-style: none;
+}
+
+.index-item {
+    margin-bottom: 3em;
+}
+
+.index-item > p {
+    display: inline;
+}
+
+.index-title {
+    margin: 0.2em 0 0 0;
+    font-size: 1.6em;
+}
+
+.index-link,
+.index-link:visited {
+    color: inherit;
+}
+
+.index-more {
+    display: inline-block;
+    margin-left: .6em;
+    color: hsl(0,0%,70%);
+}
+
+.index-more:visited {
+    color: hsl(0,0%,85%);
+}
+
+.index-more:hover {
+    color: hsl(0,0%,60%);
+}
+
+.index-more:active {
+    color: hsl(0,0%,70%);
+}
+
+
+
+
 
 /* Columns ----------------------------------------- */
 
@@ -145,13 +193,9 @@ hr {
 
 /* Code ----------------------------------------- */
 
-/* Inline */
-
 code {
     color: hsl(0, 0%, 50%);
 }
-
-/* Block: highlight = GitHub MD, prettyprint = JSDoc  */
 
 .highlight {
     display: block;
@@ -194,32 +238,40 @@ code[data-lang]:after {
 }
 
 
+/* Comments ----------------------------------------- */
+
+.comments {
+    margin: 3em 0;
+}
 
 /* Aside ----------------------------------------- */
 
 .aside {
 	position: fixed;
 	z-index: 1000;
-	width: 200px;
+	width: 140px;
 	top: 80px;
 	text-align: right;
-	color: hsl(0, 0%, 60%);
-	margin-left: -260px;
+	font-weight: 300;
+	color: hsl(0, 0%, 70%);
+	margin-left: -200px; /* width + 60px margin */
 }
 
-aside a {
+aside a,
+aside a:visited {
 	color: inherit;
 }
 
-aside a:hover {
-	color: hsl(0, 0%, 70%);
+aside a:active {
+	color: hsl(0, 0%, 50%);
 }
 
 .aside-title {
 	font-weight: 400;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	letter-spacing: 1px;	
-	margin: .5em 0;
+	margin: 0.75em 0 1.3em 0;
+	color: inherit;
 }
 
 .aside-avatar {
@@ -230,8 +282,8 @@ aside a:hover {
 
 .aside-description {
 	margin: 0 0 1em 0;
-	font-size: 0.8em; 
-	line-height: 1.2;
+	font-size: 0.7em; 
+	line-height: 1.4;
 }
 
 
@@ -239,10 +291,12 @@ aside a:hover {
 
 .nav {
     margin: 2em 0;
+    padding: 0.8em 0;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.06);
 }
 
 .nav-group {
-    margin: 1em 0;
+    margin: 1.2em 0;
 }
 
 .nav-item {
@@ -252,9 +306,24 @@ aside a:hover {
 
 .nav-item.active {
     color: hsl(0, 0%, 20%);
+    font-weight: 400;
 }
 
 /* Subnav ----------------------------------------- */
+
+.subnav {
+    font-size: .9em;
+    margin: 3em 0;
+    text-align: center;
+}
+
+.subnav:before {
+    content: "";
+    display: block;
+    margin: 3em 0;
+    height: 1px;
+    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+}
 
 .subnav-item {
     display: block;
@@ -263,11 +332,35 @@ aside a:hover {
 
 /* Footer ----------------------------------------- */
 
-.footer-end {
-    border: none;
+.footer:before {
+    content: "";
+    display: block;
     height: 1px;
     background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
 }
+
+.footer {
+    text-align: center;
+    margin-top: 3em;
+    -webkit-perspective: 100;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin: 3em 0 0 0;
+    transition: -webkit-transform .4s;
+}
+
+.footer-logo:hover {
+    -webkit-transform: translateY(-6px);
+    transition-duration: .1s;
+}
+
+.footer-logo:active {
+    -webkit-transform: translateY(20px);
+    transition-duration: .1s;
+}
+
 
 
 /* Responsive ----------------------------------------- */

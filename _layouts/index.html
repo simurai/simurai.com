@@ -6,7 +6,7 @@ layout: default
 
 
 <ul class="index">
-  {% for post in site.posts %}
+  {% for post in site.categories.[page.category] %}
     <li class="index-item">
       <a class="index-link" href="{{ post.url }}">
           <time class="index-time">{{ post.date | date_to_string }}</time>

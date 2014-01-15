@@ -1,6 +1,7 @@
 ---
 
-layout: blog
+layout: post
+nav: blog
 title: Title
 published: false
 
