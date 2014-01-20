@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>The Letter-Heads</title>
+	
+	<meta charset="utf-8">
+	<meta name="description" content="A demo that invites you to experience interactive shadow-art in your browser.">
+	<meta name="author" content="simurai">
+	
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="heads.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+
+</head>
+
+<body style="display:none;">
+	
+    
+	<div id="letters" class="out">
+		<div id="front">The Letter-HEADS</div>
+	</div>
+	
+	
+	<div id="people">
+		<div id="mr">
+			<ul id="leds-mr" class="leds">
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+			</ul>
+			<div class="hint"><img src="mr_hint.png" alt="Click me!" /></div>
+		</div>
+		<div id="ms">
+			<ul id="leds-ms" class="leds">
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+			</ul>
+			<div class="hint"><img src="ms_hint.png" alt="Ladies first?" /></div>
+		</div>
+	</div>
+	
+    
+    
+    <div id="tweet">
+        <a id="tweet-btn" href="http://twitter.com/share?text=Meet%20the%20Letter-Heads&amp;via=simurai" target="_blank">Tweet this!</a>
+    </div>
+	   		  
+	
+	
+	<div id="light">
+		<div id="pattern"></div>
+		<img id="bg" src="bg.jpg" alt="" />
+	</div>
+
+
+	
+	<!-- Footer --------------------------------------- -->
+	
+	<div id="footer">	    
+	    <h1>The Letter-HEADS</h1>
+	    <nav class="links">
+	        <a href="http://simurai.com/post/3782105679/letter-heads">About</a>
+	    </nav>
+	    
+	    <img class="screenshot" src="screenshot.jpg" alt="The Letter-HEADS">
+	    
+	    <div class="social">
+	        
+	        <a href="https://twitter.com/share" class="twitter-share-button" data-via="simurai" data-count="none">Tweet</a>
+	        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	        
+	        <g:plusone size="medium" annotation="none"></g:plusone>            
+	        <script type="text/javascript">
+	          (function() {
+	            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	            po.src = 'https://apis.google.com/js/plusone.js';
+	            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	          })();
+	        </script>
+	        
+	    </div>
+	    
+	    <nav class="stamp">
+	        <div class="ink"></div>
+	    </nav>
+	    
+	</div>
+	
+	
+	
+	<!--Audio-->
+
+	<audio id="audio_gender_lr" preload="auto"><source src="audio/gender_lr.ogg" /><source src="audio/gender_lr.mp3" /><source src="audio/gender_lr.wav" /></audio>
+	<audio id="audio_gender_rl" preload="auto"><source src="audio/gender_rl.ogg" /><source src="audio/gender_rl.mp3" /><source src="audio/gender_rl.wav" /></audio>
+
+	<audio id="audio_step_1" preload="auto"><source src="audio/step_1.ogg" /><source src="audio/step_1.mp3" /><source src="audio/step_1.wav" /></audio>
+	<audio id="audio_step_2" preload="auto"><source src="audio/step_2.ogg" /><source src="audio/step_2.mp3" /><source src="audio/step_2.wav" /></audio>
+	<audio id="audio_step_3" preload="auto"><source src="audio/step_3.ogg" /><source src="audio/step_3.mp3" /><source src="audio/step_3.wav" /></audio>
+	<audio id="audio_step_4" preload="auto"><source src="audio/step_4.ogg" /><source src="audio/step_4.mp3" /><source src="audio/step_4.wav" /></audio>
+	<audio id="audio_step_5" preload="auto"><source src="audio/step_5.ogg" /><source src="audio/step_5.mp3" /><source src="audio/step_5.wav" /></audio>
+	<audio id="audio_step_6" preload="auto"><source src="audio/step_6.ogg" /><source src="audio/step_6.mp3" /><source src="audio/step_6.wav" /></audio>
+	<audio id="audio_step_7" preload="auto"><source src="audio/step_7.ogg" /><source src="audio/step_7.mp3" /><source src="audio/step_7.wav" /></audio>
+
+	<audio id="audio_frame" preload="auto"><source src="audio/frame.ogg" /><source src="audio/frame.mp3" /><source src="audio/frame.wav" /></audio>
+	<audio id="audio_morph" preload="auto"><source src="audio/morph.ogg" /><source src="audio/morph.mp3" /><source src="audio/morph.wav" /></audio>    
+ 
+ 
+ 
+ 	<!--JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="engine.js"></script>
+	
+	
+	
+	
+<!-- Google -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-599923-1']);
+  _gaq.push(['_setDomainName', 'simurai.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><!--/ Google -->
+	
+
+</body>
+
+</html>
