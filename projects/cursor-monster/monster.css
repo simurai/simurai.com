@@ -1,0 +1,404 @@
+
+/* The Cursor Monster by simurai */
+
+
+/* ---------------------------- wrapper ---------------------------- */
+
+#wrapper {
+	z-index: 11;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transition: -webkit-transform .3s cubic-bezier(.1, 0, 0, 1);
+	   -moz-transition:    -moz-transform .3s cubic-bezier(.1, 0, 0, 1);
+		 -o-transition: 	 -o-transform .3s cubic-bezier(.1, 0, 0, 1);
+			transition: 		transform .3s cubic-bezier(.1, 0, 0, 1);
+}
+#wrapper:after { /* shadow */
+	content: "";
+	z-index: -1;
+	position: absolute;
+	width: 100px; height: 100px;
+	margin-left: -50px;
+	border-radius: 50px;
+	
+	-webkit-box-shadow: hsla(210,0%,0%,.8) 0 200px 100px 1px;
+	   -moz-box-shadow: hsla(210,0%,0%,.8) 0 200px 100px 1px;
+		 -o-box-shadow: hsla(210,0%,0%,.8) 0 200px 100px 1px;
+			box-shadow: hsla(210,0%,0%,.8) 0 200px 100px 1px;
+	
+	-webkit-transform: translateY(-160px) scale(1.4, .5);
+	   -moz-transform: translate( -50px, -160px) scale(1.2, .5);
+		 -o-transform: translateY(-160px) scale(1.4, .5);
+			transform: translateY(-160px) scale(1.4, .5);
+}
+
+/* ---------------------------- monster ---------------------------- */
+
+#monster {
+	z-index: 1;
+	position: relative;
+	width: 200px;
+	height: 240px;
+	margin: -120px 0 0 -100px;
+	border-radius: 100px 100px 50px 50px / 160px 160px 80px 80px;
+	
+	text-align: center;
+	
+	background-color: #5e97ed;
+	
+	background-image: -webkit-gradient(radial, 50% 8%, 0, 50% 40%, 120, 
+						color-stop( 0, rgba(255,255,255,.8) ),
+						color-stop(.8, rgba(255,255,255, 0) ),
+						color-stop(.8, rgba(0,0,0, 0) ), 
+						color-stop( 1, rgba(0,0,0,.33) )), 
+						url(noise.png);
+	background-image: -moz-radial-gradient(50% 21% 0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255, 0) 80%, rgba(0,0,0, 0) 80%, rgba(0,0,0,.33) 100% ), url(noise.png);
+	background-image:   -o-radial-gradient(50% 21% 0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255, 0) 80%, rgba(0,0,0, 0) 80%, rgba(0,0,0,.33) 100% ), url(noise.png);
+	background-image: 	   radial-gradient(50% 21% 0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255, 0) 80%, rgba(0,0,0, 0) 80%, rgba(0,0,0,.33) 100% ), url(noise.png);
+
+	
+	-webkit-box-shadow: inset rgba(0,0,0,.5) 0 -10px 50px;
+	   -moz-box-shadow: inset rgba(0,0,0,.5) 0 -10px 50px;
+		 -o-box-shadow: inset rgba(0,0,0,.5) 0 -10px 50px;
+			box-shadow: inset rgba(0,0,0,.5) 0 -10px 50px;
+	
+	-webkit-transform-origin: bottom;
+	   -moz-transform-origin: bottom;
+		 -o-transform-origin: bottom;
+			transform-origin: bottom;
+	
+	-webkit-box-reflect: below -3px -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, 
+									color-stop(0.6, rgba(0,0,0,.2) ), to( transparent ));
+	
+	-webkit-transform: scale3d(1, 1, 1); /* fixes the reflection after scaling */
+	
+	-webkit-transition: background-color .5s ease-out;
+	   -moz-transition: background-color .5s ease-out;
+		 -o-transition: background-color .5s ease-out;
+			transition: background-color .5s ease-out;
+}
+
+
+
+
+
+/* ---------------------------- eyes ---------------------------- */
+
+
+#monster .eye:first-child {
+	-webkit-transform: scale(0.6);
+	   -moz-transform: scale(0.6);
+		 -o-transform: scale(0.6);
+			transform: scale(0.6);
+}
+
+.eye {
+	position: relative;
+	width: 60px;
+	height: 40px;
+	margin: 0px auto 5px auto;
+	
+	top: 15%;
+
+	border-radius: 60px / 40px;
+
+	background-color: #eee;
+
+	-webkit-box-shadow: inset rgba(0,0,0,.4) 0 -1px 3px 1px, inset rgba(0,0,0,.5) 0 -5px 20px,  rgba(0,0,0,.5) 0 -5px 10px, rgba(255,255,255,.5) 0 5px 10px;
+	   -moz-box-shadow: inset rgba(0,0,0,.4) 0 -1px 3px 1px, inset rgba(0,0,0,.5) 0 -5px 20px,  rgba(0,0,0,.5) 0 -5px 10px, rgba(255,255,255,.5) 0 5px 10px;
+		 -o-box-shadow: inset rgba(0,0,0,.4) 0 -1px 3px 1px, inset rgba(0,0,0,.5) 0 -5px 20px,  rgba(0,0,0,.5) 0 -5px 10px, rgba(255,255,255,.5) 0 5px 10px;
+			box-shadow: inset rgba(0,0,0,.4) 0 -1px 3px 1px, inset rgba(0,0,0,.5) 0 -5px 20px,  rgba(0,0,0,.5) 0 -5px 10px, rgba(255,255,255,.5) 0 5px 10px;
+		
+	background-repeat: no-repeat;
+						
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 40, 
+						color-stop(.12, rgba(0,0,0,1) ),
+						color-stop(.22, hsl(190,50%,50%) ),
+						color-stop(.4, hsl(200,50%,30%) ),
+						color-stop(.5, rgba(255,255,255,0) )
+						);
+	background-image: -moz-radial-gradient(50% 50% 0deg, circle, rgba(0,0,0,1) 12%, hsl(190,50%,50%) 22%, hsl(200,50%,30%) 40%, rgba(255,255,255,0) 50% );
+	background-image:   -o-radial-gradient(50% 50% 0deg, circle, rgba(0,0,0,1) 12%, hsl(190,50%,50%) 22%, hsl(200,50%,30%) 40%, rgba(255,255,255,0) 50% );
+	background-image: 	   radial-gradient(50% 50% 0deg, circle, rgba(0,0,0,1) 12%, hsl(190,50%,50%) 22%, hsl(200,50%,30%) 40%, rgba(255,255,255,0) 50% );
+	
+}
+.eye:before { /* highlight */
+	content: "";
+	position: absolute;
+	top: 20%;
+	left: 32%;
+	border-radius: 5px;
+	width: 10px; height: 10px;
+	background-color: #fff;
+	
+	-webkit-transform: skewX(-10deg);
+	   -moz-transform: skewX(-10deg);
+		 -o-transform: skewX(-10deg);
+			transform: skewX(-10deg);
+}
+
+.eye .lid {
+	position: absolute;
+	border-radius: inherit;
+	width: inherit; height: inherit;
+	
+	background-color: rgba(94,151,237,0.8);
+	-webkit-box-shadow: inset rgba(0,0,0,.2) 0 -1px 3px 1px, inset rgba(0,0,0,.5) 0 -5px 20px, rgba(0,0,0,.6) 0 1px 2px;
+	
+	background-image: -webkit-gradient(radial, 50% 10%, 0, 50% 30%, 40, 
+						color-stop( 0, rgba(255,255,255,.8) ),
+						color-stop(.8, rgba(255,255,255, 0) ),
+						color-stop(.8, rgba(0,0,0, 0) ), 
+						color-stop( 1, rgba(0,0,0,.33) )), 
+						url(noise.png);
+	background-image: -moz-radial-gradient(50% 20% 0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255, 0) 80%, rgba(0,0,0, 0) 80%, rgba(0,0,0,.33) 100% ), url(noise.png);
+	background-image:   -o-radial-gradient(50% 20% 0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255, 0) 80%, rgba(0,0,0, 0) 80%, rgba(0,0,0,.33) 100% ), url(noise.png);
+
+	
+		
+  	-webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: 0px 0px;
+  	-webkit-mask-image: -webkit-gradient(radial, 50% 120%, 20, 50% 120%, 50, 
+    				color-stop(.5, rgba(0,0,0,0)),
+    				color-stop(.6, rgba(0,0,0,1)) 
+    				);
+    -webkit-transform: translate3d(0,0,0); /* fixes a render bug */ 
+    
+}
+
+
+
+/* ---------------------------- mouth ---------------------------- */
+
+
+#mouth {
+	position: relative;
+	width: 100px;
+	height: 20px;
+	
+	margin: 0 auto;
+	top: 25%;
+	overflow: hidden;
+	
+	border-radius: 100px 100px 50px 50px / 60px 60px 80px 80px;
+	
+	background-color: #111;
+	
+	-webkit-box-shadow: inset rgba(0,0,0,.7) 0 -2px 10px 1px, rgba(0,0,0,.7) 0 -5px 10px, rgba(255,255,255,.7) 0 5px 10px;
+	   -moz-box-shadow: inset rgba(0,0,0,.7) 0 -2px 10px 1px, rgba(0,0,0,.7) 0 -5px 10px, rgba(255,255,255,.7) 0 5px 10px;
+		 -o-box-shadow: inset rgba(0,0,0,.7) 0 -2px 10px 1px, rgba(0,0,0,.7) 0 -5px 10px, rgba(255,255,255,.7) 0 5px 10px;
+			box-shadow: inset rgba(0,0,0,.7) 0 -2px 10px 1px, rgba(0,0,0,.7) 0 -5px 10px, rgba(255,255,255,.7) 0 5px 10px;
+	
+	
+	/* tongue */
+	background-repeat: no-repeat;
+	background-position: center 85%;
+	
+	-webkit-background-size: 100px;
+	   -moz-background-size: 100px;
+		 -o-background-size: 100px;
+			background-size: 100px;
+	
+	background-image: -webkit-gradient(radial, 62% 100%, 0, 62% 100%, 50, 
+					color-stop(.3, rgba(255,0,0,1) ), 
+					color-stop(.5, rgba(255,0,0,0) )),
+					-webkit-gradient(radial, 38% 100%, 0, 38% 100%, 50, 
+					color-stop(.3, rgba(255,0,0,1) ), 
+					color-stop(.5, rgba(255,0,0,0) ));
+	background-image: -moz-radial-gradient(62% 100% 0deg, rgba(255,0,0,1) 10%, rgba(255,0,0,0) 30% ), -moz-radial-gradient(38% 100% 0deg, rgba(255,0,0,1) 10%, rgba(255,0,0,0) 30% );
+	background-image:   -o-radial-gradient(62% 100% 0deg, rgba(255,0,0,1) 10%, rgba(255,0,0,0) 30% ),   -o-radial-gradient(38% 100% 0deg, rgba(255,0,0,1) 10%, rgba(255,0,0,0) 30% );
+
+
+}
+
+#mouth:before { /* teeth */
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	width: 30px; height: 10px;
+	margin: 0 auto;
+	border-radius: 0px 0px 4px 4px;
+	
+	background-color: #fff9e4;
+	
+	-webkit-background-size: 50%;
+	   -moz-background-size: 50%;
+		 -o-background-size: 50%;
+			background-size: 50%;
+	
+	background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, 
+					color-stop(0, rgba(0,0,0,.4) ), 
+					color-stop(.1, rgba(0,0,0,0) ),
+					color-stop(.9, rgba(0,0,0,0) ),
+					color-stop(1, rgba(0,0,0,.4) )
+					);
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,.4) 100% );
+	background-image:   -o-linear-gradient(left, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,.4) 100% );
+	background-image: 	   linear-gradient(left, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,.4) 100% );
+	
+	-webkit-box-shadow: inset rgba(0,0,0,.8) 0 2px 5px 1px;
+	   -moz-box-shadow: inset rgba(0,0,0,.8) 0 2px 5px 1px;
+		 -o-box-shadow: inset rgba(0,0,0,.8) 0 2px 5px 1px;
+			box-shadow: inset rgba(0,0,0,.8) 0 2px 5px 1px;
+	
+	-webkit-transform: perspective(50) translate3d(0,0,5px) rotateX(-40deg)  ;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------- states ---------------------------- */
+
+/* sleep */
+.sleep .eye {
+  	background-position: 0 -40px;
+}
+.sleep .lid {
+  	-webkit-mask-image: -webkit-gradient(radial, 50% 200%, 20, 50% 200%, 50, color-stop(.5, rgba(0,0,0,0)), color-stop(.6, rgba(0,0,0,1)) );
+}
+.sleep #mouth { 
+	height: 50px;
+	background-position: center bottom;
+	-webkit-animation: sleep-mouth 2.5s 0 infinite alternate cubic-bezier(.3, 0, .5, 1); 
+}
+.sleep #monster {
+	-webkit-animation: sleep-monster 2.5s 0 infinite alternate cubic-bezier(.5, 0, .3, 1);
+}
+
+
+
+/* hungry */
+.hungry #mouth.out {
+	-webkit-transition: height .4s cubic-bezier(0, 0.6, 0.2, 1);
+	   -moz-transition: height .4s cubic-bezier(0, 0.6, 0.2, 1);
+}
+.hungry .lid {
+	-moz-transform: scaleY(0); /* hide for browsers without mask-image */ 
+    -o-transform: 	scaleY(0); /* hide for browsers without mask-image */ 
+}
+.hungry #monster {
+  	-webkit-animation: hungry-monster .3s 0 1 cubic-bezier(.4, .1, .2, 1);
+  	   -moz-animation: hungry-monster .3s 1 cubic-bezier(.4, .1, .2, 1);
+}
+
+
+/* eat */
+.eat #monster {
+	background-color: #f932a5;
+  	-webkit-animation: 	eat-swallow-monster .3s 0 1 cubic-bezier(.4, .1, .2, 1),
+  						eat-monster .6s .3s infinite alternate cubic-bezier(.5, .1, .5, .9);
+  	   -moz-animation: 	eat-swallow-monster .3s 1 cubic-bezier(.4, .1, .2, 1),
+  						eat-monster .6s .4s infinite alternate cubic-bezier(.5, .1, .5, .9);
+}
+.eat .eye:first-child {
+  	-webkit-animation: eat-eye-first .6s 0 infinite cubic-bezier(0, .6, 1, .4);
+  	   -moz-animation: eat-eye-first .6s infinite cubic-bezier(0, .6, 1, .4);
+}
+.eat .eye:nth-child(2) {
+  	-webkit-animation: eat-eye-second .6s 0 infinite cubic-bezier(0, .6, 1, .4);
+  	   -moz-animation: eat-eye-second .6s infinite cubic-bezier(0, .6, 1, .4);
+}
+
+.eat .lid {
+  	display: none;
+}
+.eat #mouth {
+	height: 2px;
+	border-radius: 0px 0px 500px 500px / 0px 0px 60px 60px;
+	-webkit-box-shadow: inset rgba(0,0,0,.7) 0 -2px 10px 1px,
+						rgba(0,0,0,.7) 0 -2px 10px 2px, rgba(255,255,255,.7) 0 2px 6px 2px;
+	
+	background-position: center 0px;
+	-webkit-animation: eat-mouth .2s 0 infinite alternate cubic-bezier(.5, .1, .5, .9);
+	   -moz-animation: eat-mouth .2s infinite alternate cubic-bezier(.5, .1, .5, .9);
+}
+.eat #mouth:before {
+	display: none;
+}
+#wrapper.eat {
+	-webkit-transform: scale3d(1.08, 1.08, 1);
+	   -moz-transform: scale(1.08, 1.08);
+		 -o-transform: scale(1.08, 1.08);
+			transform: scale(1.08, 1.08);
+
+	-webkit-transition: -webkit-transform .1s cubic-bezier(.1, .3, 0, 1);
+	   -moz-transition:    -moz-transform .1s cubic-bezier(.1, .3, 0, 1);
+		 -o-transition: 	 -o-transform .1s cubic-bezier(.1, .3, 0, 1);
+			transition: 		transform .1s cubic-bezier(.1, .3, 0, 1);
+}
+
+
+
+/* ---------------------------- animation webkit ---------------------------- */
+
+/* sleep */
+@-webkit-keyframes sleep-mouth { 0% {}
+	100% { -webkit-transform: scale3d(1.04, 1.05, 1); } 
+}
+@-webkit-keyframes sleep-monster { 0% {}
+    100% { -webkit-transform: scale3d(1.08, .92, 1); }
+}
+
+/* hungry */
+@-webkit-keyframes hungry-monster { 0% {}
+     20% { -webkit-transform: scale3d(.8, 1.1, 1); }
+    100% { -webkit-transform: scale3d( 1,   1, 1); }
+}
+
+/* eat */
+@-webkit-keyframes eat-swallow-monster { 0% {}
+     20% { -webkit-transform: scale3d(1.2, .9, 1); }
+    100% { -webkit-transform: scale3d(1,    1, 1); }
+}
+@-webkit-keyframes eat-monster { 0% {}
+	100% { -webkit-transform: scale3d(1.02, .98, 1); } 
+}
+@-webkit-keyframes eat-mouth {
+	0% { -webkit-transform: translateY(10px); }
+	100% { -webkit-transform: translateY(15px) scale3d(0.9, 1.2, 1); } 
+}
+@-webkit-keyframes eat-eye-first {
+	  0% {  background-position: 0 -60px; -webkit-transform: scale3d(.6,.6,1) translate3d(0,-5px,0); 	 }
+	100% {  background-position: 0  60px; -webkit-transform: scale3d(.8,.8,1) translate3d(0, 5px,0); 	 } 
+}
+@-webkit-keyframes eat-eye-second {
+	  0% {  background-position: 0  60px; -webkit-transform: scale3d(1,1,1) translate3d(0,0,0); 	 }
+	100% {  background-position: 0 -60px; -webkit-transform: scale3d(.8,.8,1) translate3d(0,0,0); 	 } 
+}
+
+
+/* ---------------------------- animation moz ---------------------------- */
+
+
+/* hungry */
+@-moz-keyframes hungry-monster { 0% {}
+     20% { -moz-transform: scale(.8, 1.1); }
+    100% { -moz-transform: scale( 1,   1); }
+}
+
+/* eat */
+@-moz-keyframes eat-swallow-monster { 0% {}
+     20% { -moz-transform: scale(1.2, .9); }
+    100% { -moz-transform: scale(1,    1); }
+}
+@-moz-keyframes eat-monster { 0% {}
+	100% { -moz-transform: scale(1.02, .98); } 
+}
+@-moz-keyframes eat-mouth {
+	0% { -moz-transform: translateY(10px); }
+	100% { -moz-transform: translateY(15px) scale(0.9, 1.2); } 
+}
+@-moz-keyframes eat-eye-first {
+	  0% {  background-position: 0 -60px; -moz-transform: scale(.6,.6) translate(0,-5px); 	 }
+	100% {  background-position: 0  60px; -moz-transform: scale(.8,.8) translate(0, 5px); 	 } 
+}
+@-moz-keyframes eat-eye-second {
+	  0% {  background-position: 0  60px; -moz-transform: scale(1,1); }
+	100% {  background-position: 0 -60px; -moz-transform: scale(.8,.8); } 
+}

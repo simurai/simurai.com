@@ -1,0 +1,50 @@
+
+/* The Cursor Monster by @simurai */
+
+
+/* Global ------------------------------------------------------ */
+
+@import url(http://fonts.googleapis.com/css?family=Slackey);
+
+html {
+	font:62.5%/1 "Droid Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	background: #d9e4f1 url(bg.jpg) no-repeat center center;
+}
+html, body {
+	height: 100%;
+}
+body {
+    margin: 0;
+	text-align: center;
+}
+
+
+
+/* Header ------------------------------------------------------ */
+
+header {
+	text-align: center;
+	padding-top: 80px;
+}
+header h1 {
+	display: inline-block;
+	text-transform: uppercase;
+	text-shadow: rgba(255,255,255,0.6) 0 1px 0, rgba(0,0,0,0.2) 0 .15em .25em;
+	font: 3.5em/1.3em "Slackey", "Droid Sans", sans-serif;
+}
+header h1 span {
+	display: block;
+	font-size: 1.25em;
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+	
+	body {
+		-webkit-text-size-adjust: 100%; 
+	}
+	
+}

@@ -17,6 +17,6 @@ cursor: none;
 
 But be careful, it can be super confusing if you abuse it.
 
-[Demo: Feed the Cursor Monster](http://monster.simurai.com/)
+[Demo: Feed the Cursor Monster](/projects/cursor-monster/)
 
 __Update__: Apparently Chrome will disable it in a future release, so enjoy while you can.
