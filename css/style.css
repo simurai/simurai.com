@@ -43,8 +43,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 660px;
     margin: 100px auto;
     text-shadow: 0px 1px 0px hsla(0,0%,100%,.8);
-    padding-left: 240px; /* aside { margin-left 200px } + padding-right 40px */
-    padding-right: 40px;
 }
 
 .title {
@@ -179,6 +177,10 @@ hr {
 
 /* Images ----------------------------------------- */
 
+.wrapper img {
+    max-width: 100%;
+}
+
 .img--float {
     float: left;
     margin: 0 10px 10px 0;
@@ -262,23 +264,8 @@ code[data-lang]:after {
 /* Aside ----------------------------------------- */
 
 .aside {
-	position: fixed;
-	z-index: 1000;
-	width: 140px;
-	top: 80px;
-	text-align: right;
 	font-weight: 300;
-	color: hsl(0, 0%, 70%);
-	margin-left: -200px; /* width + 60px margin */
-}
-
-aside a,
-aside a:visited {
-	color: inherit;
-}
-
-aside a:active {
-	color: hsl(0, 0%, 50%);
+	color: hsl(0, 0%, 68%);
 }
 
 .aside-title {
@@ -296,33 +283,45 @@ aside a:active {
 }
 
 .aside-description {
-	margin: 0 0 1em 0;
+	margin: 0;
 	font-size: 0.7em; 
 	line-height: 1.4;
 }
 
 
-/* Nav ----------------------------------------- */
+/* Aside links - nav + name */
 
-.nav {
-    margin: 2em 0;
-    padding: 0.8em 0;
-    border-top: 1px solid hsla(0, 0%, 0%, 0.06);
+.aside a,
+.aside a:visited {
+	color: inherit;
 }
 
-.nav-group {
-    margin: 1.2em 0;
+.aside a:hover {
+	color: hsl(0, 0%, 74%);
 }
 
-.nav-item {
-    display: block;
-    font-size: .9em;
+.aside a:active {
+	color: hsl(0, 0%, 68%);
 }
 
-.nav-item.active {
+.aside a.active {
     color: hsl(0, 0%, 20%);
     font-weight: 400;
 }
+
+
+
+/* Nav ----------------------------------------- */
+
+.nav {
+    margin: 1em 0;
+    padding: 1em 0;
+}
+
+.nav-item {
+    font-size: .9em;
+}
+
 
 /* Subnav ----------------------------------------- */
 
@@ -332,16 +331,11 @@ aside a:active {
     text-align: center;
 }
 
-/*.subnav:before {
-    content: "";
-    display: block;
-    margin: 3em 0;
-    height: 1px;
-    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
-}*/
-
 .subnav-item {
     display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
@@ -357,22 +351,28 @@ aside a:active {
 .footer {
     text-align: center;
     margin-top: 3em;
-    -webkit-perspective: 100;
+}
+
+.footer a {
+    outline: none;
 }
 
 .footer-logo {
     display: inline-block;
     margin: 3em 0 0 0;
     transition: -webkit-transform .4s;
+    transition:         transform .4s;
 }
 
 .footer-logo:hover {
     -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
     transition-duration: .1s;
 }
 
 .footer-logo:active {
     -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     transition-duration: .1s;
 }
 
@@ -380,8 +380,67 @@ aside a:active {
 
 /* Responsive ----------------------------------------- */
 
+@media (max-width: 999px) {
+    
+    .wrapper {
+        padding: 0 20px; /* fallback */
+        padding: 0 6vw;
+    }
+    
+    .aside {
+        text-align: center;
+    }
+    
+    .nav:before,
+    .nav:after {
+        content: "";
+        display: block;
+        margin: 1em 0;
+        height: 1px;
+        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+    }
+    
+    .nav-group {
+        display: inline-block;
+        margin: 0 1em;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        padding: 0.4em 0.8em;
+    }
+}
 
-
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
+    
+    .wrapper {
+        padding-left: 240px; /* aside { margin-left 200px } + padding-right 40px */
+        padding-right: 40px;
+    }
+    
+    .aside {
+        position: fixed;
+        z-index: 1000;
+        width: 140px;
+        top: 80px;
+        text-align: right;
+        margin-left: -200px; /* width + 60px margin */
+    }
+    
+    .nav:before {
+        content: "";
+        display: block;
+        height: 1px;
+        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) 50% );
+    }
+    
+    .nav-group {
+        display: block;
+        margin: 2em 0;
+    }
+    
+    .nav-item {
+        display: block;
+    }
     
 }
