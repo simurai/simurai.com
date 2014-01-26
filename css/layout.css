@@ -1,0 +1,176 @@
+
+/* Layout ----------------------------------------- */
+
+
+@media (max-width: 599px) {
+    
+    .wrapper {
+        padding: 1em;
+    }
+    
+    .aside {
+        font-size: 1.2em;
+    }
+    
+    .aside-title {
+        margin: 0.5em 0;
+    }
+    
+    .aside-description {
+        font-size: 0.9em; 
+    }
+    
+}
+
+
+@media (min-width: 600px) and (max-width: 999px) {
+    
+    html {
+        font-size: 18px;
+    }
+    
+    .wrapper {
+        padding: 0 20px; /* fallback */
+        padding: 0 5vw;
+        margin: 3em auto;
+    }
+    
+    .aside {
+        text-align: center;
+    }
+    
+}
+
+
+@media (min-width: 1000px) {
+    
+    html {
+        font-size: 20px;
+    }
+    
+    .wrapper {
+        padding-left: 240px; /* aside { margin-left 200px } + padding-right 40px */
+        padding-right: 40px;
+    }
+    
+    .aside {
+        position: fixed;
+        z-index: 1000;
+        width: 140px;
+        top: 80px;
+        text-align: right;
+        margin-left: -200px; /* width + 60px margin */
+    }
+
+    .aside-description {
+        font-size: 0.6em;
+    }
+    
+    .nav-item {
+        font-size: 0.8em;
+    }
+    
+}
+
+
+
+
+/* Responsive Nav ----------------------------------------- */
+
+
+@media (max-width: 999px) {
+
+    .nav:before,
+    .nav:after {
+        content: "";
+        display: block;
+        margin: 1em 0;
+        height: 1px;
+        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+    }
+    
+    .nav-group {
+        display: inline-block;
+        margin: 0 1em;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        padding: 0.4em 0.8em;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    
+    .nav:before {
+        content: "";
+        display: block;
+        height: 1px;
+        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) 50% );
+    }
+    
+    .nav {
+        margin: 1em 0;
+    }
+    
+    .nav-group {
+        display: block;
+        margin: 2em 0;
+    }
+    
+    .nav-item {
+        display: block;
+    }
+    
+}
+
+
+/* Hamburger toggle ----------------------------------------- */
+
+@media (max-width: 599px) {
+    
+    .aside-hamburger {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        background: url(../img/hamburger.svg) no-repeat center center;
+        background-size: 40px;
+    }
+    
+    .aside-hamburger:active {
+        background-color: hsla(0,0%,0%,.1);
+    }
+    
+    #top:target .aside-hamburger {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1s ease-in;
+    }
+    
+    .aside-target {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+    }
+    
+    #top:target .aside-target {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        transition: opacity .3s ease-out,
+                    -webkit-transform .2s cubic-bezier(0.000, 0.440, 0.195, 1.250);
+        transition: opacity .3s ease-out,
+                    transform .2s cubic-bezier(0.000, 0.440, 0.195, 1.250);
+        
+    }
+    
+}
