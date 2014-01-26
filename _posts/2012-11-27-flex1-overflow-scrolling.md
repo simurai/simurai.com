@@ -16,7 +16,7 @@ flex: 1;
 overflow: auto;
 ```
 
-but somehow it didn't work. Just when adding __min-height:0__ it worked.
+but somehow it didn't work. Just when adding `min-height:0` it worked.
 
 ```css
 flex: 1;
