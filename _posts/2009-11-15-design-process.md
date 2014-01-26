@@ -9,7 +9,9 @@ layout: post
 
 Lately I've been changing my __design process__. Skipping Wireframes and Photoshop comps! The following video shows all the different design steps needed to create the [Shitty Day](/projects/2009/11/12/shitty-day/) site.
 
-<iframe src="//player.vimeo.com/video/7616288?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="video-wrapper" style="padding-bottom: 56%;">
+    <iframe class="video" src="//player.vimeo.com/video/7616288?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 As you can see, I tried to implement some principles I picked up during the years:
 

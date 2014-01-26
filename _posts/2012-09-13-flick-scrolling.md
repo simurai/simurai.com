@@ -9,7 +9,9 @@ layout: post
 
 Flick Scrolling in short: An idea of a new gesture that extends scrolling content on a touch-screen. Instead of letting momentum stop the scrolling, you can decide exactly where it should stop. __It stops at the point where you flicked it__.
 
-<iframe src="//player.vimeo.com/video/49375288?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="video-wrapper" style="padding-bottom: 56%;">
+    <iframe class="video" src="//player.vimeo.com/video/49375288?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 It would be great for things like books, blogs, timelines or anywhere where you don’t skim over, but continuously wanna “move forward”. Kinda like paging but within and long scroll. Some apps have a page up/down feature, but I don’t really use it because it moves always the whole height and might cut off a picture or so. With this “flick scrolling” you can decide to where it should move to. The last paragraph or beginning of a picture.
 
