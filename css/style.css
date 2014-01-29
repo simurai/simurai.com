@@ -69,10 +69,13 @@ hr {
 
 /* Blog ----------------------------------------- */
 
-.index-time,
-.article-time {
+.time {
     color: hsl(0, 0%, 70%);
     font-weight: 300;
+}
+
+.time--inline {
+    margin-right: .4em;
 }
 
 .article iframe {
@@ -110,7 +113,7 @@ hr {
 }
 
 .index-item {
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 
 .index-item > p {
@@ -122,8 +125,9 @@ hr {
 }
 
 .index-title {
-    margin: 0.2em 0 0 0;
+    margin: 0.2em 0;
     font-size: 1.6em;
+    line-height: 1.3;
 }
 
 .index-link,
@@ -132,13 +136,15 @@ hr {
 }
 
 .index-more {
-    display: inline-block;
-    margin-left: .6em;
-    color: hsl(0,0%,70%);
+    margin-left: .2em;
+    font-size: 1.1em;
+    line-height: 1;
+    vertical-align: middle;
+    color: hsl(210,100%,50%);
 }
 
 .index-more:visited {
-    color: hsl(0,0%,85%);
+    color: hsl(0,0%,70%);
 }
 
 .index-more:hover {
@@ -150,6 +156,25 @@ hr {
 }
 
 
+/* Meta ----------------------------------------- */
+
+.meta {
+    display: block;
+    text-align: center;
+}
+
+.meta-time {
+    margin-right: 1em;
+}
+
+.meta-description:before {
+    content: " - ";
+}
+
+.meta-description {
+    font-weight: 300;
+    color: hsl(0,0%,70%);
+}
 
 
 

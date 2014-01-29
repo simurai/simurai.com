@@ -1,6 +1,8 @@
 ---
 
-title: ZEN - HTML5 Audio Player
+title: ZEN Player
+description: HTML5 Audio Player
+link: http://simurai.github.io/ZEN-Player/
 tags: [audio, JS, CSS]
 category: projects
 layout: post

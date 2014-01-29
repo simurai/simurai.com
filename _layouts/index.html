@@ -6,15 +6,19 @@ layout: default
 
 
 <ul class="index">
-  {% for post in site.categories.[page.category] %}
-    <li class="index-item">
-      <a class="index-link" href="{{ post.url }}">
-          <time class="index-time">{{ post.date | date_to_string }}</time>
-          <h2 class="index-title">{{ post.title }}</h2>
-      </a>
-      {{ post.excerpt }}
-      <a class="index-more" href="{{ post.url }}">•••</a>
-      
-    </li>
-  {% endfor %}
+    
+    {% if page.category %}
+        
+        {% for post in site.categories.[page.category] %}
+          {% include index-post.html %}
+        {% endfor %}
+    
+    {% else %}
+        
+        {% for post in site.posts %}
+            {% include index-post.html %}
+        {% endfor %}
+        
+    {% endif %}
+  
 </ul>

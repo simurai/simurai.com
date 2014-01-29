@@ -1,6 +1,8 @@
 ---
 
 title: The Letter Heads
+description: Interactive shadow art
+link: /projects/letter-heads/
 tags: [css]
 category: projects
 layout: post

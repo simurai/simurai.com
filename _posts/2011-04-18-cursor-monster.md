@@ -1,6 +1,8 @@
 ---
 
 title: Cursor Monster
+description: Interactive web toy
+link: /projects/cursor-monster/
 tags: [css]
 category: projects
 layout: post

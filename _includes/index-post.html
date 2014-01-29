@@ -1,0 +1,26 @@
+{% if post.category == "projects" %}
+<li class="index-item">
+    <a href="{{ post.link }}">
+        {{ post.excerpt }}
+    </a>
+    <a class="meta" href="{{ post.url }}">
+        <time class="meta-time time">{{ post.date | date_to_string }}</time>
+        <span class="meta-title">{{ post.title }}</span>
+        <span class="meta-description">{{ post.description }}</span>
+        <span class="index-more">•••</span>
+    </a>
+</li>
+
+{% elsif post.category == "labbb" %}
+    
+
+{% else %}
+<li class="index-item">
+    <a class="index-link" href="{{ post.url }}">
+        <h2 class="index-title">{{ post.title }}</h2>
+        <time class="time time--inline">{{ post.date | date_to_string }}</time>
+    </a>
+    {{ post.excerpt }}
+    <a class="index-more" href="{{ post.url }}">•••</a>
+</li>
+{% endif %}

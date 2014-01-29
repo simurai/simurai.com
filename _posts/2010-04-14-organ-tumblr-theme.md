@@ -1,6 +1,8 @@
 ---
 
-title: Organ - Tumblr theme
+title: Organ
+description: Tumblr theme
+link: http://organ-theme.tumblr.com/
 tags: [tumblr, theme]
 category: projects
 layout: post

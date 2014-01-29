@@ -1,6 +1,8 @@
 ---
 
 title: Shitty Day
+description: A Twitter toy
+link: 
 tags: [twitter, fun]
 category: projects
 layout: post

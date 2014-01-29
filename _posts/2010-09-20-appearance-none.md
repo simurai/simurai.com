@@ -1,6 +1,8 @@
 ---
 
-title: umbrUI - appearance:none styling
+title: umbrUI
+description: appearance:none styling
+link: http://simurai.github.io/umbrUI/
 tags: [css]
 category: projects
 layout: post
