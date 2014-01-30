@@ -1,6 +1,9 @@
 ---
 
-title: CSS tilt-shift effect
+title: Where are the trees
+description: CSS tilt-shift effect
+link: http://codepen.io/simurai/pen/qufDa
+img: tilt-shift.jpg
 tags: [css]
 category: lab
 layout: post

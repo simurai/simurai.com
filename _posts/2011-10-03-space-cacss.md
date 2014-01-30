@@ -1,6 +1,9 @@
 ---
 
 title: Space CaCSS
+description: Animated CSS background patterns
+link: http://codepen.io/simurai/pen/kgsce
+img: space-cacss.jpg
 tags: [animation, background]
 category: lab
 layout: post

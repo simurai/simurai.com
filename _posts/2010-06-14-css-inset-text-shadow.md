@@ -1,6 +1,9 @@
 ---
 
-title: CSS inset text-shadow
+title: Carve Me
+description: CSS inset text-shadow
+link: http://codepen.io/simurai/pen/Atnmy
+img: inset-text-shadow.jpg
 tags: [css]
 category: lab
 layout: post

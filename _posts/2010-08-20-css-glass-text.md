@@ -1,6 +1,9 @@
 ---
 
-title: CSS glass effect
+title: Zeppelin
+description: Glass text effect
+link: http://codepen.io/simurai/pen/Dhskl
+img: zeppelin.jpg
 tags: [css]
 category: lab
 layout: post

@@ -1,5 +1,6 @@
-{% if post.category == "projects" %}
 <li class="index-item">
+
+{% if post.category == "projects" %}
     <a href="{{ post.link }}">
         {{ post.excerpt }}
     </a>
@@ -9,18 +10,22 @@
         <span class="meta-description">{{ post.description }}</span>
         <span class="index-more">•••</span>
     </a>
-</li>
 
-{% elsif post.category == "labbb" %}
-    
+{% elsif post.category == "lab" %}
+    <a class="index-img" href="{{ post.link }}" style="background-image: url(/img/posts/{{ post.img }});"></a>
+    <a class="index-aside" href="{{ post.url }}">
+        <time class="time">{{ post.date | date_to_string }}</time>
+        <h2 class="index-title index-title--oneline">{{ post.title }}</h2>
+        <h3 class="index-description">{{ post.description }} <span class="index-more">•••</span></h3>
+    </a>
 
 {% else %}
-<li class="index-item">
     <a class="index-link" href="{{ post.url }}">
         <h2 class="index-title">{{ post.title }}</h2>
         <time class="time time--inline">{{ post.date | date_to_string }}</time>
     </a>
     {{ post.excerpt }}
     <a class="index-more" href="{{ post.url }}">•••</a>
-</li>
 {% endif %}
+
+</li>

@@ -70,6 +70,16 @@
         font-size: 0.8em;
     }
     
+    .index-aside {
+        text-align: left;
+        margin-left: 14em; /* index-img width + 2em gap */
+    }
+    
+    .index-img {
+        position: absolute;
+        margin: -0.3em 0 0 0;
+    }
+    
 }
 
 

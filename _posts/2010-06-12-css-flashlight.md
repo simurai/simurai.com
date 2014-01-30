@@ -1,6 +1,9 @@
 ---
 
-title: CSS Flashlight
+title: FLASH LIGHT
+description: CSS 3D transform demo
+link: http://codepen.io/simurai/pen/vwprf
+img: flash-light.jpg
 tags: [css]
 category: lab
 layout: post

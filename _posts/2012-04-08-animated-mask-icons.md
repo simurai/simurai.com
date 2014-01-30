@@ -1,6 +1,9 @@
 ---
 
-title: Animated CSS Mask Icons
+title: AnIcons
+description: Animated CSS Mask Icons
+link: http://codepen.io/simurai/pen/gGAjr
+img: mask-icons.jpg
 tags: [CSS, animation, mask, SVG]
 category: lab
 layout: post

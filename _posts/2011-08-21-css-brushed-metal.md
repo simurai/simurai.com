@@ -1,6 +1,9 @@
 ---
 
-title: Brushed metal with CSS
+title: Brushed Metal
+description: Repeating background gradients
+link: http://codepen.io/simurai/pen/DwJdq
+img: brushed-metal.jpg
 tags: [css]
 category: lab
 layout: post
