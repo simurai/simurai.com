@@ -339,12 +339,19 @@ code[data-lang]:after {
 /* Comments ----------------------------------------- */
 
 .comments {
-    margin: 3em 0;
-    background-color: hsla(0, 0%, 0%, 0.03);
-    padding: 2em;
-    border-radius: .5em;
-    box-shadow: inset 0 1px 2px hsla(0, 0%, 0%, 0.03);
+    margin: 0;
+    padding: 0 2em;
 }
+
+.comments:before,
+.comments:after {
+    content: "";
+    display: block;
+    margin: 3em 0;
+    height: 1px;
+    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+}
+
 
 /* Aside ----------------------------------------- */
 
