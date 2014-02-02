@@ -1,6 +1,6 @@
 ---
 
-title: Fronteers 2012 Jam - Flexible Web Apps
+title: Flexible Web Apps
 tags: [talk, flexbox]
 category: blog
 layout: post
