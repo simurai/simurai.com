@@ -422,8 +422,25 @@ code[data-lang]:after {
 
 .subnav {
     font-size: .9em;
+    line-height: 2;
     margin: 3em 0;
     text-align: center;
+}
+
+.subnav a {
+    color: hsl(0,0%,60%);
+}
+
+.subnav a:visited {
+    color: hsl(0,0%,70%);
+}
+
+.subnav a:hover {
+    color: hsl(0,0%,50%);
+}
+
+.subnav a:active {
+    color: hsl(0,0%,80%);
 }
 
 .subnav-item {
@@ -432,6 +449,41 @@ code[data-lang]:after {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.subnav-label {
+    display: inline-block;
+    padding-left: .4em;
+    font-size: 0.7em;
+    color: hsl(54, 38%, 68%);
+    text-transform: uppercase;
+}
+
+.subnav-label.is-lab {
+    color: hsl(217, 83%, 82%);
+}
+
+.subnav-label.is-projects {
+    color: hsl(330, 86%, 83%);
+}
+
+.subnav-pagination {
+    margin-bottom: 3em;
+}
+
+.subnav-pagination-item {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 1em;
+    width: 3em;
+    height: 3em;
+    padding: 0 1em;
+    font-size: 1.5em;
+    line-height: 3em;
+    border: 1px solid;
+    border-radius: 3em;
+}
+
 
 
 /* Footer ----------------------------------------- */

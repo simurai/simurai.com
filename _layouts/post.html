@@ -19,7 +19,21 @@ layout: default
 </main>
 
 <nav class="subnav">
-    {% for post in site.posts %}
-      <a class="subnav-item{% if page.title == post.title and page.date == post.date %} active{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
+    
+    <div class="subnav-pagination">
+      {% if page.next %}
+        <a class="subnav-pagination-item" href="{{ page.next.url }}" title="{{ page.next.title }}">&larr;</a>
+      {% endif %}
+      {% if page.previous %}
+        <a class="subnav-pagination-item" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&rarr;</a>
+      {% endif %}
+    </div>
+    
+    {% for post in site.related_posts %}
+      <a class="subnav-item" href="{{ post.url }}">
+          {{ post.title }}
+          <span class="subnav-label is-{{ post.category }}">{{ post.category }}</span>
+      </a>
     {% endfor %}
 </nav>
+
