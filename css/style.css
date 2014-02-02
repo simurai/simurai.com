@@ -249,13 +249,23 @@ hr {
 
 /* Images ----------------------------------------- */
 
+.img--float {
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.article:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .wrapper img {
     max-width: 100%;
 }
 
-.img--float {
-    float: left;
-    margin: 0 10px 10px 0;
+.img--25 {
+    width: 25%;
 }
 
 .img--33 {

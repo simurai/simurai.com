@@ -24,6 +24,11 @@
         font-size: 0.9em; 
     }
     
+    .img--float {
+        float: none;
+        margin: 0;
+    }
+    
 }
 
 
