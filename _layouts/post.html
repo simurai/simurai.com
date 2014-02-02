@@ -29,11 +29,10 @@ layout: default
       {% endif %}
     </div>
     
-    {% for post in site.related_posts %}
-      <a class="subnav-item" href="{{ post.url }}">
-          {{ post.title }}
-          <span class="subnav-label is-{{ post.category }}">{{ post.category }}</span>
-      </a>
+    {% for post in site.categories.[page.category] %}
+      {% if post.title != page.title %}
+        <a class="subnav-item" href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
     {% endfor %}
 </nav>
 

@@ -460,22 +460,6 @@ code[data-lang]:after {
     white-space: nowrap;
 }
 
-.subnav-label {
-    display: inline-block;
-    padding-left: .4em;
-    font-size: 0.7em;
-    color: hsl(54, 38%, 68%);
-    text-transform: uppercase;
-}
-
-.subnav-label.is-lab {
-    color: hsl(217, 83%, 82%);
-}
-
-.subnav-label.is-projects {
-    color: hsl(330, 86%, 83%);
-}
-
 .subnav-pagination {
     margin-bottom: 3em;
 }
