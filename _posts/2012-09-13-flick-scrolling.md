@@ -55,3 +55,12 @@ Hmm.. haven’t made up my mind yet.. but either way, would love to see more exp
 [Kurt](https://twitter.com/damenleeturks/status/246261588611461120) and [David](https://twitter.com/desandro/status/248095894828883968) were concerned that if you would want to quickly scroll through a long page, you would end up doing short flicks that would conflict with the flick-scroll gesture. And yes, they are right. That’s indeed problematic.
 
 A solution I could see is this: The flick-scroll gesture only works when the page is __not moving__. So if you first would do a longer scroll movement that uses momentum, then you could scroll however you like (also short movements) until scrolling comes to a halt. Only then you could do either again.
+
+
+## Upate III (Feb 2014)
+
+Recently [Readability](https://readability.com/) updated their iOS apps. Overall I like the changes, but they got rid of the [double tab](https://vimeo.com/45460682) feature that moved the page where you tabbed it. And even though I really liked that feature I can see why it doesn't work that well.
+
+The problem is not the feature itself, it's that I got so used to double tabbing that I sometimes did it outside of Readability, like on a web site or another app which of course didn't work. The thing with all custom gestures is that even if your muscle memory learned them, you still have to think first if the current app supports it or try and get frustrated if it doesn't.
+
+I guess that's why something like the above "Flick scrolling" would only work if it's baked into the OS and available system wide.
