@@ -43,7 +43,7 @@ Some points about using double-tap vs a flick gesture:
 * Doesn’t work in a web browser, double-tap is already used for “zoom to element”.
 * Can only be performed on half of the screen.
 * Maybe takes a bit longer.
-* Double-tab is already used by some apps for other functions. This would make it harder to use in general and you always have to remember which app supports it for what.
+* Double-tap is already used by some apps for other functions. This would make it harder to use in general and you always have to remember which app supports it for what.
 * Harder to discover. It’s much more likely that you do a “flick-scroll” by accident and learn about it quicker.
 
 But of course the “harder to discover” of double-tap scrolling could also be a __good thing__. It would be far less risky or confusing, because it doesn’t conflict with the scroll behavior currently in use. Also, double-tap scrolling in web browsers could be used as soon as [viewport scaling is disabled](http://stackoverflow.com/questions/4389932/how-do-you-disable-viewport-zooming-on-mobile-safari).
