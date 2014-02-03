@@ -64,3 +64,12 @@ Recently [Readability](https://readability.com/) updated their iOS apps. Overall
 The problem is not the feature itself, it's that I got so used to double tapping that I sometimes did it outside of Readability, like on a web site or another app which of course didn't work. The thing with all custom gestures is that even if your muscle memory learned them, you still have to think first if the current app supports it or try and get frustrated if it doesn't.
 
 I guess that's why something like the above "Flick scrolling" would only work if it's baked into the OS and available system wide.
+
+Rene makes a good point:
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/simurai">@simurai</a> but by that argument Pull to Refresh should have been taken out of Tweetie?</p>&mdash; Rene Ruiz (@okayrene) <a href="https://twitter.com/okayrene/statuses/430134841603268608">February 3, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Hmm.. true. I think in the case of "Pull to Refresh". That new custom gesture was just __so good__, so that quickly a lot of other apps copied it. Then when it got to the point where it had the critical mass, Apple almost had no choice as to also add it to iOS and their own apps and it became the "standard way" of manually refreshing content.
+
+It's just very tough for custom gestures to get that needed wide adoption to make it. Kinda a chicken-egg thing. Or on the other hand.. only the very best, almost obvious ones will ever make it, which could also be a good thing.
