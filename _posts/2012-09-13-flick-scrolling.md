@@ -36,17 +36,17 @@ __Credits__: Demos use the [iScroll4](http://cubiq.org/iscroll-4) library and in
 
 
 ## Update
-Ahmed El Gabri [pointed out](https://twitter.com/ahmedelgabri/status/247112692157009921) that Readability already has a feature like that. Using a __double-tab__ on a “split screen” to determine up or down scroll. It also adds an arrow on the side to guide the eye, which is really helpful.
+Ahmed El Gabri [pointed out](https://twitter.com/ahmedelgabri/status/247112692157009921) that Readability already has a feature like that. Using a __double-tap__ on a “split screen” to determine up or down scroll. It also adds an arrow on the side to guide the eye, which is really helpful.
 
-Some points about using double-tab vs a flick gesture:
+Some points about using double-tap vs a flick gesture:
 
-* Doesn’t work in a web browser, double-tab is already used for “zoom to element”.
+* Doesn’t work in a web browser, double-tap is already used for “zoom to element”.
 * Can only be performed on half of the screen.
 * Maybe takes a bit longer.
 * Double-tab is already used by some apps for other functions. This would make it harder to use in general and you always have to remember which app supports it for what.
 * Harder to discover. It’s much more likely that you do a “flick-scroll” by accident and learn about it quicker.
 
-But of course the “harder to discover” of double-tab scrolling could also be a __good thing__. It would be far less risky or confusing, because it doesn’t conflict with the scroll behavior currently in use. Also, double-tab scrolling in web browsers could be used as soon as [viewport scaling is disabled](http://stackoverflow.com/questions/4389932/how-do-you-disable-viewport-zooming-on-mobile-safari).
+But of course the “harder to discover” of double-tap scrolling could also be a __good thing__. It would be far less risky or confusing, because it doesn’t conflict with the scroll behavior currently in use. Also, double-tap scrolling in web browsers could be used as soon as [viewport scaling is disabled](http://stackoverflow.com/questions/4389932/how-do-you-disable-viewport-zooming-on-mobile-safari).
 
 Hmm.. haven’t made up my mind yet.. but either way, would love to see more explorations that go beyond momentum scrolling.
 
@@ -59,8 +59,8 @@ A solution I could see is this: The flick-scroll gesture only works when the pag
 
 ## Upate III (Feb 2014)
 
-Recently [Readability](https://readability.com/) updated their iOS apps. Overall I like the changes, but they got rid of the [double tab](https://vimeo.com/45460682) feature that moved the page where you tabbed it. And even though I really liked that feature I can see why it doesn't work that well.
+Recently [Readability](https://readability.com/) updated their iOS apps. Overall I like the changes, but they got rid of the [double tap](https://vimeo.com/45460682) feature that moved the page where you tapped it. And even though I really liked that feature I can see why it doesn't work that well.
 
-The problem is not the feature itself, it's that I got so used to double tabbing that I sometimes did it outside of Readability, like on a web site or another app which of course didn't work. The thing with all custom gestures is that even if your muscle memory learned them, you still have to think first if the current app supports it or try and get frustrated if it doesn't.
+The problem is not the feature itself, it's that I got so used to double tapping that I sometimes did it outside of Readability, like on a web site or another app which of course didn't work. The thing with all custom gestures is that even if your muscle memory learned them, you still have to think first if the current app supports it or try and get frustrated if it doesn't.
 
 I guess that's why something like the above "Flick scrolling" would only work if it's baked into the OS and available system wide.
