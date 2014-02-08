@@ -18,4 +18,4 @@ __Quick note__: [@kizmarh](https://twitter.com/kizmarh) actually did the header 
 
 PS. This was my first time ever talking in front of people.. so it might be a bit rough and rushed. ;-)
 
-__Update__: Uploaded the [Mail UI](http://archive.simurai.com/lab/flapps/mail/) example, but the code might be a bit messy. I just quickly did for the talk. Also, only tested in Chrome.
+__Update__: Uploaded the [Mail UI](/archive/mail/) example, but the code might be a bit messy. I just quickly did for the talk. Also, only tested in Chrome.

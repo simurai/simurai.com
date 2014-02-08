@@ -1,0 +1,98 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    margin: 0;
+
+    color: #444;
+    font: 20px/1.231 sans-serif;
+	background-color: hsl(0,0%,30%);
+}
+
+/* App ----------------------------------- */
+
+footer,
+header {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: hsl(0,0%,70%);
+	background: linear-gradient( hsl(0,0%,95%), hsl(0,0%,85%) );
+    border-top: 1px solid hsl(0,0%,100%);
+    border-bottom: 1px solid hsl(0,0%,60%);
+}
+
+h1 {
+    margin: 0 6px;
+    
+    color: hsl(0,0%,30%);
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.4);
+    resize: none;
+    text-align: center;
+    
+    flex: 1 1 auto;
+    width: 0;
+    min-width: 0; /* this is super important in combination with ellipsis and flex: 1 */
+    max-width: auto;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/* buttons */
+
+button {
+    box-sizing: border-box;
+    padding: 0 12px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    color: hsl(0,0%,90%);
+    border-radius: 10px;
+    text-shadow: 0 1px 0 hsla(0,0%,0%,.1);
+    background: linear-gradient( hsl(0,0%,70%), hsl(0,0%,40%) );
+    border: 2px solid hsl(0,0%,30%);
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.4),
+                inset 0 -1px 2px hsla(0,0%,0%,.5),
+                0 1px 2px hsla(0,0%,100%,.8);
+    outline: none;
+}
+
+button.action {
+    color: white;
+    background: linear-gradient( hsl(210,100%,70%), hsl(210,100%,40%) );
+    border-color: hsl(210,100%,30%);
+}
+
+
+/* Scrollbar -------------------------------- */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0px;
+    height: 4px;
+    background-color: hsl(0,0%,80%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip:padding-box;
+    background-color: hsl(0,0%,60%);
+}
