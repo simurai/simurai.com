@@ -2,7 +2,7 @@
 
 title: BonBon Buttons
 tags: [CSS]
-category: blog
+category: archive
 layout: post
 
 ---
@@ -13,4 +13,6 @@ My goal was to create sweet looking __CSS buttons__ with minimal markup. They us
 
 If you are interested in more details, I wrote some sort of tutorial and of course you can click them.
 
-See [demo](http://archive.simurai.com/lab/buttons/).
+## Update
+
+Looking at them in 2014, I think their time is over. So I moved them into the [archive](/archive/buttons/). Might still be useful purely educational.

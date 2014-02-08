@@ -1,0 +1,142 @@
+/* @override http://lab.simurai.com/css/buttons/style.css */
+
+/* BonBon Buttons by simurai.com  */
+
+/* If you are looking for the button CSS, check the buttons.css ;-) */
+
+
+
+
+html {
+	background: url("bg.png") repeat fixed 0 0;
+	font: 62.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+
+body {
+    position: relative;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0 30px;
+	text-shadow: rgba(254,255,255,0.5) 0 1px 0;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 300px;
+    top: 200px;
+    left: 0;
+    background: url(boy.png) no-repeat;
+}
+
+/* Globals */
+
+strong {
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+	color: #5185bc;
+}
+a:hover {
+	color: #3e6a9a;
+}
+p, ul {
+	margin-bottom: 20px;
+}
+code {
+	display: block;
+	padding: 5px 10px;
+	margin-top: 10px;
+	font-size: 1.1em;
+	border-radius: 4px;
+	background-color: rgba(255,255,255,0.25);
+	-webkit-box-shadow: inset rgba(0,0,0,0.15) 0 1px 1px, inset rgba(254,255,255,0.4) 0 -1px 1px;
+}
+code.inline {
+	display: inline;
+	margin-top: 0px;
+	padding: 3px 5px;
+	font-weight: bold;
+	background-color: transparent;
+	-webkit-box-shadow: inset rgba(0,0,0,0) 0 1px 1px;
+}
+
+
+/* Side */
+
+header {
+    margin-top: 100px;
+    text-align: center;
+}
+
+header h1 {
+	font-family:  'Droid Sans';
+	font-size: 6.5em;
+	font-weight: bold;
+}
+header h2 {
+	font-size: 2em;
+	color: #919191;
+	margin-bottom: 30px;
+}
+
+
+/* Demo */
+
+.demo {
+	text-align: center;
+	padding: 60px;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	background-color: rgba(254,255,255,0.1);
+	
+	-webkit-box-shadow:  	inset rgba(255,255,255,0.3) 0 2px 2px,  rgba(0,0,0,0.05) 0 2px 2px;
+	-moz-box-shadow:  		inset rgba(255,255,255,0.3) 0 2px 2px,  rgba(0,0,0,0.05) 0 2px 2px;
+	-webkit-border-radius: 	120px / 300px;
+	-moz-border-radius: 	120px / 300px;
+}
+
+/* Main */
+
+article {
+	font-size: 1.4em;
+	line-height: 1.5em;
+	color: #424242;
+}
+
+section {
+	padding: 30px 100px;
+}
+
+section#intro {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+section h3 {
+	font-size: 2em;
+	font-family: 'Georgia', serif;
+	margin-bottom: 20px;
+	margin-left: -50px;
+	color: #787878;
+}
+
+section li {
+	list-style-type: square;
+	margin-left: 1.5em;
+	margin-bottom: .5em;
+}
+
+/* Footer */
+
+footer {
+	padding: 40px 60px;
+	margin-bottom: 30px;
+	font-size: 1.3em;
+	color: #858585;
+	line-height: 1.4em;
+	border-top: 2px dotted rgba(0,0,0,0.1);
+}
+

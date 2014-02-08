@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+	
+<!-- 
+
+BonBon Buttons by @simurai
+
+Usage:
+	
+	Default button: 			<a href="" class="button">Label</a>
+	More fancy with icon: 		<a href="" class="button orange glossy" data-icon="★">Label</a>
+	
+Following additional class names are supported:
+		
+	Color: 		orange, pink, blue, green, transparent
+	Font: 		serif
+	Material: 	glossy, glass
+	Size: 		xs, xl
+	Shape: 		round, oval, brackets, skew, back, knife, shield, drop, morph
+	Icon only: 	icon
+	Disabled:	disabled
+	
+-->
+
+
+<html>
+
+<head>
+	<title>BonBon - Sweet CSS3 Buttons</title>
+	<meta charset="utf-8" />	
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css"/>    
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="buttons.css"/>
+</head>
+
+<body>
+	
+	
+	<header>
+		<h1>BonBon</h1>
+		<h2>Sweet CSS3 Buttons</h2>
+	</header>
+	
+	
+	<nav class="demo">
+		
+		<a href="#" class="button">Button</a>
+		<a href="#" data-icon="✆" class="button blue brackets">Call</a>
+		<a href="#" data-icon="✰" class="button pink serif skew glossy">Stars</a>
+		<a href="#" data-icon="✿" title="Reddit" class="button green serif back xl glass icon"></a>
+		
+		<br />
+		
+		<a href="#" data-icon="✍" class="button green">Blog</a>
+		<a href="#" data-icon="☺" title="Love" class="button pink oval icon"></a>
+		<a href="#" data-icon="✪" title="Quit" class="button orange shield xl glossy icon"></a>
+		<a href="#" data-icon="" title="Upload" class="button blue back xl glass icon"></a>
+		<a href="#" data-icon="✔" title="RSS" class="button orange drop glass icon"></a>
+		
+
+	</nav>
+	
+	
+	
+	
+	<article>
+		
+		
+		<section id="intro">
+			<p><a href="http://twitter.com/simurai/status/21675061641">There was a goal</a>:
+			<strong>Create CSS buttons that are sexy looking, really flexible, but with the most minimalistic markup as possible.</strong></p>
+			
+			<p>And voila.. here they are, the BonBon Buttons. Named after the French word for "<strong>Candy</strong>". So, let's take a tour trough the candy store.</p>
+			
+			<p>No, wait! Before you click that download button and try to use them on your site, please also <a href="#flaws">read the flaws</a>.</p>
+		</section>
+		
+		
+		<section id="markup">
+			<h3>Markup</h3>
+			<p>I get a real kick out of trying to keep the markup minimal, so I'm really happy with the outcome. A basic button looks like this:
+				<code>&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Label&lt;/a&gt;</code> 
+				<a href="#markup" class="button">Label</a>
+			</p>
+			
+			<p>You can change the look by adding more classes:
+				<code>&lt;a href=&quot;&quot; class=&quot;button <strong>orange glossy</strong>&quot;&gt;Label&lt;/a&gt;</code>
+				<a href="#markup" class="button orange glossy">Label</a>
+			</p>
+			
+		</section>
+			
+		<section id="icons">
+			<h3>Icons</h3>
+			<p>If you would like to add an <strong>icon</strong>, you can use the HTML5 custom data attribute like this: <code class="inline">data-icon=&quot;S&quot;</code>. This allows you to use <a href="http://panmental.de/symbols/info.htm">Unicode symbols</a> or icon fonts like <a href="http://pictos.drewwilson.com/">Pictos</a> or <a href="http://www.delicious.com/stacks/view/SC3hpq">many more</a>. With the following CSS <code class="inline">.button:before { content: attr(data-icon); }</code> it will add the icon in front of the label. I think it's a great solution to keep your markup semantic and to hide the additional icon letter from screen readers. Plus it allows you to quickly change icons without having to touch your CSS.
+				<code>&lt;a href=&quot;&quot; class=&quot;button orange glossy&quot; <strong>data-icon=&quot;✈&quot;</strong>&gt;Label&lt;/a&gt;</code>
+				<a href="#icons" class="button orange glossy" data-icon="✈">Label</a>
+			</p>
+			
+		</section>
+		
+		<section id="accessibility">
+			<h3>Accessibility</h3>
+			<p>Adding<code class="inline">role="button"</code> makes it more accessible. Use tabindex to keep them highlighted and if you use the &lt;button&gt; tag you also can use attributes like "disabled".
+				<code>&lt;a href=&quot;&quot; <strong>role=&quot;button&quot; tabindex=&quot;1&quot;</strong> class=&quot;button pink&quot;&gt;Tab1&lt;/a&gt;<br />
+					&lt;a href=&quot;&quot; <strong>role=&quot;button&quot; tabindex=&quot;2&quot;</strong> class=&quot;button pink&quot;&gt;Tab2&lt;/a&gt;<br />
+					&lt;button <strong>disabled</strong> class=&quot;button pink glossy&quot;&gt;Disabled&lt;/button&gt;
+				</code>
+				<a href="#accessibility" role="button" tabindex="1" class="button pink">Tab1</a>
+				<a href="#accessibility" role="button" tabindex="2" class="button pink">Tab2</a>
+				<button disabled class="button pink glossy">Disabled</button>
+			</p>
+			
+			
+		</section>
+		
+		
+		
+		<section id="looks">
+			<h3>Looks</h3>
+			
+			<p>I tried to avoid any images but couldn't resist adding a PNG for the noise. The rest is a combination of text-shadows, box-shadows, gradients and borders. This makes it easy to resize the buttons and keep them sharp. It also makes it easy to change the shape. Yes, try it out.. a <strong>morphing button</strong>:<br />
+				<a href="#looks" title="Morph" class="button blue icon morph" data-icon="★"></a>
+				<a href="#looks" class="button blue morph">Morph</a>
+				<br />
+			</p>
+			
+			<p>A border-radius doesn't always need to be rounded. You can bend it in a more oval shape using a second set of points separated with a "/". The above buttons use a transition to animate the border-radius for the default, :hover and :active state:
+				<code>
+					border-radius: 5em / 2em;<br />
+					border-radius: .4em .4em 2em 2em / .4em .4em 3em 3em;<br />
+					border-radius: .3em;
+				</code>			
+			</p>
+			
+			<p>For the colors <strong>HSL</strong> values are used. It makes it much easer to apply different shades of a color if you can use %. For example the text color is a darker version of the background, so I just lower the lightness by 20%:
+				<code>color: hsl(39, 100%, 30%);<br />
+						background-color: hsl(39, 100%, 50%);
+				</code>
+			</p>
+			
+			<p id="material">I tried to simulate different <strong>materials</strong>. A "mate", "glossy" and a "glass" version. The difference of the later two is that the glass version adds a dark blurry text-shadow which makes it look like you can see trough the button to its bottom. Works great in combination with the "back" shape.<br />
+				<a href="#material" class="button green back" data-icon="⏏">Eject</a>
+				<a href="#material" class="button green back glossy" data-icon="⏏">Eject</a>
+				<a href="#material" class="button green back glass" data-icon="⏏">Eject</a>
+			</p>
+			
+			<p>The glossy shape is created using an <strong>:after</strong> element with a gradient background on top. It get's cutout with a border-radius that is slightly smaller in width and half in height from the main button. Unfortunately I couldn't figure out how to animate the :after element. So it's disabled on the morphing shape. Also, if the button gets too long, it doesn't look as good anymore. The gloss and highlight gradient doesn't grow.<br />
+				<a style="-webkit-user-select:text; -moz-user-select:text;" contenteditable="true" href="#material" class="button glossy brackets">Type here!</a>
+			</p>
+			
+			<p>There are two <strong>more datails</strong> that I would like to point out: The border uses a brighter and a darker box-shadow to imitate depth and the drop shadow changes when pressing the button.</p>
+			
+		
+		</section>
+		
+		
+		
+		
+		<section id="flexibility">
+			<h3>Flexibility</h3>
+			
+			<p>Here all the optional class names if you wanna play around with -webkits Inspector or Firebug:<br />
+				<a href="#flexibility" title="King" class="button orange icon" data-icon="✂"></a>
+				<a href="#flexibility" class="button pink serif glossy skew" data-icon="♛">Queen</a>
+				<a href="#flexibility" class="button blue glossy glass" data-icon="☂">Rain</a>
+			</p>
+			
+			<ul>
+				<li><strong>Color:</strong> orange, pink, blue, green, transparent</li>
+				<li><strong>Font:</strong> serif</li>
+				<li><strong>Material:</strong> glossy, glass</li>
+				<li><strong>Size:</strong> xs, xl</li>
+				<li><strong>Shape:</strong> round, oval, brackets, skew, back, knife, shield, drop, morph</li>
+				<li><strong>Icon only:</strong> icon</li>
+				<li><strong>Disabled:</strong> disabled</li>
+			</ul>
+			
+			<p>There is one thing I'm kinda sad about. At the beginning when I started with the buttons, my plan was to use something like <code class="inline">data-color="#ff0000"</code> in the markup and it would create a red button. But I quickly realized that if you just add highlights and shadows on top of a color, it starts to look dull and less vivid. So all the colors need to be predefined in the CSS. I never tried it out, but maybe LESS/SASS would be a good solution because you can brighten/darken colors with code. But even then it's kinda hard, because not all colors need the same amount.
+			</p>
+		
+		</section>
+		
+		
+		<section id="flaws">
+			<h3>Note</h3>
+			
+			<p>This is just a <strong>demo</strong> and not meant to be used on your next project that targets the average internet user. Not all browser are supported. I just wanted to show a couple techniques how to use some of the new CSS3/HTML5 features.</p>
+			
+			<p>Another point. Each design element should fit with the overall design of a site. So I think it's not a good idea to just use "out of the box" buttons. It's like using one of those stock office girls on your contact page.. ;-)</p>
+			
+			<p>But feel free to play around. <strong>Thanks for reading</strong>.</p>
+		
+		</section>		
+		
+				
+	
+	</article>
+	
+	
+	<footer>
+		
+		<p>Thanks to:</p>
+				
+		<p><a href="http://valuedstandards.com/">David</a> for pointing out the custom data attributes, <a href="http://paulirish.com/">Paul Irish</a> for the role="button" hint. And everyone else that got me inspired.</p>
+				
+		<p>Written by <a href="http://simurai.com/">simurai</a></p>
+		
+			
+	</footer>
+
+</body>
+</html>
+
