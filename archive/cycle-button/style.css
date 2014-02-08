@@ -1,0 +1,201 @@
+
+/* 
+	Cycle Button by simurai
+*/
+
+
+/* globals */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
+@import url(http://fonts.googleapis.com/css?family=Copse);
+@import url(http://fonts.googleapis.com/css?family=Chewy);
+
+.font1 { font-family: "Copse", sans-serif; }
+.font2 { font-family: "Droid Sans", sans-serif; }
+.font3 { font-family: "Chewy", sans-serif; }
+
+
+html {
+	font:62.5%/1 "Droid Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	background: url(bg.png);
+}
+
+body {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 250px 50px 50px 50px;
+	text-align: center;
+	
+	border: 1px;
+	border-bottom: 0;
+	-webkit-border-image: -webkit-gradient(linear, left top, left 300, from(rgba(255,255,255,.6)), to(rgba(255,255,255,0)) ) 0% 100%;
+	   /* AFAIK, not supported in moz/o yet */
+	   -moz-border-image: -moz-linear-gradient(0% 25% 90deg, rgba(255,255,255,.6), rgba(255,255,255,0)) 0 100%;
+	     -o-border-image: -moz-linear-gradient(0% 25% 90deg, rgba(255,255,255,.6), rgba(255,255,255,0)) 0 100%;
+	        border-image: -moz-linear-gradient(0% 25% 90deg, rgba(255,255,255,.6), rgba(255,255,255,0)) 0 100%;
+	
+	background: url(dots.png) repeat-x,
+				-webkit-gradient(radial, center top, 300, center top, 0, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,.7))),
+				-webkit-gradient(linear, left top, left 200, from(hsla(0,0%,100%,.2)), to(hsla(0,0%,100%,0)));
+	
+	background: url(dots.png) repeat-x,
+				-moz-radial-gradient(50% 0% 180deg, circle closest-corner, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+				-moz-linear-gradient(0% 25% 90deg, hsla(0,0%,100%,0), hsla(0,0%,100%,0.2) );
+	
+	background: url(dots.png) repeat-x,
+				-o-radial-gradient(50% 0% 180deg, circle closest-corner, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+				-o-linear-gradient(0% 25% 90deg, hsla(0,0%,100%,0), hsla(0,0%,100%,0.2) );
+
+	background: url(dots.png) repeat-x,
+				radial-gradient(50% 0% 180deg, circle closest-corner, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+				linear-gradient(0% 25% 90deg, hsla(0,0%,100%,0), hsla(0,0%,100%,0.2) );
+}
+
+strong {
+	font-weight: bold;
+}
+
+a { text-decoration: none; }
+a:active { outline: none; }
+
+h2 {
+	font-size: 1.8em;
+}
+h2, p, ul {
+	margin-bottom: 1em;
+	line-height: 1.6em;
+}
+p, ul{
+	font-size: 1.4em;
+	color: #333;
+}
+
+li {
+	margin-bottom: .6em;
+	list-style-type: square;
+	margin-left: 30px;
+}
+
+.vs {
+	font-size: .6em;
+	color: #666;
+	margin: 0 10px;
+}
+
+
+#title {
+	position: absolute;
+	width: 500px;
+	top: 60px;
+	font-size: 5em;
+	line-height: 120px;
+	font-weight: bold;
+	margin-bottom: 60px;
+	text-shadow: rgba(255,255,255,0.5) 0 -2px 0, rgba(0,0,0,0.3) 0 1px 0;
+}
+
+
+/* button */
+
+button {
+	font-size: 3em;
+	color: #bbb;
+	text-shadow: hsla(0,0%,100%,.5) 1px 1px 0;
+	
+	border-radius: 1em;
+	border: none;
+	padding: 0 .5em;
+	
+	cursor: pointer;
+	outline: none;
+
+	background: -webkit-gradient(radial, center top, 200, center top, 30, from(hsla(0,0%,70%,0)), to(hsla(0,0%,100%,.5)));	
+	background: -moz-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.5) 50%, hsla(0,0%,90%,0) 100%);	
+	background:   -o-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.5) 50%, hsla(0,0%,90%,0) 100%);	
+	background:  	 radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.5) 50%, hsla(0,0%,90%,0) 100%);	
+	
+    box-shadow: inset rgba(0,0,0,0.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.1) 0 2px 1px;	
+}
+
+
+/* multi */
+.multi {
+	display: inline-block;
+	padding-right: 60px;
+	margin-right: 60px;
+	
+	border: 0;
+	border-right: #eee solid 1px;
+	-webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(255,255,255,0)), 
+								color-stop(.4,rgba(255,255,255,.8)), color-stop(.6,rgba(255,255,255,.8)) ) 0% 100%;
+}
+.multi button {
+	margin: 0 5px;
+	width: 2em;
+	height: 2em;
+}
+
+
+
+/* stepper */
+
+.stepper {
+	display: inline-block;
+	height: 2em;
+}
+.stepper span {
+	display: inline-block;
+	margin: 0 5px;	
+}
+
+
+.active {
+	color: #000;
+}
+
+
+/* states */
+
+button:hover {
+	background: -webkit-gradient(radial, center top, 200, center top, 30, from(hsla(0,0%,70%,0)), to(hsla(0,0%,100%,.7)));
+	background: -moz-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.7) 50%, hsla(0,0%,90%,0) 100%);	
+	background:   -o-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.7) 50%, hsla(0,0%,90%,0) 100%);	
+	background:  	 radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.7) 50%, hsla(0,0%,90%,0) 100%);	
+}
+button:active {
+	-webkit-transform: translateY(1px) scale(.98);
+	   -moz-transform: translateY(1px) scale(.98);
+		 -o-transform: translateY(1px) scale(.98);
+			transform: translateY(1px) scale(.98);
+
+	-webkit-box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+	   -moz-box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+		 -o-box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+			box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+}
+
+
+
+
+/* article */
+
+article {
+	display: block;
+	position: relative;
+	padding-top: 100px;
+	
+	text-shadow: hsla(0,0%,100%,.7) 0 1px 0;
+	text-align: left;
+}
+
+article a { color: #4e72be; font-weight: bold; }
+article a:hover { opacity: 0.6; }
+article a:active {
+	position: relative;
+	top: 1px;
+	opacity: 0.3;
+	outline: none;
+}
+
+
+

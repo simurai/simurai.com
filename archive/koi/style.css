@@ -1,0 +1,138 @@
+
+
+/* globals */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
+
+html {
+	font:62.5%/1 "Droid Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	background: url(bg.png);
+}
+
+body {
+	max-width: 500px;
+	margin: 100px auto;
+	text-align: center;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a { text-decoration: none; }
+a:active { outline: none; }
+
+h1, h2 {
+	text-shadow: rgba(255,255,255,0.6) 0 1px 0, rgba(0,0,0,0.2) 0 .15em .25em;
+}
+h1 {
+	font-size: 2.9em;
+	font-weight: bold;
+	margin-bottom: .7em;	
+}
+h2 {
+	font-size: 1.8em;
+}
+h2, p {
+	margin-bottom: 1em;
+	line-height: 1.6em;
+}
+p{
+	font-size: 1.3em;
+	color: #333;
+}
+
+
+
+
+
+
+/* article */
+
+
+#wrapper img {
+	border-radius: 4px;
+	background-color: transparent;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+	   -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+		 -o-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+			box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+}
+
+
+
+
+
+
+/* meta */
+
+strong {
+	font-weight: bold;
+	color: #000;
+}
+
+#meta {
+	width: 400px;
+	color: #777;
+	margin: 30px auto;
+	text-align: left;
+	text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+} 
+#meta p {
+	margin-bottom: 10px;
+}
+#meta a {
+	text-decoration: none;
+	color: #7276ff;
+}
+#meta a:hover {
+	color: rgba(114,118,255,0.5);
+}
+
+
+
+
+
+
+/* simurai */
+
+#simurai {
+	width: 100px;
+	height: 300px;
+	position: fixed;
+	z-index: 888;
+	bottom: 60px;
+	right: 40px;
+	opacity: 0.06;
+	
+	-webkit-transition: opacity .2s ease-out;
+	   -moz-transition: opacity .2s ease-out;
+	     -o-transition: opacity .2s ease-out;
+	        transition: opacity .2s ease-out;
+}
+#simurai:hover {
+	opacity: 1;
+}
+
+
+
+
+/* mobile */
+
+@media only screen and (max-width: 800px) { 
+	
+	body {
+		margin-bottom: 0;
+	}
+	
+	#simurai {
+		position: relative;
+		margin: 0 auto;
+		padding: 50px 0 0 50px;
+		height: 92px;
+		overflow: hidden;
+		bottom: 0px;
+		opacity: 1;
+	}
+	
+}

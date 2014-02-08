@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	
+	<title>Cycle Button</title>
+	<meta name="author" content="simurai.com">
+	
+	<link rel="stylesheet" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css">
+    <link rel="stylesheet" href="style.css"/>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+</head>
+
+
+<body id="box">
+	
+	
+		
+		
+	<h1 id="title" class="font1">Multi <span class="vs">vs</span> Cycle</h1>
+		
+	<nav class="multi">
+		<button class="font1 active">A</button><button class="font2">A</button><button class="font3">A</button>
+	</nav>
+	
+	<button class="stepper">
+		<span class="font1 active">A</span><span class="font2">A</span><span class="font3">A</span>
+	</button>
+	
+		
+	<article>
+		
+		<h2 class="font1">Remember your digital Casio watch from high school? Where you had to cycle trough the different modes by pressing just a single button?</h2> 
+		
+		<p>You rarely find them in UI design on the web.. heck.. I don't even know how they are called. "<strong>Cycle Buttons</strong>"? They feel cumbersome, not being able to select an option directly. So should we forget about them completely? Wait, maybe there are some rare occasions where they could come in handy. For an upcoming project, I'm in the following situation:</p>
+		
+		<ul>
+			<li><strong>3 groups</strong> with a total of <strong>13 options</strong>.</li>
+			<li>The UI should be kept as <strong>minimal</strong> as possible.</li>
+			<li>Users will most likely want to click trough <strong>all</strong> options, like in a slide-show with next/back buttons.</li>
+			<li>The UI should have a <strong>unique and custom</strong> look. The default drop-down menus, sliders are quite hard to customize or rebuild.</li>
+			<li>And almost the most important point of all. While cycling trough all options, the <strong>focus</strong> should always stay on the <strong>target</strong> (title in the above example).</li>
+		</ul>
+		
+		<p>So I ended up using 3 of those "cycle buttons". Once you start clicking on a group, your mouse/eye don't have to move anymore. Ahh.. <strong>relaxing</strong>! And to make sure the user doesn't get lost in the cycle, there is still an indicator.</p>		
+				
+	</article>
+
+
+
+
+
+
+
+<!-- Google -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-599923-1']);
+  _gaq.push(['_setDomainName', 'simurai.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><!--/ Google -->
+
+</body>
+
+</html>
