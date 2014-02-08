@@ -17,13 +17,13 @@ It would be great for things like books, blogs, timelines or anywhere where you 
 
 ![Flick scrolling illustration](/img/posts/flick-scroll.gif)
 
-Why not just use pages or cards? Yes, that works sometimes, but not always, especially not when you have no control over the content. iA wrote a good post about it: [Scroll or Card?](http://informationarchitects.net/blog/ipad-scroll-or-card/) With flick-scrolling you get the joy of “card flipping” without the cards.
+Why not just use pages or cards? Yes, that works sometimes, but not always, especially not when you have no control over the content. iA wrote a good post about it: [Scroll or Card?](http://ia.net/blog/ipad-scroll-or-card/) With flick-scrolling you get the joy of “card flipping” without the cards.
 
 Here the two demos from the video so you can try it out (only tested on iOS and Android). Note that the “Timeline demo” has a __slightly modified__ behavior: Instead of scrolling to where you touched it, it always scrolls to the __top of an item__ (in this case a picture). This behavior would be great for a list of repeating items, like the timeline in Instagram for quicker and easier moving to the next picture.
 
-[Book demo](http://archive.simurai.com/lab/flick-scroll/book/)
+[Book demo](/archive/flick-scroll/book/)
 
-[Timeline demo](http://archive.simurai.com/lab/flick-scroll/timeline/)
+[Timeline demo](/archive/flick-scroll/timeline/)
 
 Warning: I’m not really a programmer so the demo is just a hack to demonstrate how it could work. Would need some improvements. And of course, performance would be better if it would be implemented natively.
 
