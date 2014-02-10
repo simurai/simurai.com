@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Letter heads</title>
+	
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+		
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.transform-0.8.0.min.js"></script>
+
+
+	<style type="text/css">
+		
+		.letter {
+			-webkit-transition: none;
+		}
+		.letter:hover {
+			background-color: rgba(255,255,255,.1);
+			cursor: move;
+			z-index: 999;
+		}
+		#mr, #ms {
+			pointer-events: none;
+		}
+		
+		.mr, .ms {
+			pointer-events: auto;
+		}
+		
+		html {
+			background-color: #333;
+		}
+		#bg {
+			display: none;
+		}
+		
+		/*T*/#letters .letter:nth-child( 1) {  left: -126px; top:  259px; }
+		/*h*/#letters .letter:nth-child( 2) {  left:  -34px; top:  256px; }
+		/*e*/#letters .letter:nth-child( 3) {  left:   45px; top:  257px; }
+		/*L*/#letters .letter:nth-child( 5) {  left: -279px; top: -146px; }
+		/*e*/#letters .letter:nth-child( 6) {  left: -306px; top:  -91px; }
+		/*t*/#letters .letter:nth-child( 7) {  left: -236px; top:  101px; }
+		/*t*/#letters .letter:nth-child( 8) {  left: -180px; top:  150px; }
+		/*e*/#letters .letter:nth-child( 9) {  left: -110px; top:  163px; }
+		/*r*/#letters .letter:nth-child(10) {  left:  -31px; top:  156px; }
+		/*-*/#letters .letter:nth-child(11) {  left:   17px; top:  161px; }
+		/*H*/#letters .letter:nth-child(12) {  left:  119px; top:  128px; }
+		/*E*/#letters .letter:nth-child(13) {  left:  174px; top:   50px; }
+		/*A*/#letters .letter:nth-child(14) {  left:  196px; top:  -45px; }
+		/*d*/#letters .letter:nth-child(15) {  left:  200px; top: -133px; }
+		/*S*/#letters .letter:nth-child(16) {  left:  174px; top: -221px; }
+				
+	
+		
+		
+	</style>	
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		
+		var current_element;
+		$('#back .letter').each( function($i) {
+			$(this).draggable();
+			$(this).bind('mousedown', function() {
+				current_element = $(this);
+				//$("#debug").html( "current_element: " + current_element );
+			});
+		});
+		
+		
+		$("html").bind('keypress', function(e){
+			var code = (e.keyCode ? e.keyCode : e.which);
+			$("#debug").html( "code: " + code );
+
+			if(code == 122) { $(current_element).animate({rotate: '-=5deg'}); }
+			if(code == 120) { $(current_element).animate({rotate: '+=5deg'}); }
+			if(code == 97) { $(current_element).animate({rotate: '-=25deg'}); }
+			if(code == 115) { $(current_element).animate({rotate: '+=25deg'}); }
+						
+		});
+		
+	});	
+	</script>
+
+</head>
+
+<body>
+	
+    
+	
+	<div id="letters" class="ms font1">
+		
+		<div id="back">
+			<span class="letter">T</span><span class="letter">h</span><span class="letter">e</span><span class="letter"> </span>
+			<span class="letter">L</span><span class="letter">e</span><span class="letter">t</span><span class="letter">t</span><span class="letter">e</span><span class="letter">r</span><span class="letter">-</span>
+			<span class="letter">H</span><span class="letter">E</span><span class="letter">A</span><span class="letter">D</span><span class="letter">S</span>
+		</div>
+		
+	</div>
+	
+	<div id="people">
+		<div id="mr">
+			<ul id="leds-mr" class="leds">
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+			</ul>
+		</div>
+		<div id="ms">
+			<ul id="leds-ms" class="leds">
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+				<li><span class="led"></span></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	    
+	<div id="fonts">
+	    <button title="Change font">
+	    	<span class="font1 active">F</span><span class="font2">F</span><span class="font3">F</span>
+	    </button>
+	</div>
+	   		  
+	
+	
+	<div id="light">
+		<div id="pattern"></div>
+		<img id="bg" src="bg.jpg" alt="" />
+	</div>
+
+
+    <!--Debug-->
+    
+    <div id="debug-letters">Letter-HEADS</div>
+    <div id="debug_marker"></div>
+    <div id="debug"></div>
+    
+    
+					
+</body>
+
+</html>
