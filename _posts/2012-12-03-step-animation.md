@@ -7,7 +7,6 @@ layout: post
 
 ---
 
-There is an over a year old [jsFiddle](http://jsfiddle.net/simurai/CGmCe/) but I never got around to post it.. until today! ;-)
 
 If you don't wanna use gifs on your site and rather PNGs for better colors, but still be able to __animate__ them, here an option:
 
