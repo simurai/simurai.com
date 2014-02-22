@@ -1,3 +1,5 @@
-![Screenshot](http://lab.simurai.com/monster/screenshot.jpg)
+# Cursor Monster
 
-[lab.simurai.com/monster](http://lab.simurai.com/monster)
+![Screenshot](screenshot.jpg)
+
+[simurai.com/projects/cursor-monster](http://simurai.com/projects/cursor-monster/)
