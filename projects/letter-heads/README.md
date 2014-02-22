@@ -1,3 +1,6 @@
-![Screenshot](http://lab.simurai.com/letter-heads/screenshot.jpg)
 
-[lab.simurai.com/letter-heads](http://lab.simurai.com/letter-heads)
+# The Letter Heads
+
+![Screenshot](screenshot.jpg)
+
+[simurai.com/projects/letter-heads](http://simurai.com/projects/letter-heads/)
