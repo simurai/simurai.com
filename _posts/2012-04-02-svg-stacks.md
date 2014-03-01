@@ -30,3 +30,5 @@ __Update__: A couple bugs have been added to other browsers so you can track its
 __Update II__: Michael Schieben created a tool to that turns a folder of SVG files into a single SVG Stack: [SVG Stacker](https://github.com/preciousforever/SVG-Stacker)
 
 __Update III__: Looks like “SVG Stacks” got [shot down](https://code.google.com/p/chromium/issues/detail?id=128055#c6) by the WG. But there is still some [hope left](https://twitter.com/erikdahlstrom/status/308623071630200833) and it’s probably still [in flux](https://twitter.com/erikdahlstrom/status/308828047128264704). So instead of url() we could use image().
+
+__Update IV__ (Feb 2014): And back alive! Work has started to also add SVG fragment identifiers to WebKit, see this [bug](https://bugs.webkit.org/show_bug.cgi?id=129387). Not sure where that leaves Chrome as they now have Blink.
