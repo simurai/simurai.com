@@ -285,6 +285,13 @@ hr {
     vertical-align: top;
 }
 
+figcaption {
+    font-size: .8em;
+    color: hsl(0,0%,50%);
+    font-style: italic;
+    margin-left: 1em;
+}
+
 
 /* Code ----------------------------------------- */
 
