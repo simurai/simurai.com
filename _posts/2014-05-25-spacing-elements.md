@@ -45,3 +45,13 @@ That way all elements are evenly spaced and you still can use `display:none` wit
 There are more ways but I'm not aware of a simple one that also let's you use `display: none`. Let me know otherwise.
 
 * Maybe the [Visual Format Language](http://gridstylesheets.org/guides/vfl/) in __GSS__? Looks quite slick.
+
+## Update
+
+A couple more options:
+
+* Using Grandpa's [table](https://twitter.com/derSchepp/status/470809273061355520), still need to [test this](https://twitter.com/maddesigns/status/470809480549400576)
+* Using [calc()](https://twitter.com/Catharsis/status/470800126911332352)
+* Using [Adjacent selector](https://twitter.com/jnowland/status/470874604735442944)
+
+Hmmm.. gotta try some. I kinda like the last one.
