@@ -7,7 +7,7 @@ layout: post
 
 ---
 
-So let's say we have a "bar" with some items inside. Like a header or footer. Let's also say we want those items to be spaced evenly, meaning they have the same gab everywhere. Shouldn't be a big problem. Let's take a look:
+So let's say we have a "bar" with some items inside. Like a header or footer. Let's also say we want those items to be spaced evenly, meaning they have the same gap everywhere. Shouldn't be a big problem. Let's take a look:
 
 ## 1. Margin
 We can't just add `margin: 2rem` to the elements since there is no [margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/margin_collapsing) on the horizontal axis. And it also doesn't work when using Flexbox. Leaving a double sized gap in between. Wishing there is something like `margin: 2rem collapse;` where you can enable/disable it optionally.
