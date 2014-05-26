@@ -41,7 +41,8 @@ The easiest way I think, is to add margins to all elements (like in the first ex
 
 That way all elements are evenly spaced and you still can use `display:none` without having to worry about breaking it. A little flaw is that you have to keep the 2 values in sync, but if you're using a preprocessor, it can just be a single variable. Or maybe you could use REM's to control it with `font-size` from the :root.
 
-![codepen]()
+<p data-height="185" data-theme-id="3586" data-slug-hash="xsotr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/simurai/pen/xsotr/'>Spacing elements</a> by simurai (<a href='http://codepen.io/simurai'>@simurai</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
 ### Other?
