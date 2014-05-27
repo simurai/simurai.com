@@ -53,5 +53,6 @@ A couple more options:
 * Using Grandpa's [table](https://twitter.com/derSchepp/status/470809273061355520), still need to [test this](https://twitter.com/maddesigns/status/470809480549400576)
 * Using [calc()](https://twitter.com/Catharsis/status/470800126911332352)
 * Using [Adjacent selector](https://twitter.com/jnowland/status/470874604735442944)
+* More selector "hacks": [1](http://codepen.io/jnowland/pen/clbxL), [2](http://codepen.io/thierry/pen/KBfkv?editors=010)
 
-Hmmm.. gotta try some. I kinda like the last one.
+Hmmm.. gotta try some. I kinda like the 3rd one. Keeps it independent from the parent and is not "too" complicated.
