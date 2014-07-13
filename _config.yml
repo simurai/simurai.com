@@ -1,3 +1,7 @@
+name: simurai
+description: Blog about simurai's work and CSS doodles
+url: http://simurai.com
+
 permalink: /:categories/:year/:month/:day/:title
 markdown: redcarpet
 redcarpet:
