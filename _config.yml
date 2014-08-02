@@ -3,8 +3,9 @@ description: Blog about simurai's work and CSS doodles
 url: http://simurai.com
 
 permalink: /:categories/:year/:month/:day/:title
+
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-# exclude: [cursor-monster, letter-heads]
+# exclude: [archive, cursor-monster, letter-heads]
