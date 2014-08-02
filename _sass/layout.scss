@@ -1,6 +1,8 @@
 
-/* Layout ----------------------------------------- */
+/* Layout */
 
+
+/* Narrow ----------------------------------------- */
 
 @media (max-width: 599px) {
     
@@ -25,128 +27,11 @@
         margin: 0;
     }
     
-}
-
-
-@media (min-width: 600px) and (max-width: 1099px) {
     
-    html {
-        font-size: 18px;
-    }
     
-    .wrapper {
-        padding: 0 20px; /* fallback */
-        padding: 0 5vw;
-        margin: 3em auto;
-    }
+    /* Hamburger toggle -------------------- */
     
-    .aside {
-        text-align: center;
-    }
-    
-}
-
-
-@media (min-width: 1100px) {
-    
-    html {
-        font-size: 20px;
-    }
-    
-    .wrapper {
-        padding-left: 240px; /* aside { margin-left 220px } + padding-right 40px/2 */
-        padding-right: 40px;
-        padding-top: 3.4em;
-    }
-    
-    .aside {
-        position: fixed;
-        z-index: 1000;
-        width: 140px;
-        top: 80px;
-        text-align: right;
-        margin-left: -220px; /* width + 80px margin */
-    }
-
-    .aside-description {
-        font-size: 0.8em;
-    }
-    
-    .nav-item {
-        font-size: 0.8em;
-    }
-    
-    .index-aside {
-        text-align: left;
-        margin-left: 14em; /* index-img width + 2em gap */
-    }
-    
-    .index-img {
-        position: absolute;
-        margin: -0.3em 0 0 0;
-    }
-    
-}
-
-
-
-
-/* Responsive Nav ----------------------------------------- */
-
-
-@media (max-width: 1099px) {
-
-    .nav:before,
-    .nav:after {
-        content: "";
-        display: block;
-        margin: 1em 0;
-        height: 1px;
-        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
-    }
-    
-    .nav-group {
-        display: inline-block;
-        margin: 0 1em;
-    }
-    
-    .nav-item {
-        display: inline-block;
-        padding: 0.4em 0.8em;
-    }
-    
-}
-
-@media (min-width: 1100px) {
-    
-    .nav:before {
-        content: "";
-        display: block;
-        height: 1px;
-        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) 50% );
-    }
-    
-    .nav {
-        margin: 1em 0;
-    }
-    
-    .nav-group {
-        display: block;
-        margin: 2em 0;
-    }
-    
-    .nav-item {
-        display: block;
-    }
-    
-}
-
-
-/* Hamburger toggle ----------------------------------------- */
-
-@media (max-width: 599px) {
-    
-    .aside-hamburger {
+    .header-hamburger {
         display: block;
         position: absolute;
         top: 1em;
@@ -158,17 +43,17 @@
         background-size: 40px;
     }
     
-    .aside-hamburger:active {
+    .header-hamburger:active {
         background-color: hsla(0,0%,0%,.1);
     }
     
-    #top:target .aside-hamburger {
+    #top:target .header-hamburger {
         opacity: 0;
         pointer-events: none;
         transition: opacity 1s ease-in;
     }
     
-    .aside-target {
+    .header-target {
         position: absolute;
         visibility: hidden;
         opacity: 0;
@@ -176,7 +61,7 @@
                 transform: translateY(-50px);
     }
     
-    #top:target .aside-target {
+    #top:target .header-target {
         position: relative;
         visibility: visible;
         opacity: 1;
@@ -189,4 +74,31 @@
         
     }
     
+    
 }
+
+
+
+/* Wide ----------------------------------------- */
+
+@media (min-width: 600px) {
+    
+    html {
+        font-size: 18px;
+    }
+    
+    .wrapper {
+        padding: 0 20px; /* fallback */
+        padding: 0 5vw;
+        margin: 6rem auto;
+    }
+    
+    .header {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+    
+}
+
+
+

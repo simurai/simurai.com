@@ -116,6 +116,7 @@ hr {
 /* Index ----------------------------------------- */
 
 .index {
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -123,7 +124,7 @@ hr {
 .index-item {
     position: relative;
     clear: both;
-    margin-bottom: 6em;
+    margin-bottom: 6rem;
 }
 
 .index-item > p {
@@ -378,34 +379,35 @@ code[data-lang]:after {
 }
 
 
-/* Aside ----------------------------------------- */
+/* Header ----------------------------------------- */
 
-.aside {
+.header {
+    margin-bottom: 2rem;
 	text-align: center;
 	font-weight: 300;
 	color: hsl(0, 0%, 64%);
 }
 
-.aside-hamburger {
+.header-hamburger {
     display: none;
 }
 
-.aside-title {
+.header-title {
+	margin: 1em 0 0.25em 0;
+	font-size: 1.5em;
 	font-weight: 400;
-	font-size: 1.2em;
-	letter-spacing: 1px;	
-	margin: 0.75em 0 1.3em 0;
+	letter-spacing: 1px;
 	color: inherit;
 }
 
-.aside-avatar {
+.header-avatar {
     width: 64px;
     height: 64px;
     border-radius: 32px;
     vertical-align: top;
 }
 
-.aside-description {
+.header-description {
 	margin: 0;
 	line-height: 1.4;
 }
@@ -413,20 +415,20 @@ code[data-lang]:after {
 
 /* Aside links - nav + name */
 
-.aside a,
-.aside a:visited {
+.header a,
+.header a:visited {
 	color: inherit;
 }
 
-.aside a:hover {
+.header a:hover {
 	color: hsl(0, 0%, 74%);
 }
 
-.aside a:active {
+.header a:active {
 	color: hsl(0, 0%, 68%);
 }
 
-.aside a.active {
+.header a.active {
     color: hsl(0, 0%, 20%);
     font-weight: 400;
 }
@@ -439,8 +441,23 @@ code[data-lang]:after {
     padding: 1em 0;
 }
 
+.nav:before,
+.nav:after {
+    content: "";
+    display: block;
+    margin: 1em 0;
+    height: 1px;
+    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+}
+
+.nav-group {
+    display: inline-block;
+    margin: 0 1em;
+}
+
 .nav-item {
-    //font-size: .9em;
+    display: inline-block;
+    padding: 0.4em 0.8em;
 }
 
 
