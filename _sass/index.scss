@@ -1,0 +1,86 @@
+
+/* Index ----------------------------------------- */
+
+.index {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.index-item {
+    position: relative;
+    clear: both;
+    margin-bottom: 6rem;
+}
+
+.index-item > p {
+    display: inline;
+}
+
+.index-item img {
+    margin-top: 1em;
+}
+
+.index-title {
+    margin: 0.2em 0;
+    font-size: 1.6em;
+    line-height: 1.3;
+}
+
+.index-title--oneline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index-link,
+.index-link:visited {
+    color: inherit;
+}
+
+.index-more {
+    margin-left: .2em;
+    font-size: 1.1em;
+    line-height: 1;
+    vertical-align: middle;
+    color: hsl(0, 70%, 50%);
+}
+
+.index-more:visited {
+    color: hsl(0,0%,70%);
+}
+
+.index-more:hover {
+    color: hsl(0,0%,60%);
+}
+
+.index-more:active {
+    color: hsl(0,0%,70%);
+}
+
+.index-aside {
+    display: block;
+    text-align: center;
+}
+
+.index-img {
+    display: block;
+    margin: 0.6em auto;
+    width: 12em;
+    height: 6em;
+    border-radius: 5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.15), 0 1px 1px hsl(0, 100%, 100%);
+}
+
+.index-description {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1em;
+    color: hsl(0,0%,36%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,54 @@
+
+/* Header ----------------------------------------- */
+
+.header {
+    margin-bottom: 2rem;
+	text-align: center;
+	font-weight: 300;
+	color: hsl(0, 0%, 64%);
+}
+
+.header-hamburger {
+    display: none;
+}
+
+.header-title {
+	margin: 1em 0 0.25em 0;
+	font-size: 1.5em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: inherit;
+}
+
+.header-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    vertical-align: top;
+}
+
+.header-description {
+	margin: 0;
+	line-height: 1.4;
+}
+
+
+/* Aside links - nav + name */
+
+.header a,
+.header a:visited {
+	color: inherit;
+}
+
+.header a:hover {
+	color: hsl(0, 0%, 74%);
+}
+
+.header a:active {
+	color: hsl(0, 0%, 68%);
+}
+
+.header a.active {
+    color: hsl(0, 0%, 20%);
+    font-weight: 400;
+}

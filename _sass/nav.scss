@@ -1,0 +1,75 @@
+/* Nav ----------------------------------------- */
+
+.nav {
+    padding: 1em 0;
+}
+
+.nav:before,
+.nav:after {
+    content: "";
+    display: block;
+    margin: 1em 0;
+    height: 1px;
+    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+}
+
+.nav-group {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+}
+
+
+/* Subnav ----------------------------------------- */
+
+.subnav {
+    font-size: .9em;
+    line-height: 2;
+    margin: 3em 0;
+    text-align: center;
+}
+
+.subnav a {
+    color: hsl(0,0%,60%);
+}
+
+.subnav a:visited {
+    color: hsl(0,0%,70%);
+}
+
+.subnav a:hover {
+    color: hsl(0,0%,50%);
+}
+
+.subnav a:active {
+    color: hsl(0,0%,80%);
+}
+
+.subnav-item {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.subnav-pagination {
+    margin-bottom: 3em;
+}
+
+.subnav-pagination-item {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 1em;
+    width: 3em;
+    height: 3em;
+    padding: 0 1em;
+    font-size: 1.5em;
+    line-height: 3em;
+    border: 1px solid;
+    border-radius: 3em;
+}

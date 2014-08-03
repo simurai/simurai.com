@@ -1,0 +1,37 @@
+
+/* Footer ----------------------------------------- */
+
+.footer:before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.footer a {
+    outline: none;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin: 3em 0 0 0;
+    transition: -webkit-transform .4s;
+    transition:         transform .4s;
+}
+
+.footer-logo:hover {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    transition-duration: .1s;
+}
+
+.footer-logo:active {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    transition-duration: .1s;
+}

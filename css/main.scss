@@ -4,8 +4,18 @@
 
 ---
 
-@import "normalize";
-@import "solarized";
+@import "_lib/normalize";
+@import "_lib/solarized";
 
-@import "style";
-@import "layout";
+@import "global";
+@import "header";
+@import "nav";
+@import "code";
+@import "comments";
+@import "footer";
+
+@import "index";
+@import "post";
+@import "page";
+
+@import "mq";
