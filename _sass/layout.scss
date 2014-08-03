@@ -110,19 +110,28 @@
     }
     
     .header {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
     
     .header-avatar {
         position: absolute;
-        margin-left: -156px; /* Damn, magic numbers */
+        margin-top: 24px;
     }
     
     .header-title,
     .header-description {
-        text-align: left;
-        margin-left: 40%;
+        display: none;
     }
+    
+    .nav:before {
+        margin: 1em 0 0 0;
+    }
+    .nav:after {
+        margin: 0 0 1em 0;
+    }
+    
+    .nav-group:first-child { margin: 0 3em 0 0; }
+    .nav-group:last-child  { margin: 0 0 0 3em; }
     
 }
 

@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     line-height: 1;
+    text-align: center;
 }
 
 
@@ -68,6 +69,10 @@ hr {
 
 
 /* Blog ----------------------------------------- */
+
+.article-meta {
+    text-align: center;
+}
 
 .time {
     color: hsl(0, 0%, 70%);
