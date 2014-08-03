@@ -1,7 +1,7 @@
 <li class="index-item">
 
 {% if post.category == "projects" %}
-    <a href="{{ post.link }}">
+    <a href="{{ post.url }}">
         {{ post.excerpt }}
     </a>
     <a class="meta" href="{{ post.url }}">
@@ -12,7 +12,7 @@
     </a>
 
 {% elsif post.category == "lab" %}
-    <a class="index-img" href="{{ post.link }}" style="background-image: url(/img/posts/{{ post.img }});"></a>
+    <a class="index-img" href="{{ post.url }}" style="background-image: url(/img/posts/{{ post.img }});"></a>
     <a class="index-aside" href="{{ post.url }}">
         <time class="time">{{ post.date | date_to_string }}</time>
         <h2 class="index-title index-title--oneline">{{ post.title }}</h2>
