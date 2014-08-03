@@ -101,4 +101,30 @@
 }
 
 
+/* Wide + small height ----------------------------------------- */
+
+@media (min-width: 600px) and (max-height: 900px) {
+    
+    .wrapper {
+        margin: 3rem auto;
+    }
+    
+    .header {
+        margin-bottom: 1rem;
+    }
+    
+    .header-avatar {
+        position: absolute;
+        margin-left: -156px; /* Damn, magic numbers */
+    }
+    
+    .header-title,
+    .header-description {
+        text-align: left;
+        margin-left: 40%;
+    }
+    
+}
+
+
 
