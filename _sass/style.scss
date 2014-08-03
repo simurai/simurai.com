@@ -31,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     line-height: 1;
-    text-align: center;
 }
 
 
@@ -68,6 +67,14 @@ hr {
 }
 
 
+/* Page ----------------------------------------- */
+
+.page {
+    padding-bottom: 3rem;
+}
+
+
+
 /* Blog ----------------------------------------- */
 
 .article-meta {
@@ -85,6 +92,10 @@ hr {
 
 .article iframe {
     margin: 1em 0;
+}
+
+.article h1 {
+    text-align: center;
 }
 
 .article h2,

@@ -116,6 +116,7 @@
     .header-avatar {
         position: absolute;
         margin-top: 24px;
+        margin-left: 42px; /* Damn magic numbers */
     }
     
     .header-title,
