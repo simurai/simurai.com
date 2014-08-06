@@ -2,10 +2,13 @@
 /* Header ----------------------------------------- */
 
 .header {
-    margin-bottom: 2rem;
+    margin: $space 0;
 	text-align: center;
 	font-weight: 300;
 	color: hsl(0, 0%, 64%);
+	@media (min-height: $break--) and (min-width: $break-) {
+        margin: $space*2 0;
+	}
 }
 
 .header-hamburger {
@@ -13,7 +16,7 @@
 }
 
 .header-title {
-	margin: 1em 0 0.25em 0;
+	margin: .25em 0;
 	font-size: 1.5em;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -29,7 +32,6 @@
 
 .header-description {
 	margin: 0;
-	line-height: 1.4;
 }
 
 
@@ -51,4 +53,29 @@
 .header a.active {
     color: hsl(0, 0%, 20%);
     font-weight: 400;
+}
+
+
+/* Nav ----------------------------------------- */
+
+.nav {
+    margin-top: 2em;
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+    }
+}
+
+.nav-group {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 1em .5em;
+    line-height: 1;
 }

@@ -2,39 +2,14 @@
 /* Responsive */
 
 
-/* Narrow ----------------------------------------- */
+/* Hamburger toggle ----------------------------------------- */
 
 @media (max-width: 599px) {
-    
-    .wrapper {
-        padding: 1em 1em 3em 1em;
-    }
-    
-    .aside {
-        font-size: 1.2em;
-    }
-    
-    .aside-title {
-        margin: 0.5em 0;
-    }
-    
-    .aside-description {
-        font-size: 0.9em; 
-    }
-    
-    .img--float {
-        float: none;
-        margin: 0;
-    }
-    
-    
-    
-    /* Hamburger toggle -------------------- */
-    
+            
     .header-hamburger {
         display: block;
         position: absolute;
-        top: 1em;
+        top: 0;
         right: 1em;
         width: 64px;
         height: 64px;
@@ -79,60 +54,30 @@
 
 
 
-/* Wide ----------------------------------------- */
+/* Compact header ----------------------------------------- */
 
-@media (min-width: 600px) {
+@media (min-width: $break-) and (max-height: $break--) {
     
-    html {
-        font-size: 18px;
-    }
-    
-    .wrapper {
-        padding: 0 20px; /* fallback */
-        padding: 0 5vw;
-        margin: 6rem auto;
-    }
-    
-    .header {
-        text-align: center;
-        margin-bottom: 6rem;
-    }
-    
-}
-
-
-/* Wide + small height ----------------------------------------- */
-
-@media (min-width: 600px) and (max-height: 900px) {
-    
-    .wrapper {
-        margin: 3rem auto;
-    }
-    
-    .header {
-        margin-bottom: 3rem;
-    }
-    
-    .header-avatar {
-        position: absolute;
-        margin-top: 24px;
-        margin-left: 42px; /* Damn magic numbers */
-    }
-    
-    .header-title,
-    .header-description {
-        display: none;
-    }
-    
-    .nav:before {
-        margin: 1em 0 0 0;
-    }
-    .nav:after {
-        margin: 0 0 1em 0;
-    }
-    
-    .nav-group:first-child { margin: 0 3em 0 0; }
-    .nav-group:last-child  { margin: 0 0 0 3em; }
+//    .header-avatar {
+//        position: absolute;
+//        margin-top: 24px;
+//        margin-left: 42px; /* Damn magic numbers */
+//    }
+//    
+//    .header-title,
+//    .header-description {
+//        display: none;
+//    }
+//    
+//    .nav:before {
+//        margin: 1em 0 0 0;
+//    }
+//    .nav:after {
+//        margin: 0 0 1em 0;
+//    }
+//    
+//    .nav-group:first-child { margin: 0 3em 0 0; }
+//    .nav-group:last-child  { margin: 0 0 0 3em; }
     
 }
 

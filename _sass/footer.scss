@@ -10,7 +10,10 @@
 
 .footer {
     text-align: center;
-    margin-top: 3em;
+    margin: $space 0;
+    @media (min-height: $break--) and (min-width: $break-) {
+        margin: $space*2 0;
+    }
 }
 
 .footer a {
@@ -19,7 +22,7 @@
 
 .footer-logo {
     display: inline-block;
-    margin: 3em 0 0 0;
+    margin: $space 0 0 0;
     transition: -webkit-transform .4s;
     transition:         transform .4s;
 }

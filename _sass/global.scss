@@ -1,12 +1,29 @@
 
 /* Global ----------------------------------------- */
 
-body {
-    margin: 0;
-    color: hsl(0, 0%, 36%);
-    font-family: 'Open Sans', sans-serif;
-    background-color: hsl(30, 30%, 96%); /* rgb(248, 245, 242) */
+html {
+    font-size: 16px;
     line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(0, 0%, 36%);
+    background-color: hsl(30, 30%, 96%); /* rgb(248, 245, 242) */
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 1em; // fallback
+    padding: 0 5vw;
+    max-width: 42em;
+    @media (min-width: $break-) {
+        font-size: 18px;
+    }
+    @media (min-width: $break--) {
+        font-size: 20px;
+    }
+    @media (min-width: $break----) and (min-height: $break---) {
+        font-size: 22px;
+    }
 }
 
 a {
@@ -30,24 +47,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    line-height: 1;
+    line-height: 1.2;
 }
 
-
-/* Wrapper ----------------------------------------- */
-
-.wrapper {
-    position: relative;
-    max-width: 760px;
-    padding: 3em 1em;
-    margin: 0 auto;
-    text-shadow: 0px 1px 0px hsla(0,0%,100%,.8);
-}
-
-.title--404 {
-    font-size: 8em;
-    text-align: center;
-    margin: 0;
+hr {
+    border: none;
+    border-bottom: 2px dashed hsl(0, 0%, 80%);
+    margin: 2em 0;
 }
 
 blockquote {
@@ -60,46 +66,21 @@ blockquote {
     border-left: 4px solid hsl(0, 0%, 80%);
 }
 
-hr {
-    border: none;
-    border-bottom: 2px dashed hsl(0, 0%, 80%);
-    margin: 2em 0;
+img {
+    max-width: 100%;
 }
 
 
 
-/* Columns ----------------------------------------- */
+/* Misc ----------------------------------------- */
 
-.cols {
-    font-size: 0; /* removes white-space but */
-}
-.cols > .col {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 4%;
-    font-size: 16px;
+
+.title--404 {
+    font-size: 8em;
+    text-align: center;
+    margin: 0;
 }
 
-.cols > .col:last-child {
-    margin-right: 0;
-}
-
-.col-1-2 { width: 48%; }
-.col-1-3 { width: 30.666%; }
-.col-2-3 { width: 65.333%; }
-
-@media all and (max-width: 700px) {
-    .cols > .col {
-        display: block;
-        vertical-align: top;
-    }
-    .col-1-2,
-    .col-1-3,
-    .col-2-3  {
-        width: 100%;
-        margin-right: 0;
-    }
-}
 
 
 /* Images ----------------------------------------- */
@@ -142,7 +123,7 @@ hr {
 
 figcaption {
     font-size: .8em;
-    color: hsl(0,0%,50%);
+    color: hsl(0,0%,60%);
     font-style: italic;
     margin-left: 1em;
 }

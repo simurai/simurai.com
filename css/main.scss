@@ -4,12 +4,24 @@
 
 ---
 
+// Vars
+
+$break-:     600px;
+$break--:    900px;
+$break---:  1200px;
+$break----: 1600px;
+
+$space: 4em;
+
+
+
+// Imports
+
 @import "_lib/normalize";
 @import "_lib/solarized";
 
 @import "global";
 @import "header";
-@import "nav";
 @import "code";
 @import "comments";
 @import "footer";
