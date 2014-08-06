@@ -9,7 +9,7 @@
 .comments:after {
     content: "";
     display: block;
-    margin: 3em 0;
+    margin: $space 0;
     height: 1px;
     background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
 }

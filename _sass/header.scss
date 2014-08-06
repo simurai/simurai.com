@@ -2,13 +2,11 @@
 /* Header ----------------------------------------- */
 
 .header {
-    margin: $space 0;
+	margin: $space 0; /* fallback */
+	margin: 12vmin 0;
 	text-align: center;
 	font-weight: 300;
 	color: hsl(0, 0%, 64%);
-	@media (min-height: $break--) and (min-width: $break-) {
-        margin: $space*2 0;
-	}
 }
 
 .header-hamburger {

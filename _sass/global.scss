@@ -16,12 +16,12 @@ body {
     padding: 0 5vw;
     max-width: 42em;
     @media (min-width: $break-) {
-        font-size: 18px;
-    }
-    @media (min-width: $break--) {
         font-size: 20px;
     }
-    @media (min-width: $break----) and (min-height: $break---) {
+    @media (min-width: $break--) {
+        font-size: 21px;
+    }
+    @media (min-width: $break---) and (min-height: $break--) {
         font-size: 22px;
     }
 }

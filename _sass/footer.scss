@@ -9,11 +9,8 @@
 }
 
 .footer {
-    text-align: center;
     margin: $space 0;
-    @media (min-height: $break--) and (min-width: $break-) {
-        margin: $space*2 0;
-    }
+    text-align: center;
 }
 
 .footer a {
