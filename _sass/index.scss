@@ -47,15 +47,15 @@
 }
 
 .index-more:visited {
-    color: hsl(0,0%,70%);
+    color: $color-light;
 }
 
 .index-more:hover {
-    color: hsl(0,0%,60%);
+    color: lighten($color-light, 10%);
 }
 
 .index-more:active {
-    color: hsl(0,0%,70%);
+    color: $color-light;
 }
 
 .index-aside {
@@ -79,7 +79,7 @@
     margin: 0;
     font-weight: 300;
     font-size: 1em;
-    color: hsl(0,0%,36%);
+    color: $color;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

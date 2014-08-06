@@ -6,7 +6,7 @@
 	margin: 12vmin 0;
 	text-align: center;
 	font-weight: 300;
-	color: hsl(0, 0%, 64%);
+	color: $color-light;
 }
 
 .header-hamburger {
@@ -37,19 +37,19 @@
 
 .header a,
 .header a:visited {
-	color: inherit;
+	color: $color-light;
 }
 
 .header a:hover {
-	color: hsl(0, 0%, 74%);
+	color: lighten($color-light, 10%);
 }
 
 .header a:active {
-	color: hsl(0, 0%, 68%);
+	color: lighten($color-light, 10%);
 }
 
 .header a.active {
-    color: hsl(0, 0%, 20%);
+    color: $color-dark;
     font-weight: 400;
 }
 

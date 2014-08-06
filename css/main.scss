@@ -12,6 +12,11 @@ $break---:  1600px;
 
 $space: 4em;
 
+$color: hsl(0, 0%, 36%);
+$color-dark: darken($color, 12%);
+$color-light: lighten($color, 24%);
+$color-hint: lighten($color, 48%);
+
 
 
 // Imports

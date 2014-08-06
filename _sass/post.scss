@@ -6,7 +6,7 @@
 }
 
 .time {
-    color: hsl(0, 0%, 70%);
+    color: $color-light;
     font-weight: 300;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .article h2 {
-    border-bottom: 1px dashed hsla(0, 0%, 0%, 0.1);
+    border-bottom: 1px dashed $color-hint;
 }
 
 .video-wrapper {
@@ -70,7 +70,7 @@
 
 .meta-description {
     font-weight: 300;
-    color: hsl(0,0%,70%);
+    color: $color-light;
 }
 
 
@@ -85,19 +85,23 @@
 }
 
 .subnav a {
-    color: hsl(0,0%,60%);
+    color: $color;
 }
 
 .subnav a:visited {
-    color: hsl(0,0%,70%);
+    color: $color-light;
 }
 
 .subnav a:hover {
-    color: hsl(0,0%,50%);
+    color: lighten($color, 10%);
+}
+
+.subnav a:visited:hover {
+    color: lighten($color-light, 10%);
 }
 
 .subnav a:active {
-    color: hsl(0,0%,80%);
+    color: $color-hint;
 }
 
 .subnav-item {
