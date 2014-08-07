@@ -14,15 +14,12 @@ body {
     margin: 0 auto;
     padding: 0 1em; // fallback
     padding: 0 5vw;
-    max-width: 42em;
+    max-width: 36em;
     @media (min-width: $break-) {
         font-size: 20px;
     }
-    @media (min-width: $break--) {
-        font-size: 21px;
-    }
     @media (min-width: $break---) and (min-height: $break--) {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 
