@@ -1,3 +1,5 @@
+# Config -----------------------------
+
 name: simurai
 description: Blog about simurai's work and CSS doodles
 url: http://simurai.com
@@ -6,6 +8,21 @@ permalink: /:categories/:year/:month/:day/:title
 
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "disable_indented_code_blocks", "autolink", "tables", "with_toc_data"]
+
+
+
+# Some tests -----------------------------
+
+# markdown: rdiscount
+# rdiscount:
+#   extensions:
+#     - autolink      # greedily urlify links
+#     - footnotes     # footnotes
+#     - smart         # typographic substitutions with SmartyPants
+
+#kramdown: 
+#  parse_block_html: true
+
 
 # exclude: [archive, cursor-monster, letter-heads]
