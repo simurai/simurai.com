@@ -4,7 +4,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: $color;
     background-color: hsl(30, 60%, 98%); /* rgb(253, 250, 247) */
 }
@@ -39,7 +39,7 @@ a:active {
 
 b, strong,
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: 700;
     color: $color-dark;
 }
 
