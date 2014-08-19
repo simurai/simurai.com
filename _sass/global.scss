@@ -4,7 +4,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 300;
     color: $color;
     background-color: hsl(30, 60%, 98%); /* rgb(253, 250, 247) */
 }
@@ -37,14 +38,22 @@ a:active {
     color: hsl(220,60%,50%);
 }
 
-b, strong,
-h1, h2, h3, h4, h5, h6 {
+b, strong {
     font-weight: 700;
+    color: $color-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
     color: $color-dark;
 }
 
 h1 {
     line-height: 1.2;
+}
+
+h3 + p {
+    margin-top: .5em;
 }
 
 li {

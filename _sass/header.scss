@@ -5,6 +5,7 @@
 	margin: $space 0; /* fallback */
 	margin: 12vmin 0;
 	text-align: center;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: $color-light;
 }
@@ -15,8 +16,8 @@
 
 .header-title {
 	margin: .25em 0;
-	font-size: 1.5em;
-	font-weight: 400;
+	font-size: 1.75em;
+	font-weight: inherit;
 	letter-spacing: 1px;
 	color: inherit;
 }
