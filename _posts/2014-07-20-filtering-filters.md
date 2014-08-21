@@ -7,7 +7,7 @@ layout: post
 
 ---
 
-A lot of photo apps allow you to add filters before sharing. The typical UI for picking a filter is a row of little __thumbnails__ that can be __vertically scrolled__. I'm sure you've used it many times. It looks something like this:
+A lot of photo apps allow you to add filters before sharing. The typical UI for picking a filter is a row of little __thumbnails__ that can be __horizontally scrolled__. I'm sure you've used it many times. It looks something like this:
 
 ![Photo filter](/img/posts/filter-1.jpg)
 
