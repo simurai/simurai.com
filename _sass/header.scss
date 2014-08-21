@@ -2,12 +2,7 @@
 /* Header ----------------------------------------- */
 
 .header {
-	margin: $space 0; /* fallback */
-	margin: 12vmin 0;
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	color: $color-light;
+	
 }
 
 .header-hamburger {
@@ -31,50 +26,4 @@
 
 .header-description {
 	margin: 0;
-}
-
-
-/* Aside links - nav + name */
-
-.header a,
-.header a:visited {
-	color: $color-light;
-}
-
-.header a:hover {
-	color: lighten($color-light, 10%);
-}
-
-.header a:active {
-	color: lighten($color-light, 10%);
-}
-
-.header a.active {
-    color: $color-dark;
-    font-weight: 400;
-}
-
-
-/* Nav ----------------------------------------- */
-
-.nav {
-    margin-top: 2em;
-    &:before,
-    &:after {
-        content: "";
-        display: block;
-        height: 1px;
-        background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
-    }
-}
-
-.nav-group {
-    display: inline-block;
-    margin: 0 1em;
-}
-
-.nav-item {
-    display: inline-block;
-    padding: 1em .5em;
-    line-height: 1;
 }

@@ -1,16 +1,8 @@
 
 /* Footer ----------------------------------------- */
 
-.footer:before {
-    content: "";
-    display: block;
-    height: 1px;
-    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
-}
-
 .footer {
-    margin: $space 0;
-    text-align: center;
+    
 }
 
 .footer a {

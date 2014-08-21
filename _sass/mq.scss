@@ -52,34 +52,11 @@
     
 }
 
+/* Hamburger toggle ----------------------------------------- */
 
-
-/* Compact header ----------------------------------------- */
-
-@media (min-width: $break-) and (max-height: $break--) {
-    
-//    .header-avatar {
-//        position: absolute;
-//        margin-top: 24px;
-//        margin-left: 42px; /* Damn magic numbers */
-//    }
-//    
-//    .header-title,
-//    .header-description {
-//        display: none;
-//    }
-//    
-//    .nav:before {
-//        margin: 1em 0 0 0;
-//    }
-//    .nav:after {
-//        margin: 0 0 1em 0;
-//    }
-//    
-//    .nav-group:first-child { margin: 0 3em 0 0; }
-//    .nav-group:last-child  { margin: 0 0 0 3em; }
-    
+@media (min-width: 600px) {
+    .header-target.is-post {
+        display: none;
+    }
 }
-
-
 

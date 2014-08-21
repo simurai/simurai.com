@@ -84,6 +84,15 @@ img {
 
 /* Misc ----------------------------------------- */
 
+.Bread { // Header + Footer
+    margin: $space 0; /* fallback */
+    margin: 12vmin 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: $color-light;
+}
+
 
 .title--404 {
     font-size: 8em;
