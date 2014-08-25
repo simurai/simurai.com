@@ -1,0 +1,249 @@
+
+/* Filtering filters - Demo app
+ * ---------------------------------
+ * More info: http://simurai.com/blog/2014/07/20/filtering-filters/
+ */
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 16px; /* Spacing of components */
+
+    font-family: Avenir, sans-serif;
+    color: hsl(0, 0%, 60%);
+    background: hsl(0, 0%, 20%);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+body {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Sizing of components */
+    background: hsl(0, 0%, 8%);
+}
+
+a {
+    color: inherit;
+}
+
+[v-cloak] {
+    visibility: hidden;
+}
+
+.Support {
+    display: none;
+}
+@supports not ( -webkit-filter:sepia() ) {
+	.Support {
+	    display: block;
+	    padding: 1rem;
+	    color: white;
+	    background: hsl(0, 50%, 50%);
+	}
+}
+
+
+
+/* Intro --------------------------------- */
+
+.Header { -webkit-animation: Header-intro .4s .2s cubic-bezier(0, .20, 0, 1) backwards; animation: Header-intro .4s .2s cubic-bezier(0, .20, 0, 1) backwards; }
+.Photo {  -webkit-animation: Photo-intro  .4s .4s cubic-bezier(0, .20, 0, 1) backwards; animation: Photo-intro  .4s .4s cubic-bezier(0, .20, 0, 1) backwards; }
+.Filter { -webkit-animation: Filter-intro .4s .6s cubic-bezier(0, .20, 0, 1) backwards; animation: Filter-intro .4s .6s cubic-bezier(0, .20, 0, 1) backwards; }
+@-webkit-keyframes Header-intro { 0% { opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px); } }
+        @keyframes Header-intro { 0% { opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px); } }
+@-webkit-keyframes Photo-intro  { 0% { opacity: 0; -webkit-transform: scale(.9); transform: scale(.9); } }
+        @keyframes Photo-intro  { 0% { opacity: 0; -webkit-transform: scale(.9); transform: scale(.9); } }
+@-webkit-keyframes Filter-intro { 0% { opacity: 0; -webkit-transform: translateY(-20px); transform: translateY(-20px); } }
+        @keyframes Filter-intro { 0% { opacity: 0; -webkit-transform: translateY(-20px); transform: translateY(-20px); } }
+
+
+/* Header --------------------------------- */
+
+.Header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: hsl(0, 0%, 20%);
+    border-bottom: 1px solid hsl(0, 0%, 12%);
+}
+
+
+.Header-button {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-family: inherit;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+.Header-button:active {
+    background: hsla(0,0%,0%,.3);
+}
+
+.Header-button:first-child { border-right: 1px solid hsl(0,0%,12%); }
+.Header-button:last-child { border-left: 1px solid hsl(0,0%,12%); }
+
+.Header-button[disabled] {
+    cursor: default;
+}
+
+
+/* Photo --------------------------------- */
+
+.Photo {
+    position: relative;
+    z-index: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background: url(photo-1.jpg) no-repeat center;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.Photo,
+.Photo[data-filter] {
+    transition: -webkit-filter .2s, background-image .6s;
+}
+
+
+/* Filter --------------------------------- */
+
+.Filter {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: hsl(0, 0%, 20%);
+    border-top: 1px solid hsl(0, 0%, 12%);
+}
+
+.Filter-item {
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    padding: 2rem 0 1rem 0;
+    overflow: hidden;
+    border-right: 1px solid hsl(0, 0%, 12%);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.Filter-button {
+    margin: 0 1rem;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px -10px hsla(0, 0%, 0%, 0.5);
+    background: hsl(0, 0%, 24%);
+    color: hsl(0, 0%, 60%);
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid hsl(0, 0%, 12%);
+    transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.20, 0, 0, 1);
+    pointer-events: none;
+}
+.Filter-item:active .Filter-button {
+    opacity: 0.5;
+    -webkit-transform: scale(.9);
+            transform: scale(.9);
+    transition-duration: .1s;
+}
+.Filter-item.is-selected .Filter-button {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+}
+.Filter-item.is-selected:active .Filter-button {
+    -webkit-transform: translateY(-1rem) scale(.9);
+            transform: translateY(-1rem) scale(.9);
+}
+
+
+.Filter-thumb {
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background: url(photo-1.jpg) no-repeat center;
+    background-size: 60px;
+}
+
+.Filter-thumb[data-filter] {
+    transition: background-image .4s;
+}
+
+.Filter-label {
+    display: block;
+    text-align: center;
+    border-radius: 0 0 inherit inherit;
+    font-size: .8em;
+    line-height: 1.75;
+    border-top: 1px solid hsl(0, 0%, 18%);
+}
+
+
+/* Current Photo --------------------------------- */
+
+#app[data-photo="1"] .Photo,
+#app[data-photo="1"] .Filter-thumb {
+    background-image: url(photo-1.jpg);
+}
+
+#app[data-photo="2"] .Photo,
+#app[data-photo="2"] .Filter-thumb {
+    background-image: url(photo-2.jpg);
+}
+
+#app[data-photo="3"] .Photo,
+#app[data-photo="3"] .Filter-thumb {
+    background-image: url(photo-3.jpg);
+}
+
+
+
+/* Desktop --------------------------------- */
+
+@media (min-width: 800px) and (min-height: 600px) {
+    html {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    body {
+        width: 320px;
+        height: 568px;
+        box-sizing: content-box;
+        border: 10px solid hsl(0, 0%, 12%);
+        border-width: 72px 10px;
+        border-radius: 30px;
+        box-shadow: 0 30px 30px -25px hsla(0, 0%, 0%, 0.4);
+    }
+}
