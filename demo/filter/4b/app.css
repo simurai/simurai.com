@@ -118,6 +118,7 @@ a {
             flex: 1;
     background: url(photo-1.jpg) no-repeat center;
     background-size: cover;
+    pointer-events: none;
 }
 
 .Photo,

@@ -18,14 +18,14 @@
     <div class="Support">Note: Looks like your browser doesn't support <a href="http://caniuse.com/#search=CSS filter">CSS filters</a> that are used in this demo.</div>
     
     <header class="Header" v-cloak>
-        <button class="Header-button" v-on="click:onSnap">Snap</button>
+        <button class="Header-button" v-on="click:onPickPhoto">Snap</button>
         <button class="Header-button" disabled>Share</button>
     </header>
     
-    <main id="photo" class="Photo" v-on="click:onSelection"></main>
+    <main id="photo" class="Photo"></main>
     
     <footer id="filter" class="Filter" v-cloak>
-        <div class="Filter-item" v-repeat="filters" v-on="click:onPickFilter(this, $index)">
+        <div class="Filter-item" v-repeat="filters" v-on="click:onPickFilter(this)">
             <div class="Filter-button">
                 <div class="Filter-thumb" data-filter="{{filter}}" style="transition-delay: {{($index*0.075)+0.1}}s"></div>
                 <label class="Filter-label">{{label}}</label>

@@ -52,3 +52,28 @@ Or probably even better (3B): Instead of throwing away the ones you don't like (
 ## Conclusion
 
 I understand that the suggestions might make a photo app more complicated and harder to explain to a new user. But it could be more a "__power user__" feature that you're not forced to use if you don't want to. Anyways, in case I'm not the only one with this (small) problem, I hope some day we will have a better way to __filter filters__. Ohh.. and let me know if you're already using an app that tackles this somehow.
+
+
+
+
+
+
+## Update
+
+Thanks for all the comments. Good to see more people thinking about this. I played around a bit more with the demo, mostly after the conversation with [Ignacio](https://twitter.com/iign) in the comments below. So here a 4th option:
+
+### 4. Select and cycle
+Let people __select__ a couple filters and then __cycle through them by tapping on the photo__. It's actually similar to 3B, but it keeps the UI simple by using the photo as the secondary navigation control. Here the steps how to use:
+
+1. You can tab each filter until you find one you like.
+2. If you tab a 2nd time on that filter, it gets selected as a "favorite". It will move up a little to visualize it.
+3. You can keep trying other filters and mark more as favorites.
+4. Once you reached the end (or think you have enough), you can tap on the photo above the filter picker to quickly cycle through all your previously selected (favorited) filters. Now comparing different filters is really quick and easy.
+
+![filter 5](/img/posts/filter-5.gif)
+
+> Try the [demo](http://simurai.com/demo/filter/).
+
+The implementation of the demo could still be improved a bit. Like adding __swipe gestures__ instead of tapping. Or to remove a filter from your favorite selection, you could just __swipe down__ on the image. Also note that the filters are CSS based and still a bit glitchy when animating. But you should get the idea.
+
+

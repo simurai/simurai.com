@@ -1,0 +1,74 @@
+
+/* filter.css
+ * ---------------------------------
+ */
+
+[data-filter] {
+    transition: -webkit-filter .2s;
+}
+
+
+/* Default --------------------------------- */
+
+[data-filter="default"] {
+    -webkit-filter:
+        brightness(100%)
+        contrast(100%)
+        grayscale(0%)
+        hue-rotate(0deg)
+        invert(0%)
+        saturate(100%)
+        sepia(0%)
+    ;
+}
+
+
+/* Filters --------------------------------- */
+
+[data-filter="f1"] {
+    -webkit-filter: brightness(160%)          contrast(110%)         grayscale(0%)         hue-rotate(0deg)         invert(10%)         saturate(90%)         sepia(0%);
+}
+
+[data-filter="f2"] {
+    -webkit-filter: brightness(110%)          contrast(240%)         grayscale(100%)         hue-rotate(0deg)         invert(32%)         saturate(0%)         sepia(11%);
+}
+
+[data-filter="f3"] {
+    -webkit-filter: brightness(130%)         contrast(140%)          grayscale(0%)         hue-rotate(0deg)         invert(7%)         saturate(50%)         sepia(0%);
+}
+
+[data-filter="f4"] {
+    -webkit-filter: brightness(130%)         contrast(80%)         grayscale(90%)          hue-rotate(0deg)         invert(0%)         saturate(100%)         sepia(0%);
+}
+
+[data-filter="f5"] {
+    -webkit-filter: brightness(130%)         contrast(110%)         grayscale(0%)         hue-rotate(180deg)          invert(0%)         saturate(200%)         sepia(0%);
+}
+
+[data-filter="f6"] {
+    -webkit-filter: brightness(110%)         contrast(120%)         grayscale(0%)         hue-rotate(0deg)         invert(90%)          saturate(70%)         sepia(30%);
+}
+
+[data-filter="f7"] {
+    -webkit-filter: brightness(130%)         contrast(120%)         grayscale(0%)         hue-rotate(0deg)         invert(10%)         saturate(180%)          sepia(0%);
+}
+
+[data-filter="f8"] {
+    -webkit-filter: brightness(120%)         contrast(120%)         grayscale(0%)         hue-rotate(0deg)         invert(0%)         saturate(100%)         sepia(100%);
+}
+
+[data-filter="f9"] {
+    -webkit-filter: brightness(240%)         contrast(80%)         grayscale(0%)         hue-rotate(0deg)         invert(30%)         saturate(100%)         sepia(100%);
+}
+
+[data-filter="f10"] {
+    -webkit-filter: brightness(190%)         contrast(160%)         grayscale(0%)         hue-rotate(0deg)         invert(20%)         saturate(0%)         sepia(0%);
+}
+
+[data-filter="f11"] {
+    -webkit-filter: brightness(50%)         contrast(170%)         grayscale(0%)         hue-rotate(0deg)         invert(13%)         saturate(10%)         sepia(20%);
+}
+
+[data-filter="f12"] {
+    -webkit-filter: brightness(150%)         contrast(1000%)         grayscale(60%)         hue-rotate(0deg)         invert(23%)         saturate(100%)         sepia(20%);
+}
