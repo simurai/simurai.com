@@ -61,9 +61,10 @@ li {
 }
 
 hr {
+    width: 10em;
+    margin: 3em auto;
     border: none;
-    border-bottom: 2px dashed $color-hint;
-    margin: 2em 0;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
 blockquote {
