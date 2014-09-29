@@ -32,3 +32,11 @@ __Update II__: Michael Schieben created a tool to that turns a folder of SVG fil
 __Update III__: Looks like “SVG Stacks” got [shot down](https://code.google.com/p/chromium/issues/detail?id=128055#c6) by the WG. But there is still some [hope left](https://twitter.com/erikdahlstrom/status/308623071630200833) and it’s probably still [in flux](https://twitter.com/erikdahlstrom/status/308828047128264704). So instead of url() we could use image().
 
 __Update IV__ (Feb 2014): And back alive! Work has started to also add SVG fragment identifiers to WebKit, see this [bug](https://bugs.webkit.org/show_bug.cgi?id=129387). Not sure where that leaves Chrome as they now have Blink.
+
+
+__Update V__ (Sept 2014): Support is getting [a lot better](http://caniuse.com/#feat=svg-fragment).
+
+<blockquote class="twitter-tweet" lang="en"><p>Updated Safari to 7.1 and noticed that fragment identifiers + SVG icon stacks now work. Sweet! <a href="http://t.co/uLMtwKfhUB">http://t.co/uLMtwKfhUB</a> <a href="http://t.co/in79SK5kCU">pic.twitter.com/in79SK5kCU</a></p>&mdash; ʕ•ᴥ•ʔ Bear (@bear_travis) <a href="https://twitter.com/bear_travis/status/515227711317368832">September 25, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+One thing that still doesn't seem to work, and probably never will, is using a SVG fragment identifier as `background-image`. I'm kinda sad about that since I love to use icons as backgrounds. I heard it's a security related reason.
