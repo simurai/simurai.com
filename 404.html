@@ -16,20 +16,20 @@ title: 404
 </div>
 
 <script type="text/javascript">
-    
+
     var path = window.location.pathname;
-    
+
     // title
     document.title = "404 - " + path;
-        
+
     // Redirects
     var redirects = {
-        '/rss': 'http://feeds.feedburner.com/simurai',
+        '/feed.xml': '/rss/',
         '/tagged/projects': '/projects/',
         '/tagged/lab': '/lab/',
         '/tagged/blog': '/blog/',
         '/contact/': '/about/#contact',
-        
+
         '/post/37075268994/steps-animation':            '/blog/2012/12/03/step-animation',
         '/post/36659519235/flex1-overflow-scrolling':   '/blog/2012/11/27/flexbox-overflow-scrolling',
         '/post/34144004589/flexbox-web-apps':           '/blog/2012/10/23/flexible-web-apps',
@@ -60,9 +60,9 @@ title: 404
         '/post/244131639/design-process':               '/blog/2009/11/15/design-process',
         '/post/241642811/shitty-day':                   '/projects/2009/11/12/shitty-day'
     };
-    
+
     if (redirects.hasOwnProperty(path)) {
         window.location = redirects[path];
     }
-        
+
 </script>
