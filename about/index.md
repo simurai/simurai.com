@@ -14,7 +14,7 @@ __Samurai__? Almost.. Simon (my real name) + samurai = __simurai__.
 
 __Bio__: I was born in the Swiss Alps. Grew up between cows and goats. Later I lived and worked in Zürich (Switzerland), Vancouver (Canada), Fukuoka (Japan) and Haarlem (Netherlands). Currently I live in __Sapporo, Japan__.
 
-__Work__: I used to work as a UI Engineer. Looking for something new from beginning of October 2014.
+__Work__: I currently work as a freelancer. Booked till the end of Dec 2014.
 
 __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, movies.
 
