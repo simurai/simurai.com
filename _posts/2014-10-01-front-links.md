@@ -77,7 +77,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
   * [wireframe.cc](http://wireframe.cc/)
   * [Moqups](https://moqups.com/)
 * HTML symbols
-  * [â˜º Characters](http://copypastecharacter.com/)
+  * [☺ Characters](http://copypastecharacter.com/)
   * [Draw Chars](http://shapecatcher.com/)
 * [Placeholder Image](http://placehold.it/)
 * [FavIcon Editor](http://www.xiconeditor.com/)
