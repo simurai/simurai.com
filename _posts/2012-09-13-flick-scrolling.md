@@ -73,3 +73,8 @@ Rene makes a good point:
 Hmm.. true. I think in the case of "Pull to Refresh". That new custom gesture was just __so good__, that quickly a lot of other apps copied it. Then when it got to the point where it had the critical mass, Apple almost had no choice as to also add it to iOS and their own apps and it became the "standard way" of manually refreshing content.
 
 It's just very tough for custom gestures to get that needed wide adoption to make it. Kinda a chicken-egg thing. Or on the other hand.. only the very best, almost obvious ones will ever make it, which could also be a good thing.
+
+
+## Update IV (Jan 2015)
+
+Mathew Huusko made an iOS version. Source is on [GitHub](https://github.com/mhuusko5/Flick-Scroll)
