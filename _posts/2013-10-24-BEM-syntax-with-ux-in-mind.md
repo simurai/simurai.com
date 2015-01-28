@@ -38,7 +38,7 @@ See how when you're using underscores it selects the part before and after, in t
 Now, what if the component or child element consists of multiple words? We could use underscores like `component_name-element_name`. It would still be double-clickable, but readability suffers since it's harder to see what belongs together. Better to use __camelCase__ which groups each part visually: `componentName-elementName`.
 
 ### MainComponent
-OK, I think we're getting closer. As a last rule, for the "main" component we use `CamelCase`. The reason for it is to add __emphasis__ and make it easier to distinguish the main component from a child element. Also when using a namespace, the component moves to the second position, which makes it even more important to have it stick out: `org-Component-childElement`
+OK, I think we're getting closer. As a last rule, for the "main" component we use `PascalCase`. The reason for it is to add __emphasis__ and make it easier to distinguish the main component from a child element. Also when using a namespace, the component moves to the second position, which makes it even more important to have it stick out: `org-Component-childElement`
 
 ### --variation
 We kept the more commonly used double hyphens (--) for __variations__. `digit-Progress--small`. It makes sense, because it pulls the variation (--small) visually more apart and makes it look like it's something "different" than the default component.
