@@ -40,6 +40,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 * FlexBox
   - [cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
   - [Patterns](http://webkit-flex.atomeye.com/)
+  - [Flexbox in 5min](http://flexboxin5.com/)
   - [Flexplorer](http://bennettfeely.com/flexplorer/)
   - [FlexyBoxes](http://the-echoplex.net/flexyboxes/)
 
