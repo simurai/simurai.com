@@ -58,9 +58,12 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
   - [nth-test](http://nth-test.com/)
   - [:kids](http://codepen.io/RadLikeWhoa/full/cAJEo#tool)
 
+* Color
+  - [Color converter](http://briangrinstead.com/colorstash/)
+  - [Contrast tester](http://jxnblk.com/colorable/demos/text/)
+
 * [Clip Path](http://bennettfeely.com/clippy/)
 * [px to em](http://matthewkosloski.me/labs/pixem/)
-* [Colors](http://briangrinstead.com/colorstash/)
 * [Cursors](http://chrisnager.github.io/cursors/)
 * Live Edit
   - [Takana](http://usetakana.com/)
