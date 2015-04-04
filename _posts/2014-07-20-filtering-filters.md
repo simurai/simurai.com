@@ -77,3 +77,10 @@ Let people __select__ a couple filters and then __cycle through them by tapping 
 The implementation of the demo could still be improved. It is a bit hard to discover that you can tap the photo to cycle through your favorites. Might need some __visual clue__ to help understand it better. Adding __swipe gestures__ instead of tapping would also improve UX. Or to remove a filter from your favorite selection, you could just __swipe down__ on the image. Also note that the filters are CSS based and still a bit glitchy when animating. But you should get the idea.
 
 
+## Update II
+
+Manuel Haring explored a [similar concept](http://drbl.in/omCo) where you can push up filters to narrow down your selection.
+
+<img alt="Photofilter" src="https://d13yacurqjgara.cloudfront.net/users/86752/screenshots/2002430/photofilter.gif" style="max-width: 400px;">
+
+Here a larger [video](https://dl.dropboxusercontent.com/u/95309344/find-filters-concept.mp4) that has even a third selection stage.
