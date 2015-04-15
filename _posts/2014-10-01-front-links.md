@@ -39,6 +39,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 
 * FlexBox
   - [cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
+  - [Flexbox Playground](https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground)
   - [Patterns](http://webkit-flex.atomeye.com/)
   - [Flexbox in 5min](http://flexboxin5.com/)
   - [Flexplorer](http://bennettfeely.com/flexplorer/)
