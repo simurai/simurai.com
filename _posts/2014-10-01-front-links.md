@@ -79,7 +79,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 * [AniJS](http://anijs.github.io/)
 
 
-## Utils
+## Utils + Tools
 
 * Wireframes
   * [wireframe.cc](http://wireframe.cc/)
@@ -89,6 +89,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
   * [Draw Chars](http://shapecatcher.com/)
 * [Placeholder Image](http://placehold.it/)
 * [FavIcon Editor](http://www.xiconeditor.com/)
+* [SVG Optimizer](https://jakearchibald.github.io/svgomg/)
 * [GitHub Editor](http://prose.io/)
 
 ## Resources
