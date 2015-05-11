@@ -83,7 +83,7 @@ Let’s switch it around and look at it from the Header’s perspective. What wo
 
 Ok, that gets us a bit closer. Now, it’s probably strange saying it like that when talking about CSS, but what would we do if we don’t want to create an own child, but still have one. Right, we could adopt one. In our example we adopt a Button component as our own child. We didn’t create it, but now we can tweak.. erm.. I mean “raise” it like it’s our own:
 
-```css
+```scss
 // born in button.scss
 .Button {
   font-size: 1em;
@@ -137,7 +137,7 @@ So after all that, which is best? I’m afraid there isn't a clear winner. It wo
 
 1. __Descendant selectors__ if we can expect that components don’t change much. Like when using a UI Kit or library.
 2. __Variations__ if it makes sense that a component has different versions that get reused anyways, and not just for a specific context.
-3. __Adopted Child__ for layout, sizing, positioning or where we are sure to always want to override a property.
+3. __Adopted Child__ for layout, sizing, positioning or where we are sure to always want to override a property. Also for changing multiple child components at once.
 4. __Extending__ when we truly want the components to be separated and don’t mind inflating the CSS output.
 5. __Utilities__ for very specific things, that once the class is defined, it will never change, like clearing floats.
 6. __Inline styles__ if it needs to be dynamically added with JavaScript.
