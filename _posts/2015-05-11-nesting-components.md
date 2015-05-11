@@ -121,9 +121,9 @@ So, as a general rule, don’t use “adopted children” for any properties tha
 
 ## More options?
 
-There are some more ways to do contextual styling. I'll just mention them briefly for completeness, but they also don’t seem to be that useful.
+There are some more ways to do contextual styling that came to mind. I'll just mention them briefly for completeness, but think the 3 above are better suited.
 
-__Option 4__ - We could use a preprocessor to __extend__ an existing component. In our example it would be a clone of the Button with some tweaks added and used as a new child component `.Header-button` in the Header. Now we only rely that the Button exists in the source, but don't have to worry about other contexts. Downside is inflating our CSS output. As well as having to remember lots of new child component classes.
+__Option 4__ - We could use a preprocessor to __extend__ an existing component. In our example it would be a clone of the Button with some tweaks added and used as a new child component `.Header-button`. Now we only rely that the Button exists in the source, but don't have to worry about other contexts. Downside is inflating our CSS output. As well as having to remember lots of new child component classes.
 
 __Option 5__ - We could create a __utility__ class like `.u-small`. It's similar to variations, but not scoped to a single component and could be used for other components as well. And for that reason it becomes very risky to ever change later.
 
@@ -133,13 +133,13 @@ __Option 6__ - And of course, we could use __inline styles__. But I would leave 
 --------
 
 
-So after all that, which is best? I’m afraid I’m not sure and it seems that there just isn’t a good way that fits every case. It would be nice to keep it consistent with a single approach throughout the entire project, but I guess we just have to decide on a per case basis:
+So after all that, which is best? I’m afraid there isn't a clear winner. It would be nice to keep it consistent with a single approach throughout the entire project, but I guess we just have to decide on a per case basis:
 
-1. __Adopted Child__ for layout, sizing, positioning where we are sure to always want to override a property.
+1. __Descendant selectors__ if we can expect that components don’t change much. Like when using a UI Kit or library.
 2. __Variations__ if it makes sense that a component has different versions that get reused anyways, and not just for a specific context.
-3. __Descendant selectors__ if you can be sure that components don’t change much. Like when you’re using a UI Kit or library.
-4. __Extending__ when you truly want the components to be separated and don’t mind inflating the CSS output.
-5. __Utilities__ for very specific things, like clearing floats.
+3. __Adopted Child__ for layout, sizing, positioning or where we are sure to always want to override a property.
+4. __Extending__ when we truly want the components to be separated and don’t mind inflating the CSS output.
+5. __Utilities__ for very specific things, that once the class is defined, it will never change, like clearing floats.
 6. __Inline styles__ if it needs to be dynamically added with JavaScript.
 
-As said at the beginning, there isn't a one way fits all solution and maybe the conclusion is: Try to create your components in a way that contextual styling can be kept to a minimum.
+As said at the beginning, I haven't found a "fits all" solution and maybe the conclusion is: Try to keep contextual styling to a minimum.
