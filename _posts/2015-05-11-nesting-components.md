@@ -143,3 +143,6 @@ So after all that, which is best? I’m afraid there isn't a clear winner. It wo
 6. __Inline styles__ if it needs to be dynamically added with JavaScript.
 
 As said at the beginning, I haven't found a "fits all" solution and maybe the conclusion is: Try to keep contextual styling to a minimum.
+
+## Update
+The "Adopted Child" approach is called "Mixes" in BEM. Here some [more infos](https://en.bem.info/forum/issues/4/).
