@@ -145,7 +145,7 @@ So after all that, which is best? I’m afraid there isn't a clear winner. It wo
 As said at the beginning, I haven't found a "fits all" solution and maybe the conclusion is: Try to keep contextual styling to a minimum.
 
 
-## Update
+## Updates
 
 The "Adopted Child" approach is called "Mixes" in BEM. Here some [more infos](https://en.bem.info/forum/issues/4/).
 
@@ -154,3 +154,7 @@ The "Adopted Child" approach is called "Mixes" in BEM. Here some [more infos](ht
 SUIT also [recommends](https://github.com/suitcss/suit/blob/master/doc/components.md#styling-dependencies) using "Adopted Child/Mixes". But also another option:
 
 __Option 7__ - Adding a __wrapper element__. It's the `<div class="Excerpt-wrapButton">` in that [example](https://github.com/suitcss/suit/blob/master/doc/components.md#styling-dependencies). I think it works great in most cases. But for example when using Flexbox, because it has this parent/child relationship, adding an extra wrapper in between would break it. And then you might still need to set the width of the wrapped component to 100% or so. Anyways, this is a great addition. Thanks Pablo in the comments.
+
+-----------
+
+__Option 8__ - __Single Purpose Classes__. It's where every class has only a single property. It's somewhere between utilities (Option 5) and inline styles (Option 6). [Atomic CSS](http://acss.io) and [Tachyons](http://tachyons.io/) use this approach. I haven't used them on a real project, but just from looking at it, the concerns are similar to the ones from utilites. If you want to change the value in a SP class, it seems unpredictable. Because in another place (where that same class is used), you might want to keep the current value. So you would have to first check if the change has any unwanted effects somewhere else.
