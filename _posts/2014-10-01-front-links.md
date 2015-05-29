@@ -19,7 +19,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 * Shadow DOM
   - [The list](https://gist.github.com/3759334)
   - [Form Pseudo Elements](http://tjvantoll.com/2013/04/15/list-of-pseudo-elements-to-style-form-controls/)
-* [Viewport sizes](http://viewportsizes.com/)
+* [Device sizes](http://www.google.com/design/tool/devices/)
 * [SVG PocketGuide](https://github.com/jonitrythall/svgpocketguide/blob/master/svgpocketguide.md)
 
 
