@@ -89,7 +89,9 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
   * [Draw Chars](http://shapecatcher.com/)
 * [Placeholder Image](http://placehold.it/)
 * [FavIcon Editor](http://www.xiconeditor.com/)
-* [SVG Optimizer](https://jakearchibald.github.io/svgomg/)
+* SVG
+  * [SVG Optimizer](https://jakearchibald.github.io/svgomg/)
+  * [Paths (editor)](http://jxnblk.com/paths/)
 * [GitHub Editor](http://prose.io/)
 
 ## Resources
