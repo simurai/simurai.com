@@ -1,7 +1,7 @@
 
 /* Global ----------------------------------------- */
 
-html {
+:root {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Merriweather', Georgia, serif;
@@ -16,68 +16,69 @@ body {
     padding: 0 5vw;
     max-width: 36em;
     @media (min-width: $break-) {
-        font-size: 20px;
+        font-size: 1.25em;
     }
     @media (min-width: $break---) and (min-height: $break--) {
-        font-size: 24px;
+        font-size: 1.5em;
     }
 }
 
 a {
-    text-decoration: none;
-    color: hsl(220,60%,60%);
-}
-a:visited {
+  text-decoration: none;
+  color: hsl(220,60%,60%);
+  &:visited {
     color: hsl(220, 30%, 60%);
-}
-a:hover {
+  }
+  &:hover {
     color: hsl(220,60%,70%);
-}
-a:active {
+  }
+  &:active {
     color: hsl(220,60%,50%);
+  }
 }
 
+
 b, strong {
-    font-weight: 700;
-    color: $color-dark;
+  font-weight: 700;
+  color: $color-dark;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    color: $color-dark;
+  font-weight: bold;
+  color: $color-dark;
 }
 
 h1 {
-    font-weight: normal;
-    line-height: 1.2;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 h3 + p {
-    margin-top: .5em;
+  margin-top: .5em;
 }
 
 li {
-    margin: .5em 0;
+  margin: .5em 0;
 }
 
 hr {
-    width: 10em;
-    margin: 3em auto;
-    border: none;
-    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+  width: 10em;
+  margin: 3em auto;
+  border: none;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
 blockquote {
-    margin: 1.5em 0;
-    padding: 0 1em;
-    font-size: .9em;
-    color: $color-light;
-    border-radius: 0 6px 6px 0;
-    border-left: 4px solid $color-hint;
+  margin: 1.5em 0;
+  padding: 0 1em;
+  font-size: .9em;
+  color: $color-light;
+  border-radius: 0 6px 6px 0;
+  border-left: 4px solid $color-hint;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 
@@ -85,19 +86,19 @@ img {
 /* Misc ----------------------------------------- */
 
 .Bread { // Header + Footer
-    margin: $space 0; /* fallback */
-    margin: 12vmin 0;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: $color-light;
+  margin: $space 0; /* fallback */
+  margin: 12vmin 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: $color-light;
 }
 
 
 .title--404 {
-    font-size: 8em;
-    text-align: center;
-    margin: 0;
+  font-size: 8em;
+  text-align: center;
+  margin: 0;
 }
 
 
@@ -105,44 +106,44 @@ img {
 /* Images ----------------------------------------- */
 
 .img--float {
-    float: left;
-    margin: 0 2em 2em 0;
+  float: left;
+  margin: 0 2em 2em 0;
 }
 
 .article:after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .wrapper img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .img--25 {
-    width: 25%;
+  width: 25%;
 }
 
 .img--33 {
-    width: 33%;
+  width: 33%;
 }
 
 .img--50 {
-    width: 50%;
+  width: 50%;
 }
 
 .img--66 {
-    width: 66%;
+  width: 66%;
 }
 
 .img--fill {
-    width: 100%;
-    vertical-align: top;
+  width: 100%;
+  vertical-align: top;
 }
 
 figcaption {
-    font-size: .8em;
-    color: $color-light;
-    font-style: italic;
-    margin-left: 1em;
+  font-size: .8em;
+  color: $color-light;
+  font-style: italic;
+  margin-left: 1em;
 }

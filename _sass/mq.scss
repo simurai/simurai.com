@@ -1,62 +1,55 @@
-
-/* Responsive */
-
-
-/* Hamburger toggle ----------------------------------------- */
+// Hamburger toggle -----------------------------------------
 
 @media (max-width: 599px) {
-            
-    .header-hamburger {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 1em;
-        width: 64px;
-        height: 64px;
-        border-radius: 32px;
-        background: url(../img/hamburger.svg) no-repeat center center;
-        background-size: 40px;
-    }
-    
-    .header-hamburger:active {
-        background-color: hsla(0,0%,0%,.1);
-    }
-    
-    #top:target .header-hamburger {
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 1s ease-in;
-    }
-    
-    .header-target {
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        -webkit-transform: translateY(-50px);
-                transform: translateY(-50px);
-    }
-    
-    #top:target .header-target {
-        position: relative;
-        visibility: visible;
-        opacity: 1;
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-        transition: opacity .3s ease-out,
-                    -webkit-transform .2s cubic-bezier(0.000, 0.440, 0.195, 1.250);
-        transition: opacity .3s ease-out,
-                    transform .2s cubic-bezier(0.000, 0.440, 0.195, 1.250);
-        
-    }
-    
-    
+
+  .header-hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background: url(../img/hamburger.svg) no-repeat center center;
+    background-size: 40px;
+  }
+
+  .header-hamburger:active {
+    background-color: hsla(0,0%,0%,.1);
+  }
+
+  #top:target .header-hamburger {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in;
+  }
+
+  .header-target {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+
+  #top:target .header-target {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transition: opacity .3s ease-out,
+                -webkit-transform .2s cubic-bezier(0.000, 0.440, 0.195, 1.250);
+    transition: opacity .3s ease-out,
+                transform .2s cubic-bezier(0.000, 0.440, 0.195, 1.250);
+  }
+
 }
 
-/* Hamburger toggle ----------------------------------------- */
+// Hamburger toggle -----------------------------------------
 
 @media (min-width: 600px) {
-    .header-target.is-post {
-        display: none;
-    }
+  .header-target.is-post {
+    display: none;
+  }
 }
-

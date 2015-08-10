@@ -1,17 +1,17 @@
-/* Comments ----------------------------------------- */
+// Comments -----------------------------------------
 
 .comments {
-    margin: 0;
-    padding: 0 2em;
+  margin: 0;
+  padding: 0 2em;
 }
 
 .comments:before,
 .comments:after {
-    content: "";
-    display: block;
-    margin: $space 0;
-    height: 1px;
-    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+  content: "";
+  display: block;
+  margin: $space 0;
+  height: 1px;
+  background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
 }
 
 .comments-tweet {

@@ -1,25 +1,25 @@
 
-/* Post ----------------------------------------- */
+// Post -----------------------------------------
 
 .article-meta {
-    text-align: center;
+  text-align: center;
 }
 
 .time {
-    color: $color-light;
-    font-weight: 300;
+  color: $color-light;
+  font-weight: 300;
 }
 
 .time--inline {
-    margin-right: .4em;
+  margin-right: .4em;
 }
 
 .article iframe {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .article h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .article h2,
@@ -27,105 +27,104 @@
 .article h4,
 .article h5,
 .article h6 {
-    margin: 2em 0 0 0;
+  margin: 2em 0 0 0;
 }
 
 .article h2 {
-    border-bottom: 1px dashed $color-hint;
+  border-bottom: 1px dashed $color-hint;
 }
 
 .video-wrapper {
-    position: relative;
-    max-width: 100%;
-    height: auto;
+  position: relative;
+  max-width: 100%;
+  height: auto;
 }
 
 .video-wrapper .video {
-    margin: 0;
+  margin: 0;
 }
 
 .video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
-/* Meta ----------------------------------------- */
+// Meta -----------------------------------------
 
 .meta {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .meta-time {
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 .meta-description:before {
-    content: " - ";
+  content: " - ";
 }
 
 .meta-description {
-    font-weight: 300;
-    color: $color-light;
+  font-weight: 300;
+  color: $color-light;
 }
 
 
 
-/* Subnav ----------------------------------------- */
+// Subnav -----------------------------------------
 
 .subnav {
-    font-size: .9em;
-    line-height: 2;
-    margin: $space 0;
-    text-align: center;
+  font-size: .9em;
+  line-height: 2;
+  margin: $space 0;
+  text-align: center;
 }
 
 .subnav a {
-    color: $color;
+  color: $color;
 }
 
 .subnav a:visited {
-    color: $color-light;
+  color: $color-light;
 }
 
 .subnav a:hover {
-    color: lighten($color, 10%);
+  color: lighten($color, 10%);
 }
 
 .subnav a:visited:hover {
-    color: lighten($color-light, 10%);
+  color: lighten($color-light, 10%);
 }
 
 .subnav a:active {
-    color: $color-hint;
+  color: $color-hint;
 }
 
 .subnav-item {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .subnav-pagination {
-    margin-bottom: $space;
+  margin-bottom: $space;
 }
 
 .subnav-pagination-item {
-    display: inline-block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0 1em;
-    width: 3em;
-    height: 3em;
-    padding: 0 1em;
-    font-size: 1.5em;
-    line-height: 3em;
-    border: 1px solid;
-    border-radius: 3em;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 1em;
+  width: 3em;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.5em;
+  line-height: 3em;
+  border: 1px solid;
+  border-radius: 3em;
 }
-

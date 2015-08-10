@@ -1,23 +1,18 @@
-/* Page ----------------------------------------- */
-
-.page {
-    
-}
+// Page -----------------------------------------
 
 
-/* Columns ----------------------------------------- */
+
+// Columns -----------------------------------------
 
 .page.has-cols {
-    @media (min-width: $break-) {
-        font-size: .8em;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
+  @media (min-width: $break-) {
+    font-size: .8em;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
 }
 
 .page-col {
-    //-webkit-column-break-inside: avoid;
-    //column-break-inside: avoid;
-    -webkit-column-break-after: always;
-    column-break-after: always;
+  -webkit-column-break-after: always;
+  column-break-after: always;
 }
