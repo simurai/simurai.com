@@ -2,6 +2,7 @@
 
 title: Media Query splitting
 tags: [CSS, RWD]
+comments: yep
 category: blog
 layout: post
 

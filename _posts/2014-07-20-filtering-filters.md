@@ -2,6 +2,7 @@
 
 title: Filtering (photo) filters
 tags: [photo, filter, UX]
+comments: yep
 category: blog
 layout: post
 
@@ -17,7 +18,7 @@ A filter picker like that is easy to understand and works pretty well. But in my
 1. I start with the first thumbnail and then just keep tapping __one after the other__.
 2. If there is a filter that I like, I try to remember its __name__. And somewhat its position, but more like "somewhere at the beginning".
 3. Then once I reach the end, I start scrolling back trying to __find__ the ones I liked.
-4. Usually there are like 2-3 filters that I would like to quickly __compare__ before making my final choice. But it's quite hard to scroll between them, especially if they are far apart. Also having to remember their name/position costs some precious brain power. 
+4. Usually there are like 2-3 filters that I would like to quickly __compare__ before making my final choice. But it's quite hard to scroll between them, especially if they are far apart. Also having to remember their name/position costs some precious brain power.
 
 Now, I don't really know how most people use these filter pickers. Could be that:
 

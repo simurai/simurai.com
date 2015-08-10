@@ -2,6 +2,7 @@
 
 title: SVG Stacks
 tags: [SVG]
+comments: yep
 category: blog
 layout: post
 
@@ -17,7 +18,7 @@ Oh, nice! [The demo](http://jsfiddle.net/simurai/7GCGr/) already works in Firefo
 
 There are alternatives to SVG Stacks with better browser support by using [embed, iframe, object or img elements](http://jsfiddle.net/24DNn/5/), but I still prefer background images because of their easier positioning/resizing. So let’s hope more browsers will also add support for that.
 
-So how does it work? It’s actually pretty simple. Have a look at the source of Erik’s [SVG file](http://dahlström.net/tmp/sharp-icons/svg-icon-target.svg). 
+So how does it work? It’s actually pretty simple. Have a look at the source of Erik’s [SVG file](http://dahlström.net/tmp/sharp-icons/svg-icon-target.svg).
 
 ![SVG Stacks info graphic](/img/posts/svg-stacks.png)
 

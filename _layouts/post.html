@@ -20,7 +20,7 @@ post: true
 </main>
 
 <nav class="subnav">
-    
+
     <div class="subnav-pagination">
       {% if page.next %}
         <a class="subnav-pagination-item" href="{{ page.next.url }}" title="{{ page.next.title }}">&larr;</a>
@@ -29,11 +29,10 @@ post: true
         <a class="subnav-pagination-item" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&rarr;</a>
       {% endif %}
     </div>
-    
+
     {% for post in site.categories.[page.category] %}
       {% if post.title != page.title %}
         <a class="subnav-item" href="{{ post.url }}">{{ post.title }}</a>
       {% endif %}
     {% endfor %}
 </nav>
-
