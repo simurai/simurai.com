@@ -1,7 +1,7 @@
 
 // Nav -----------------------------------------
 
-.nav {
+.Nav {
   margin-top: 2em;
   &:before,
   &:after {
@@ -12,31 +12,85 @@
   }
 }
 
-.nav-group {
+.Nav-group {
   display: inline-block;
   margin: 0 1em;
 }
 
-.nav-item {
+.Nav-item {
   display: inline-block;
   padding: 1em .5em;
   line-height: 1;
+  color: inherit;
+
+  &:visited {
+  	color: inherit;
+  }
+
+  &:hover {
+  	color: $color;
+  }
+
+  &:active {
+    color: $color-hint;
+  }
+
+  &.is-active {
+  	color: $color-dark;
+    font-weight: 400;
+  }
 }
 
-.nav-item,
-.nav-item:visited {
-	color: $color-light;
+
+// Subnav -----------------------------------------
+
+.Subnav {
+  font-size: .9em;
+  line-height: 2;
+  margin: $space 0;
+  text-align: center;
+
+  // link colors
+  a {
+    color: inherit;
+
+    &:visited {
+      color: $color-light;
+    }
+
+    &:hover {
+    	color: $color-light;
+    }
+
+    &:active {
+      color: $color-hint;
+    }
+  }
 }
 
-.nav-item:hover {
-	color: lighten($color-light, 10%);
+.Subnav-item {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.nav-item:active {
-	color: lighten($color-light, 10%);
+
+// Subnav pagination
+.Subnav-pagination {
+  margin-bottom: $space;
 }
 
-.nav-item.active {
-  color: $color-dark;
-  font-weight: 400;
+.Subnav-pagination-item {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 1em;
+  width: 3em;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.5em;
+  line-height: 3em;
+  border: 1px solid;
+  border-radius: 3em;
 }

@@ -1,10 +1,10 @@
-<nav class="nav">
-    <div class="nav-group">
-        <a class="nav-item {% if page.category == "projects" %}active{% endif %}" href="/projects/">Projects</a>
-        <a class="nav-item {% if page.category == "lab" %}active{% endif %}" href="/lab/">Lab</a>
-        <a class="nav-item {% if page.category == "blog" %}active{% endif %}" href="/blog/">Blog</a>
+<nav class="Nav">
+    <div class="Nav-group">
+        <a class="Nav-item {% if page.category == "projects" %}is-active{% endif %}" href="/projects/">Projects</a>
+        <a class="Nav-item {% if page.category == "lab" %}is-active{% endif %}" href="/lab/">Lab</a>
+        <a class="Nav-item {% if page.category == "blog" %}is-active{% endif %}" href="/blog/">Blog</a>
     </div>
-    <div class="nav-group">
-        <a class="nav-item {% if page.nav == "about" %}active{% endif %}" href="/about/">About</a>
+    <div class="Nav-group">
+        <a class="Nav-item {% if page.nav == "about" %}is-active{% endif %}" href="/about/">About</a>
     </div>
 </nav>
