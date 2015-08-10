@@ -1,19 +1,19 @@
 // Comments -----------------------------------------
 
-.comments {
+.Comments {
   margin: 0;
   padding: 0 2em;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    margin: $space 0;
+    height: 1px;
+    background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
+  }
 }
 
-.comments:before,
-.comments:after {
-  content: "";
-  display: block;
-  margin: $space 0;
-  height: 1px;
-  background: linear-gradient( to right, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0) );
-}
-
-.comments-tweet {
+.Comments-tweet {
   text-align: center;
 }
