@@ -81,9 +81,15 @@ img {
   max-width: 100%;
 }
 
+figcaption {
+  font-size: .8em;
+  color: $color-light;
+  font-style: italic;
+  margin-left: 1em;
+}
 
 
-/* Misc ----------------------------------------- */
+// Misc -----------------------------------------
 
 .Bread { // Header + Footer
   margin: $space 0; /* fallback */
@@ -103,22 +109,7 @@ img {
 
 
 
-/* Images ----------------------------------------- */
-
-.img--float {
-  float: left;
-  margin: 0 2em 2em 0;
-}
-
-.article:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.wrapper img {
-  max-width: 100%;
-}
+// Images -----------------------------------------
 
 .img--25 {
   width: 25%;
@@ -141,9 +132,7 @@ img {
   vertical-align: top;
 }
 
-figcaption {
-  font-size: .8em;
-  color: $color-light;
-  font-style: italic;
-  margin-left: 1em;
+.img--float {
+  float: left;
+  margin: 0 2em 2em 0;
 }

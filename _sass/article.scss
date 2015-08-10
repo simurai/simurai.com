@@ -3,6 +3,12 @@
 
 .Article {
 
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
   h2,
   h3,
   h4,

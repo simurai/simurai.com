@@ -27,6 +27,7 @@ $sans-serif: 'Lato', sans-serif;
 @import "_lib/normalize";
 @import "_lib/solarized";
 
+@import "utilities";
 @import "global";
 @import "header";
 @import "nav";
