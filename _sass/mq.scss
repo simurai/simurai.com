@@ -2,7 +2,7 @@
 
 @media (max-width: 599px) {
 
-  .header-hamburger {
+  .Header-hamburger {
     display: block;
     position: absolute;
     top: 0;
@@ -14,17 +14,17 @@
     background-size: 40px;
   }
 
-  .header-hamburger:active {
+  .Header-hamburger:active {
     background-color: hsla(0,0%,0%,.1);
   }
 
-  #top:target .header-hamburger {
+  #top:target .Header-hamburger {
     opacity: 0;
     pointer-events: none;
     transition: opacity 1s ease-in;
   }
 
-  .header-target {
+  .Header-target {
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -32,7 +32,7 @@
             transform: translateY(-50px);
   }
 
-  #top:target .header-target {
+  #top:target .Header-target {
     position: relative;
     visibility: visible;
     opacity: 1;
@@ -49,7 +49,7 @@
 // Hamburger toggle -----------------------------------------
 
 @media (min-width: 600px) {
-  .header-target.is-post {
+  .Header-target.is-post {
     display: none;
   }
 }

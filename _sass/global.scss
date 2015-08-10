@@ -2,35 +2,31 @@
 /* Global ----------------------------------------- */
 
 :root {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: $serif;
-    color: $color;
-    background-color: hsl(30, 60%, 98%); /* rgb(253, 250, 247) */
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $serif;
+  color: $color;
+  background-color: hsl(30, 60%, 98%); /* rgb(253, 250, 247) */
 }
 
 body {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 1em; // fallback
-    padding: 0 5vw;
-    max-width: 36em;
-    @media (min-width: $break-) {
-        font-size: 1.25em;
-    }
-    @media (min-width: $break---) and (min-height: $break--) {
-        font-size: 1.5em;
-    }
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1em; // fallback
+  padding: 0 5vw;
+  max-width: 36em;
+  @media (min-width: $break-) {
+    font-size: 1.25em;
+  }
+  @media (min-width: $break---) and (min-height: $break--) {
+    font-size: 1.5em;
+  }
 }
 
 a {
   text-decoration: none;
   color: hsl(220,60%,60%);
+
   &:visited {
     color: hsl(220, 30%, 60%);
   }
@@ -41,7 +37,6 @@ a {
     color: hsl(220,60%,50%);
   }
 }
-
 
 b, strong {
   font-weight: 700;
