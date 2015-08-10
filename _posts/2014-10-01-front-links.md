@@ -7,7 +7,7 @@ layout: post
 
 ---
 
-This is my (living) collection of __front-end__ links. It's not complete by all means, in fact, there isn't any of the obvious ones, like [Can I use](http://caniuse.com) or so. Just some links that I need occasionally but can't remember their names, so I saved them here for quick access. Also, they're somewhat randomly ordered.
+This is my (living) collection of __front-end__ links. It's not complete by all means, in fact, there isn't any of the obvious ones, like [Can I use](http://caniuse.com) or so. Just some links that I need occasionally but can't remember their names, so I saved them here for quick access. Also, they're somewhat randomly ordered. ( [Edit source](https://github.com/simurai/simurai.github.io/edit/master/_posts/2014-10-01-front-links.md) )
 
 
 ## Docs
