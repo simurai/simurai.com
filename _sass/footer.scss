@@ -1,29 +1,24 @@
 
-/* Footer ----------------------------------------- */
+// Footer -----------------------------------------
 
-.footer {
-    
+.Footer a {
+  outline: none;
 }
 
-.footer a {
-    outline: none;
-}
+.Footer-logo {
+  display: inline-block;
+  margin: $space 0 0 0;
+  transition: -webkit-transform .4s;
+  transition:         transform .4s;
 
-.footer-logo {
-    display: inline-block;
-    margin: $space 0 0 0;
-    transition: -webkit-transform .4s;
-    transition:         transform .4s;
-}
-
-.footer-logo:hover {
+  &:hover {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px);
     transition-duration: .1s;
-}
-
-.footer-logo:active {
+  }
+  &:active {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
     transition-duration: .1s;
+  }
 }

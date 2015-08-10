@@ -5,13 +5,11 @@ post: true
 
 ---
 
-<main class="main">
+<main class="Post">
 
-    <article class="article">
-        <h1>{{ page.title }}</h1>
-        <div class="article-meta">
-            <time class="time">{{ page.date | date: "%B %d %Y" }}</time>
-        </div>
+    <article class="Article">
+        <h1 class="Article-title">{{ page.title }}</h1>
+        <time class="Article-date">{{ page.date | date: "%B %d %Y" }}</time>
         {{content}}
     </article>
 
@@ -19,20 +17,20 @@ post: true
 
 </main>
 
-<nav class="subnav">
+<nav class="Subnav">
 
-    <div class="subnav-pagination">
+    <div class="Subnav-pagination">
       {% if page.next %}
-        <a class="subnav-pagination-item" href="{{ page.next.url }}" title="{{ page.next.title }}">&larr;</a>
+        <a class="Subnav-pagination-item" href="{{ page.next.url }}" title="{{ page.next.title }}">&larr;</a>
       {% endif %}
       {% if page.previous %}
-        <a class="subnav-pagination-item" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&rarr;</a>
+        <a class="Subnav-pagination-item" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&rarr;</a>
       {% endif %}
     </div>
 
     {% for post in site.categories.[page.category] %}
       {% if post.title != page.title %}
-        <a class="subnav-item" href="{{ post.url }}">{{ post.title }}</a>
+        <a class="Subnav-item" href="{{ post.url }}">{{ post.title }}</a>
       {% endif %}
     {% endfor %}
 </nav>

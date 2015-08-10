@@ -4,22 +4,22 @@ layout: default
 
 ---
 
-<ul class="index">
-    
+<ul class="Index">
+
     {% if page.category %}
-        
+
         {% for post in site.categories.[page.category] %}
           {% include index-post.html %}
         {% endfor %}
     
     {% else %}
-        
+
         {% for post in site.posts %}
             {% include index-post.html %}
         {% endfor %}
-        
+
     {% endif %}
-  
+
 </ul>
 
 {{content}}
