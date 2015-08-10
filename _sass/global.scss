@@ -4,7 +4,7 @@
 :root {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Merriweather', Georgia, serif;
+    font-family: $serif;
     color: $color;
     background-color: hsl(30, 60%, 98%); /* rgb(253, 250, 247) */
 }
@@ -89,7 +89,7 @@ img {
   margin: $space 0; /* fallback */
   margin: 12vmin 0;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: $sans-serif;
   font-weight: 300;
   color: $color-light;
 }
