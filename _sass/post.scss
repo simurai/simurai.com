@@ -1,38 +1,8 @@
 
 // Post -----------------------------------------
 
-.article-meta {
-  text-align: center;
-}
 
-.time {
-  color: $color-light;
-  font-weight: 300;
-}
-
-.time--inline {
-  margin-right: .4em;
-}
-
-.article iframe {
-  margin: 1em 0;
-}
-
-.article h1 {
-  text-align: center;
-}
-
-.article h2,
-.article h3,
-.article h4,
-.article h5,
-.article h6 {
-  margin: 2em 0 0 0;
-}
-
-.article h2 {
-  border-bottom: 1px dashed $color-hint;
-}
+// Video --------------
 
 .video-wrapper {
   position: relative;
@@ -50,25 +20,4 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-
-// Meta -----------------------------------------
-
-.meta {
-  display: block;
-  text-align: center;
-}
-
-.meta-time {
-  margin-right: 1em;
-}
-
-.meta-description:before {
-  content: " - ";
-}
-
-.meta-description {
-  font-weight: 300;
-  color: $color-light;
 }

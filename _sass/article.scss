@@ -1,0 +1,32 @@
+
+// Article -----------------------------------------
+
+.Article {
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 2em 0 0 0;
+  }
+  h2 {
+    border-bottom: 1px dashed $color-hint;
+  }
+
+  iframe {
+    margin: 1em 0;
+  }
+
+}
+
+.Article-title {
+  text-align: center;
+}
+
+.Article-date {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: $color-light;
+}

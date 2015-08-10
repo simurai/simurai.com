@@ -6,7 +6,7 @@ title: About simurai
 
 ---
 
-<div class="page-col">{% capture m %}
+<div class="Page-col">{% capture m %}
 
 ![simurai about](/img/simurai-about.jpg)
 
@@ -21,7 +21,7 @@ __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, mov
 {% endcapture %}{{ m | markdownify }}</div>
 
 
-<div class="page-col">{% capture m %}
+<div class="Page-col">{% capture m %}
 
 ## Contact
 

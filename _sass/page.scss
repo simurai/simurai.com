@@ -1,18 +1,16 @@
 // Page -----------------------------------------
 
-
-
-// Columns -----------------------------------------
-
-.page.has-cols {
-  @media (min-width: $break-) {
-    font-size: .8em;
-    -webkit-column-count: 2;
-    column-count: 2;
+.Page {
+  &.has-cols {
+    @media (min-width: $break-) {
+      font-size: .8em;
+      -webkit-column-count: 2;
+      column-count: 2;
+    }
   }
 }
 
-.page-col {
+.Page-col {
   -webkit-column-break-after: always;
   column-break-after: always;
 }

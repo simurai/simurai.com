@@ -25,6 +25,11 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
   color: hsl(220,60%,60%);
   &:visited {
     color: hsl(220, 30%, 60%);
