@@ -2,6 +2,7 @@
 
 title: Sprite sheet animation with steps()
 tags: [tips, animation]
+comments: yep
 category: blog
 layout: post
 
@@ -17,8 +18,8 @@ div {
     animation: play 1s steps(10) infinite;
 }
 
-@keyframes play { 
-      0% { background-position:    0px 0; } 
+@keyframes play {
+      0% { background-position:    0px 0; }
     100% { background-position: -500px 0; }
 }
 ```
