@@ -98,7 +98,9 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 
 ## Resources
 
+* [Color schemes](http://colorhunt.co/)
 * Fonts
+  - [Font Guide](http://www.typewolf.com/)  
   - [Tagged Google Fonts](http://katydecorah.com/font-library/)
   - [Blokk Font](http://blokkfont.com)
 * Icons
