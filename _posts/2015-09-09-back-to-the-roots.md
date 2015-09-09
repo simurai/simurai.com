@@ -1,7 +1,7 @@
 ---
 
 title: Back to the :roots
-tags: [cascade, specificity, :root]
+tags: [cascade, specificity, root]
 comments: yep
 category: blog
 layout: post
