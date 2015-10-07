@@ -28,6 +28,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 ## CSS
 
 * [All CSS properties](http://ref.openweb.io/CSS/)
+* [All CSS values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_values_syntax)
 * [CSS Vocabulary](http://pumpula.net/p/apps/css-vocabulary/)
 * [CSS Triggers (perf)](http://csstriggers.com/)
 
