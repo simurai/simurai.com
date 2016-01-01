@@ -14,7 +14,7 @@ __Samurai__? Almost.. Simon (my real name) + samurai = __simurai__.
 
 __Bio__: I was born in the Swiss Alps. Grew up between cows and goats. Later I lived and worked in Zürich (Switzerland), Vancouver (Canada), Fukuoka (Japan) and Haarlem (Netherlands). Currently I live in __Sapporo, Japan__.
 
-__Work__: I currently work as a contractor, doing front-end UI design.
+__Work__: Designer at GitHub, working on [Atom](https://atom.io).
 
 __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, movies.
 
@@ -26,8 +26,9 @@ __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, mov
 ## Contact
 
 * Tweet on [Twitter](http://twitter.com/simurai)
-* Comment on [dribbble](http://dribbble.com/simurai)
-* Fork on [CodePen](http://codepen.io/simurai)
+* Critique on [dribbble](http://dribbble.com/simurai)
+* Play on [CodePen](http://codepen.io/simurai)
+* Fork on [GitHub](https://github.com/simurai)
 * Chat on [tlk.io](http://tlk.io/simurai)
 * Email to [sim@simurai.com](mailto:sim@simurai.com)
 
