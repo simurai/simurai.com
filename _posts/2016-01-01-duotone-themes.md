@@ -11,7 +11,7 @@ layout: post
 
 ![DuoTone themes](/img/posts/duotone-dark.png)
 
-A double-hue syntax theme for __Atom__.
+Double-hue syntax themes for __Atom__.
 
 DuoTone themes use only 2 hues (7 shades in total). It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
