@@ -15,7 +15,7 @@ A double-hue syntax theme for __Atom__.
 
 DuoTone themes use only 2 hues (7 shades in total). It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
-A __big thanks__ goes to [@braver](https://github.com/braver) that did most of the initial [language support](https://github.com/simurai/duotone-dark-syntax/pull/2).
+A __big thanks__ goes to [@braver](https://github.com/braver) who did most of the initial [language support](https://github.com/simurai/duotone-dark-syntax/pull/2).
 
 
 ## Color variations
