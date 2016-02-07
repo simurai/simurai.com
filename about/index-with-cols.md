@@ -1,10 +1,12 @@
 ---
 
-layout: page
+layout: page-cols
 nav: about
 title: About simurai
 
 ---
+
+<div class="Page-col">{% capture m %}
 
 ![simurai about](/img/simurai-about.jpg)
 
@@ -16,6 +18,10 @@ __Work__: Designer at GitHub, working on [Atom](https://atom.io).
 
 __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, movies.
 
+{% endcapture %}{{ m | markdownify }}</div>
+
+
+<div class="Page-col">{% capture m %}
 
 ## Contact
 
@@ -25,3 +31,5 @@ __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, mov
 * Fork on [GitHub](https://github.com/simurai)
 * Chat on [tlk.io](http://tlk.io/simurai)
 * Email to [sim@simurai.com](mailto:sim@simurai.com)
+
+{% endcapture %}{{ m | markdownify }}</div>
