@@ -23,5 +23,6 @@ __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, mov
 * Critique on [dribbble](http://dribbble.com/simurai)
 * Play on [CodePen](http://codepen.io/simurai)
 * Fork on [GitHub](https://github.com/simurai)
+* Read on [Instapaper](https://www.instapaper.com/p/simurai)
 * Chat on [tlk.io](http://tlk.io/simurai)
 * Email to [sim@simurai.com](mailto:sim@simurai.com)
