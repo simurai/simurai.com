@@ -12,7 +12,7 @@ __Samurai__? Almost.. Simon (my real name) + samurai = __simurai__.
 
 __Bio__: I was born in the Swiss Alps. Grew up between cows and goats. Later I lived and worked in Zürich (Switzerland), Vancouver (Canada), Fukuoka (Japan) and Haarlem (Netherlands). Currently I live in __Sapporo, Japan__.
 
-__Work__: Designer at GitHub, working on [Atom](https://atom.io).
+__Work__: Designer at GitHub, working on [Atom](https://atom.io) and [Electron](http://electron.atom.io/).
 
 __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, movies.
 
