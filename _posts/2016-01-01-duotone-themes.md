@@ -20,10 +20,10 @@ A __big thanks__ goes to [@braver](https://github.com/braver) who did most of th
 
 ## Color variations
 
-[![DuoTone dark](/img/posts/duotone-dark.png)](https://atom.io/themes/duotone-dark-syntax)
-[![DuoTone dark Sea](/img/posts/duotone-dark-sea.png)](https://atom.io/themes/duotone-dark-sea-syntax)
-[![DuoTone dark Space](/img/posts/duotone-dark-space.png)](https://atom.io/themes/duotone-dark-space-syntax)
-[![DuoTone dark Earth](/img/posts/duotone-dark-earth.png)](https://atom.io/themes/duotone-dark-earth-syntax)
-[![DuoTone dark Forest](/img/posts/duotone-dark-forest.png)](https://atom.io/themes/duotone-dark-forest-syntax)
+[![DuoTone dark](/img/posts/duotone-dark.png)](http://simurai.com/duotone-dark-sky-syntax)
+[![DuoTone dark Sea](/img/posts/duotone-dark-sea.png)](http://simurai.com/duotone-dark-sea-syntax)
+[![DuoTone dark Space](/img/posts/duotone-dark-space.png)](http://simurai.com/duotone-dark-space-syntax)
+[![DuoTone dark Earth](/img/posts/duotone-dark-earth.png)](http://simurai.com/duotone-dark-earth-syntax)
+[![DuoTone dark Forest](/img/posts/duotone-dark-forest.png)](http://simurai.com/duotone-dark-forest-syntax)
 
 And here some more [color variations](https://atom.io/themes/search?utf8=%E2%9C%93&q=keyword:duotone) created by other theme authors.
