@@ -2,7 +2,6 @@
 
 title: Filtering (photo) filters
 tags: [photo, filter, UX]
-comments: yep
 category: blog
 layout: post
 

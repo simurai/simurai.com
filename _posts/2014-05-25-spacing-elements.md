@@ -2,7 +2,6 @@
 
 title: Spacing elements
 tags: [css, margin, padding, REM]
-comments: yep
 category: blog
 layout: post
 

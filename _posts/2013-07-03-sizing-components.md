@@ -2,7 +2,6 @@
 
 title: Sizing (Web) components
 tags: [css,em,font-size]
-comments: yep
 category: blog
 layout: post
 

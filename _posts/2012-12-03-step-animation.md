@@ -2,7 +2,6 @@
 
 title: Sprite sheet animation with steps()
 tags: [tips, animation]
-comments: yep
 category: blog
 layout: post
 

@@ -2,7 +2,6 @@
 
 title: SVG Stacks
 tags: [SVG]
-comments: yep
 category: blog
 layout: post
 

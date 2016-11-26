@@ -2,7 +2,6 @@
 
 title: Nesting Components
 tags: [components, nesting, context]
-comments: yep
 category: blog
 layout: post
 

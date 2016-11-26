@@ -2,7 +2,7 @@
 
 title: Back to the :roots
 tags: [cascade, specificity, root]
-comments: yep
+comments: https://github.com/simurai/simurai.github.io/issues/4
 category: blog
 layout: post
 
