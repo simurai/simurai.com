@@ -16,7 +16,7 @@ Alright then, let’s dive right into this abyss.
 
 > I just want to create a **single page** or a **simple site**. The content is mostly text and maybe a form or two. There aren’t any co-workers, just me (and my cat).  
 
-👉 Keep it simple and style HTML elements directly without using classes. [Use the cascade and let things inherit](https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/).  As the site grows, you might wanna look into start using [OOOCSS](http://oocss.org/) , or use some utility classes here and there.
+👉 Keep it simple and style HTML elements directly without using classes. [Use the cascade and let things inherit](https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/).  As the site grows, you might wanna look into start using [OOCSS](http://oocss.org/) , or use some utility classes here and there.
 
 ---
 
