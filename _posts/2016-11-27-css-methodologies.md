@@ -36,7 +36,7 @@ That’s probably the 3 main uses cases, but there are lots more situations that
 
 > I want to get started with a prototype .  
 
-👉 Use a “single purpose class” library like [TACHYONS](http://tachyons.io/) or [BASSCSS](http://basscss.com/) . It can be liberating writing HTML and CSS at the same time in the same place. No switching files, no pondering what the class name should be called, just quickly build what on your mind.
+👉 Use a “single purpose class” library like [TACHYONS](http://tachyons.io/) or [BASSCSS](http://basscss.com/) . It can be liberating writing HTML and CSS at the same time in the same place. No switching files, no pondering what the class name should be called, just quickly build what's on your mind.
 
 ---
 
