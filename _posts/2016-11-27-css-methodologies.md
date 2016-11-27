@@ -1,4 +1,14 @@
-# When to use which CSS methodology
+---
+
+title: When to use which CSS methodology
+tags: [CSS, methodology]
+comments: https://github.com/simurai/simurai.github.io/pull/5
+category: blog
+layout: post
+
+---
+
+
 Over the years more and more CSS methodologies started to appear and it can be quite hard to keep an overview and decide what to use. In this post we try to find the right CSS methodology for a certain situation, because unfortunately there just isn’t the perfect one.
 
 Alright then, let’s dive right into this abyss.
@@ -27,7 +37,7 @@ That’s probably the 3 main uses cases, but there are lots more situations that
 
 > Our project has lots of states, lots of things that need to be updated at runtime.  
 
-👉 Use [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) , [JSS](https://github.com/cssinjs/jss) (or a similar CSS-in-JS library). 
+👉 Use [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) , [JSS](https://github.com/cssinjs/jss) (or a similar CSS-in-JS library).
 
 
 > I want to release a CSS framework (yes, me too).  
@@ -55,7 +65,7 @@ ok, wait.. don’t do the last one. The only reason I can think of using chained
 - - - -
 
 
-As you can see, there are many different use cases and that’s why debating about CSS methodologies can be hard without knowing each other’s context. 
+As you can see, there are many different use cases and that’s why debating about CSS methodologies can be hard without knowing each other’s context.
 
 Some closing thoughts: You don’t have to settle on a single CSS methodology. It can also be mixed. Switching to a new methodology is also possible and sometimes a must. Like when a project starts out as a simple prototype but then later grows into a more complex project with many team members. But switching methodologies can be quite time consuming and brittle. So a little planing upfront can save lots of headaches later on. Happy choosing!
 
@@ -63,4 +73,4 @@ Some closing thoughts: You don’t have to settle on a single CSS methodology. I
 - - - -
 
 
-> Disclaimer: I’m biased too, who isn’t? I also haven’t used every CSS methodology long enough to claim that I know what I’m talking about. But I still try to stay as neutral as possible. If you think this post got something wrong or is missing, [click this link](#) and edit away.  
+> Disclaimer: I’m biased too, who isn’t? I also haven’t used every CSS methodology long enough to claim that I know what I’m talking about. But I still try to stay as neutral as possible. If you think this post got something wrong or is missing, [click this link](https://github.com/simurai/simurai.github.io/edit/css-methodologies/_posts/2016-11-27-css-methodologies.md?pr=/simurai/simurai.github.io/pull/5) and edit away.  
