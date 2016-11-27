@@ -2,7 +2,7 @@
 
 title: When to use which CSS methodology
 tags: [CSS, methodology]
-comments: https://github.com/simurai/simurai.github.io/pull/5
+comments: https://github.com/simurai/simurai.github.io/issues/6
 category: blog
 layout: post
 
@@ -78,4 +78,4 @@ Some closing thoughts: You don’t have to settle on a single CSS methodology. I
 
 ---
 
-> Disclaimer: I’m biased too, who isn’t? I also haven’t used every CSS methodology long enough to claim that I know what I’m talking about. But I still try to stay as neutral as possible. If you think this post got something wrong or has missing pieces, [click this link](https://github.com/simurai/simurai.github.io/edit/css-methodologies/_posts/2016-11-27-css-methodologies.md?pr=/simurai/simurai.github.io/pull/5) and edit away.  
+> Disclaimer: I’m biased too, who isn’t? I also haven’t used every CSS methodology long enough to claim that I know what I’m talking about. But I still try to stay as neutral as possible. If you think this post got something wrong or has missing pieces, [click this link](https://github.com/simurai/simurai.github.io/edit/master/_posts/2016-11-27-css-methodologies.md) and edit away.  
