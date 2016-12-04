@@ -74,7 +74,7 @@ ok, wait.. don’t do the last one. The only reason I can think of using chained
 
 As you can see, there are many different use cases and that’s why debating about CSS methodologies can be hard without knowing each other’s context.
 
-Some closing thoughts: You don’t have to settle on a single CSS methodology, you also borrow different aspects and create your own. Tailor one to your specific need. Remember that switching to new and shiny style of authoring CSS (pun intended) is possible and sometimes is a must. Like when a project starts out as a simple prototype but then later grows into a more complex project with many team members. As with any big change in codebase, switching to the new way to write CSS can be quite time consuming and brittle. So a little planing upfront can save lots of headaches later on. Happy choosing!
+Some closing thoughts: You don’t have to settle on a single CSS methodology, you also borrow different aspects and create your own. Tailor one to your specific need. Remember that switching to a new style of authoring CSS is possible and sometimes is a must. Like when a project starts out as a simple prototype but then later grows into a more complex project with many team members. As with any big change in codebase, switching to the new way to write CSS can be quite time consuming and brittle. So a little planing upfront can save lots of headaches later on. Happy choosing!
 
 ---
 
