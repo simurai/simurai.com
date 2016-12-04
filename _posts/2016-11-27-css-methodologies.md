@@ -16,7 +16,7 @@ Alright then, let’s dive right into this abyss.
 
 > I just want to create a **single page** or a **simple site**. The content is mostly text and maybe a form or two. There aren’t any co-workers, just me (and my cat).  
 
-👉 Keep it simple and style HTML elements directly without using classes. [Use the cascade and let things inherit](https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/).  As the site grows, you might wanna look into start using [OOCSS](http://oocss.org/) , or use some utility classes here and there.
+👉 Keep it simple and style HTML elements directly without using classes. [Use the cascade and let things inherit](https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/).  As the site grows, you might wanna look into start using [OOCSS](https://github.com/stubbornella/oocss/wiki), or use some utility classes here and there.
 
 ---
 
@@ -28,7 +28,7 @@ Alright then, let’s dive right into this abyss.
 
 > We’re a big company with many different teams. Our product is **large and complex**. It’s hard to keep up what’s going on. The code base is constantly in flux and we don’t want to break something in another corner.
 
-👉 Use [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) , [JSS](https://github.com/cssinjs/jss) (or a similar CSS-in-JS library). Having the CSS tied together with your HTML/JS makes it easier to change, move or remove those components without affecting the rest. Also take a look at Atomic CSS with [ACSS](https://acss.io/)  which tries to solve the same problem with a different approach.
+👉 Use CSS-in-JS: [(1)](https://speakerdeck.com/vjeux/react-css-in-js). Having the CSS tied together with your HTML/JS makes it easier to change, move or remove those components without affecting the rest.
 
 ---
 
@@ -36,7 +36,7 @@ That’s probably the 3 main uses cases, but there are lots more situations that
 
 > I want to get started with a prototype .  
 
-👉 Use a “single purpose class” library like [TACHYONS](http://tachyons.io/) or [BASSCSS](http://basscss.com/) . It can be liberating writing HTML and CSS at the same time in the same place. No switching files, no pondering what the class name should be called, just quickly build what's on your mind.
+👉 Use the “single purpose class” approach, also known as "atomic": [(1)](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/) [(2)](http://mrmrs.io/writing/2016/03/24/scalable-css/). It can be liberating writing HTML and CSS at the same time in the same place. No switching files, no pondering what the class name should be called, just quickly build what's on your mind.
 
 ---
 
