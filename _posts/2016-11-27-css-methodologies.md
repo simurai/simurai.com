@@ -36,7 +36,7 @@ That’s probably the 3 main uses cases, but there are lots more situations that
 
 > I want to get started with a prototype .  
 
-👉 Use the “single purpose class” approach, also known as "atomic": [(1)](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/) [(2)](http://mrmrs.io/writing/2016/03/24/scalable-css/). It can be liberating writing HTML and CSS at the same time in the same place. No switching files, no pondering what the class name should be called, just quickly build what's on your mind.
+👉 Use the “single purpose class” approach, also known as atomic/functional CSS: [(1)](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/) [(2)](http://mrmrs.io/writing/2016/03/24/scalable-css/). It can be liberating writing HTML and CSS at the same time in the same place. No switching files, no pondering what the class name should be called, just quickly build what's on your mind.
 
 ---
 
