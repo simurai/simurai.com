@@ -54,7 +54,7 @@ That’s probably the 3 main uses cases, but there are lots more situations that
 
 > I want to create a 3rd party widget (that shouldn’t be customizable).  
 
-👉 Use [CSS Modules](https://glenmaddern.com/articles/css-modules). The unique classes will guard against styles leaking out or in. Iframes or Web Components can also be considered.
+👉 Use [CSS Modules](https://glenmaddern.com/articles/css-modules). The unique classes will guard against styles leaking out or in. Iframes or Web Components/Shadow DOM can also be considered.
 
 ---
 
