@@ -14,6 +14,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 
 ## Docs
 
+* [HTML reference](http://htmlreference.io/)
 * [DevDocs](http://devdocs.io/)
 * [Native HTML Elements](http://nativeformelements.com/)
 * [jQuery -> JS](http://youmightnotneedjquery.com/)
@@ -27,6 +28,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 
 ## CSS
 
+* [CSS reference](http://cssreference.io/)
 * [All CSS properties](http://ref.openweb.io/CSS/)
 * [All CSS values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_values_syntax)
 * [CSS Triggers (perf)](http://csstriggers.com/)
