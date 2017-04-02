@@ -89,7 +89,7 @@ Sometimes it might make sense to use the text `color` for other properties. Like
 
 Similarly `em`s are mapped to `font-size` allowing you to scale everything by just changing the :root font size.
 
-Here a few more details on [currentColor and EMs](http://simurai.com/blog/2014/05/04/cssconf/).
+Here a few more details on [currentColor and EMs](http://simurai.com/blog/2014/05/04/cssconf).
 
 ![EMs](/img/posts/cssconf-size.gif)
 
