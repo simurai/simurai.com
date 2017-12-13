@@ -81,6 +81,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
 * [vue.js](http://vuejs.org/)
 * [Physics Animation](http://impulse.luster.io/)
 * [AniJS](http://anijs.github.io/)
+* [Popmotion](https://popmotion.io/)
 
 
 ## Utils + Tools
