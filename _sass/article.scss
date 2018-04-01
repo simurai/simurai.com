@@ -38,8 +38,11 @@
 }
 
 .Article-subTitle {
-  margin-bottom: 2em;
   text-align: center;
   color: $color;
   font-weight: 500;
+  
+  && {
+    margin-bottom: 2em;
+  }
 }
