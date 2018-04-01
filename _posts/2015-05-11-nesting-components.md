@@ -1,13 +1,14 @@
 ---
 
 title: Nesting Components
+subtitle: The struggles with contextual styling
 tags: [components, nesting, context]
 category: blog
 layout: post
 
 ---
 
-..or the struggles with contextual styling. — Using CSS components is somewhat straightforward. We add the markup and give it the component’s class name and all is good. Where it gets trickier is when we try to nest components. And when they need to be tweaked based on the context. Where should the styles be defined? It’s a question I’ve been asking myself a few times and what this article is trying to explore.
+Using CSS components is somewhat straightforward. We add the markup and give it the component’s class name and all is good. Where it gets trickier is when we try to nest components. And when they need to be tweaked based on the context. Where should the styles be defined? It’s a question I’ve been asking myself a few times and what this article is trying to explore.
 
 > Just to clarify before we start, with "CSS components", I mean the small building blocks that get used to assemble a website or app. Like buttons, inputs, navs, headers etc. Some also call them modules or patterns. Also I'm using the [SUIT](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) naming convention in the examples below, but any other convention would be fine as well. And just a heads, there isn't some awesome solution at the end that solves all the problems. It's just me whining most of the time.
 
