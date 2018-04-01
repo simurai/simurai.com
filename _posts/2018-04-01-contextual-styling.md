@@ -1,13 +1,12 @@
 ---
 
 title: Contextual styling with custom properties
+subtitle: How to have multiple themes on the same page.
 tags: [custom properties, css, variables, theme]
 category: blog
 layout: post
 
 ---
-
-> How to have multiple themes on the same page.
 
 Something I've been wanting for a long time, define different regions like a footer section, or side bar and not have to deal with all the contextual styling hassle. A.k.a. “Now that this button is used on a dark background, the button needs to change its colors too. Where should the styles live?”. Here an old post about [struggling with contextual styling](http://simurai.com/blog/2015/05/11/nesting-components).
 
