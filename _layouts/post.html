@@ -10,7 +10,7 @@ post: true
     <article class="Article">
         <h1 class="Article-title">{{ page.title }}</h1>
         <time class="Article-date">{{ page.date | date: "%B %d %Y" }}</time>        
-        {% if post.subtitle %}<h3 class="Article-subTitle">{{ post.subtitle }}</h3>{% endif %}
+        {% if page.subtitle %}<h3 class="Article-subTitle">{{ page.subtitle }}</h3>{% endif %}
         {{content}}
     </article>
 
