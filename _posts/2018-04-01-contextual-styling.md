@@ -63,7 +63,7 @@ If you wonder why use `data-theme` attributes over classes? Well, no specific re
 
 At this point we get this:
 
-<p data-height="300" data-theme-id="3586" data-slug-hash="be9c343986c1853c0487011d686678b7" data-default-tab="result" data-user="simurai" data-embed-version="2" data-pen-title="Contextual styling with custom properties (1/3)" class="codepen">See the Pen <a href="https://codepen.io/simurai/pen/be9c343986c1853c0487011d686678b7/">Contextual styling with custom properties (1/3)</a> by simurai (<a href="https://codepen.io/simurai">@simurai</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="320" data-theme-id="3586" data-slug-hash="be9c343986c1853c0487011d686678b7" data-default-tab="result" data-user="simurai" data-embed-version="2" data-pen-title="Contextual styling with custom properties (1/3)" class="codepen">See the Pen <a href="https://codepen.io/simurai/pen/be9c343986c1853c0487011d686678b7/">Contextual styling with custom properties (1/3)</a> by simurai (<a href="https://codepen.io/simurai">@simurai</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## 2. Dark theme
@@ -90,7 +90,7 @@ And add the theme attribute to the header and footer.
 
 Which gives us this:
 
-<p data-height="300" data-theme-id="3586" data-slug-hash="b7a9532fe4607536b4c8acb659fbcabe" data-default-tab="result" data-user="simurai" data-embed-version="2" data-pen-title="Contextual styling with custom properties (2/3)" class="codepen">See the Pen <a href="https://codepen.io/simurai/pen/b7a9532fe4607536b4c8acb659fbcabe/">Contextual styling with custom properties (2/3)</a> by simurai (<a href="https://codepen.io/simurai">@simurai</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="320" data-theme-id="3586" data-slug-hash="b7a9532fe4607536b4c8acb659fbcabe" data-default-tab="result" data-user="simurai" data-embed-version="2" data-pen-title="Contextual styling with custom properties (2/3)" class="codepen">See the Pen <a href="https://codepen.io/simurai/pen/b7a9532fe4607536b4c8acb659fbcabe/">Contextual styling with custom properties (2/3)</a> by simurai (<a href="https://codepen.io/simurai">@simurai</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 The reason why this works is that custom properties cascade and can be overridden on nested elements, just like normal properties.
@@ -118,7 +118,7 @@ No problem! Just like with the dark theme, we define a new “hero” theme.
 
 And here is that fresh hero:
 
-<p data-height="300" data-theme-id="3586" data-slug-hash="c995ced84077d0823a1496ee6fbacd27" data-default-tab="result" data-user="simurai" data-embed-version="2" data-pen-title="Contextual styling with custom properties (3/3)" class="codepen">See the Pen <a href="https://codepen.io/simurai/pen/c995ced84077d0823a1496ee6fbacd27/">Contextual styling with custom properties (3/3)</a> by simurai (<a href="https://codepen.io/simurai">@simurai</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="320" data-theme-id="3586" data-slug-hash="c995ced84077d0823a1496ee6fbacd27" data-default-tab="result" data-user="simurai" data-embed-version="2" data-pen-title="Contextual styling with custom properties (3/3)" class="codepen">See the Pen <a href="https://codepen.io/simurai/pen/c995ced84077d0823a1496ee6fbacd27/">Contextual styling with custom properties (3/3)</a> by simurai (<a href="https://codepen.io/simurai">@simurai</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 It’s also not limited to colors only, could be used for sizes, fonts or anything that makes sense to define as variables. 
