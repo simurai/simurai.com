@@ -1,7 +1,7 @@
 ---
 
 title: Contextual styling with custom properties
-subtitle: How to have multiple themes on the same page.
+subtitle: How to have multiple themes on the same page
 tags: [custom properties, css, variables, theme]
 category: blog
 layout: post
