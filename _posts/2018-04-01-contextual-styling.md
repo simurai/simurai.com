@@ -151,3 +151,12 @@ P.S. On a side note, I’m also excited about CSS colors level 4. The [color-mod
 ```
 
 This will make it possible to change themes **at runtime** with fewer hard-coded values. Just change `--bg` and the rest adapts accordingly. 😍
+
+## Update
+
+(@giuseppegurgone)[https://twitter.com/giuseppegurgone] made an interesting [comment](
+https://twitter.com/giuseppegurgone/status/980398653453021184):
+
+> in suitcss projects I used to define component level custom props, theme variables and then create themes by mapping the former to the latter https://github.com/giuseppeg/suitcss-toolkit/tree/example-app/examples/app#themes
+
+So if I understood it correctly, by mapping theme variables to component variables, you could avoid your theme variables from growing too much and you can decide for each component how to use these theme variables.
