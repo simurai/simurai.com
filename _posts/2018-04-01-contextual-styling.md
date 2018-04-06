@@ -140,18 +140,6 @@ Ok, I’m pretty sure it doesn’t fit all situations. There are just too many t
 
 A concern I can imagine is that the list of variables might grow quickly if themes have totally different characteristics. Like not just a bit darker or lighter backgrounds. Then you might need to have foreground and border colors for each component (or group of components) and can’t just use the general `--fg` and `--border` variables. Naming these variables is probably the hardest part.
 
------
-
-P.S. On a side note, I’m also excited about CSS colors level 4. The [color-mod()](https://www.w3.org/TR/css-color-4/#modifying-colors) function lets you do stuff like darken/lighten with custom properties.
-
-```css
-[data-theme="dark"] {
-  --button-bg: color-mod(var(--bg) lightness(10%));
-}
-```
-
-This will make it possible to change themes **at runtime** with fewer hard-coded values. Just change `--bg` and the rest adapts accordingly. 😍
-
 ## Update
 
 [@giuseppegurgone](https://twitter.com/giuseppegurgone) made an interesting [comment](
