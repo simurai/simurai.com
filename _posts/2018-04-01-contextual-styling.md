@@ -140,7 +140,7 @@ Ok, I’m pretty sure it doesn’t fit all situations. There are just too many t
 
 A concern I can imagine is that the list of variables might grow quickly if themes have totally different characteristics. Like not just a bit darker or lighter backgrounds. Then you might need to have foreground and border colors for each component (or group of components) and can’t just use the general `--fg` and `--border` variables. Naming these variables is probably the hardest part.
 
-## Update
+## Update I
 
 [@giuseppegurgone](https://twitter.com/giuseppegurgone) made an interesting [comment](
 https://twitter.com/giuseppegurgone/status/980398653453021184):
@@ -148,3 +148,7 @@ https://twitter.com/giuseppegurgone/status/980398653453021184):
 > in suitcss projects I used to define component level custom props, theme variables and then create themes by mapping the former to the latter [suitcss-toolkit](https://github.com/giuseppeg/suitcss-toolkit/tree/example-app/examples/app#themes)
 
 So if I understood it correctly, by mapping theme variables to component variables, you could avoid your theme variables from growing too much and you can decide for each component how to use these theme variables.
+
+## Update II
+
+If it's too early to use custom properties in your project, [@szalonna](https://github.com/szalonna) posted an [example](https://github.com/simurai/simurai.github.io/issues/13) how to do something similar in SCSS.
