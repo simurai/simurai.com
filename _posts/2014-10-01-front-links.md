@@ -107,6 +107,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
   - [Tagged Google Fonts](http://katydecorah.com/font-library/)
   - [Blokk Font](http://blokkfont.com)
 * Icons
+  - [Feather](https://feathericons.com/)
   - [Icomoon](http://icomoon.io/app/)
   - [Material](https://www.google.com/design/icons/)
   - [Entypo](http://entypo.com/characters/)
