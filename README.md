@@ -1,5 +1,4 @@
-simurai.com
-===========
+# simurai.com
 
 This is what you see at [simurai.com](http://simurai.com/).
 
