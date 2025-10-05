@@ -54,6 +54,7 @@ This is my (living) collection of __front-end__ links. It's not complete by all 
   - [Stylie](http://jeremyckahn.github.io/stylie/)
 
 * Easing:
+  - [Easing Wizard](https://easingwizard.com/)
   - [Bezier Builder](http://www.roblaplaca.com/examples/bezierBuilder/)
   - [Ceaser](http://matthewlein.com/ceaser/)
   - [cubic-bezier](http://cubic-bezier.com/)
